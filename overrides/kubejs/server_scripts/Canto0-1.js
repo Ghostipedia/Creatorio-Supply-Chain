@@ -105,7 +105,15 @@ ServerEvents.recipes(event => {
         C: 'rubberworks:rubber_sheet',
         D: 'minecraft:gold_block'
     })
-
+    event.shaped('create:wrench', [
+        'AA',
+        'AB',
+        ' C'
+    ], {
+        A: 'creatoriocore:primitive_andesite_alloy',
+        B: 'create:cogwheel',
+        C: 'minecraft:stick'
+    })
     event.recipes.create.mixing('create:andesite_alloy', ['minecraft:clay_ball', 'minecraft:iron_nugget', 'minecraft:andesite'])
 
     event.recipes.create.sequenced_assembly(

@@ -17,6 +17,7 @@ event.remove({ id: 'create:crafting/materials/andesite_alloy_from_block' })
 
 event.remove({ id: 'create:crafting/kinetics/large_water_wheel' }) 
 event.remove({ id: 'create:crafting/kinetics/empty_blaze_burner' }) 
+event.remove({ id: 'create:crafting/kinetics/wrench' }) 
 
 
 
