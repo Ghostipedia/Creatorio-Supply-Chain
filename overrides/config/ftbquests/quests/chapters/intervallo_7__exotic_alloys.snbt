@@ -1,0 +1,13 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "intervallo_7__exotic_alloys"
+	group: "78E1BA510443F331"
+	icon: {
+		id: "tfmg:silicon_ingot"
+	}
+	id: "3F06CE53014416DC"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+}

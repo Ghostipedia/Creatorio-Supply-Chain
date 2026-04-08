@@ -1,0 +1,5 @@
+	[dragonlib_server_config.time_system]
+		#When ON, DragonLib tries to detect time changing mods (like TimeControl) and uses its settings. When OFF, Vanilla or Custom is used. (Default: ON)
+		use_custom = false
+		#Specifies the preferred time changing mod. If multiple such mods are installed, it cannot be clearly determined which mod DragonLib is using to retrieve the data. This option allows you to specify a particular mod. However, installing multiple such mods simultaneously is not recommended. If this value is empty, the mod will be selected automatically, as before. If the specified mod does not exist, vanilla will be used. (Default: '')
+		preferred_mod = ""

@@ -1,0 +1,30 @@
+#.
+#Recipes for Petrol's Parts components
+[recipes]
+	#.
+	#Enable default Recipe for the Brass Depot
+	brassDepot = true
+	#.
+	#Enable default Recipes for the Coaxial Cogwheel and Large Coaxial Cogwheel
+	coaxialGears = true
+	#.
+	#Enable default Recipe for the Colossal Cogwheel
+	colossalCogwheel = true
+	#.
+	#Enable default Recipes for the Corner Shaft
+	cornerShaft = true
+	#.
+	#Enable default Recipe for the Differential
+	differential = true
+	#.
+	#Enable default Recipe for the Hydraulic Transmission
+	hydraulicTransmission = true
+	#.
+	#Enable default Recipe for the Planetary Gearset
+	planetaryGearset = true
+	#.
+	#Enable default Recipe for the Pneumatic Tube
+	pneumaticTube = true
+	#.
+	#Enable default Recipe for the Redstone Programmer
+	redstoneProgrammer = true

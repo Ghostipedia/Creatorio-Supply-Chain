@@ -1,0 +1,22 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "intervallo_2__the_first_alloy_of_flame"
+	group: "1D7A6AE4FC996FA8"
+	icon: {
+		id: "create:brass_ingot"
+	}
+	id: "7113839087C79230"
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		id: "7903A59C9048C18E"
+		tasks: [{
+			id: "54EDB2C25F632916"
+			item: { count: 1, id: "minecraft:obsidian" }
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+}

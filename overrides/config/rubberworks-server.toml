@@ -1,0 +1,16 @@
+#.
+#Parameters and abilities of Rubberworks's kinetic mechanisms
+[kinetics]
+
+		#.
+		#.
+		#Fine tune the kinetic stats of individual components
+		[kinetics.stressValues.v2]
+
+			#.
+			#.
+			#[in Stress Units]
+			#Configure the individual stress impact of mechanical blocks. Note that this cost is doubled for every speed increase it receives.
+			[kinetics.stressValues.v2.impact]
+				compressor = 4.0
+				sapper = 4.0

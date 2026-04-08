@@ -1,0 +1,13 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "what_kind_of_mango_is_this_i_dont_know"
+	group: "67C78D47BBCE53D5"
+	icon: {
+		id: "minecraft:sniffer_egg"
+	}
+	id: "4C15316CD6852494"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+}

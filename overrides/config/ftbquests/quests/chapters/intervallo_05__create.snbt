@@ -1,0 +1,89 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "intervallo_05__create"
+	group: "64E10135C7757B71"
+	icon: {
+		id: "create:wrench"
+	}
+	id: "7469C0363A46619B"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7FF6529D92491048"]
+			icon: {
+				id: "creatoriocore:primitive_assembly_component"
+			}
+			id: "6692C8C66C99FF5D"
+			shape: "hexagon"
+			tasks: [{
+				id: "7C6171D83F8A1E3D"
+				item: { count: 1, id: "creatoriocore:primitive_assembly_component" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6533C4D7DC9A650A"]
+			id: "31158BEA886AF01A"
+			shape: "hexagon"
+			tasks: [{
+				id: "1440FDB907DBC19C"
+				item: { count: 1, id: "creatoriocore:nether_permit" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6692C8C66C99FF5D"]
+			id: "6533C4D7DC9A650A"
+			shape: "hexagon"
+			tasks: [{
+				id: "33BB226616E6A144"
+				item: { count: 1, id: "create:andesite_alloy" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["31158BEA886AF01A"]
+			id: "5EDA05012BB511E6"
+			shape: "hexagon"
+			tasks: [{
+				id: "78CB81D47C993A82"
+				item: { count: 1, id: "create:empty_blaze_burner" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5EDA05012BB511E6"]
+			id: "6A52A4EABC826077"
+			shape: "hexagon"
+			tasks: [{
+				id: "20F3A69471474381"
+				item: { count: 1, id: "create:brass_ingot" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6A52A4EABC826077"]
+			id: "6F7AD08F1D7BB233"
+			shape: "hexagon"
+			tasks: [{
+				id: "0220B88458702FDC"
+				item: { count: 1, id: "create:precision_mechanism" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+	]
+}

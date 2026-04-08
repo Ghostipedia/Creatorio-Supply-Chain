@@ -1,0 +1,13 @@
+#.
+#(This block is in development, and disabled in feature flags by default) Determines whether the flywheel bearing should be able to function as kinetic storage, setting this to false this means it will be purely decorative.
+flywheelBearingStorageCapability = false
+#.
+#(This block is in development, and disabled in feature flags by default) Multiplier for the kinetic storage capacity of flywheels mounted on flywheel bearings (if enabled). Values higher than one increase capacity. It is not recommended to set the value to 0, as you should disable the storage feature entirely.
+# Default: 1.0
+# Range: 0.0 ~ 100.0
+flywheelStorageFactor = 1.0
+#.
+#Multiplier for the number of chains required for a cogwheel chain. Minimum cost is always 1 chain, unless this value is set to 0. Does not affect the number of chains returned by existing chain drives.
+# Default: 1.0
+# Range: 0.0 ~ 10.0
+cogwheelChainDriveCostFactor = 1.0

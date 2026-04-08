@@ -1,0 +1,28 @@
+["Create Railways Navigator Config"]
+	#The language that should be used for announcements of the navigator. Can be different from the game's language settings. (Default: Default)
+	#Allowed Values: DEFAULT, ENGLISH, GERMAN, DUTCH, POLISH, CHINESE_SIMPLIFIED, SAXON, BAVARIAN, SPANISH, RUSSIAN, FRENCH, KOREAN, SWEDISH, PORTUGUESE, BASQUE, ITALIAN, JAPANESE, PORTUGUESE_BRAZILIAN, UKRAINIAN, ARABIC, CZECH, GERMAN_SWITZERLAND, ROMANIAN, TURKISH, HUNGARIAN, HEBREW
+	language = "DEFAULT"
+	#The unit to be used to represent speed. (Default: KMH)
+	#Allowed Values: MS, KMH, MPH, FTS, KT, CMS
+	speed_unit = "KMH"
+	#Display Time Format. (Default: Hours 24)
+	#Allowed Values: HOURS_24, HOURS_12, TICKS
+	time_format = "HOURS_24"
+
+	["Create Railways Navigator Config".general]
+		#[in Ticks]
+		#The interval in which the displays are updated with new information. Lower values can decrease performance and increase the network traffic, while larger values reduce the reaction speed of the displays. (Default: 50, Recommended: 50 - 100)
+		# Default: 50
+		# Range: 20 ~ 200
+		display_refresh_rate = 50
+
+	["Create Railways Navigator Config".route_overlay]
+		#Scale of the route overlay UI. (Default: 0.75)
+		# Default: 0.75
+		# Range: 0.25 ~ 2.0
+		scale = 0.75
+		#If active, you will receive short toasts about important events on your trip, e.g. delays, changes, ... (Default: ON)
+		notifications = true
+		#The position on your screen where you want the overlay to appear. (Default: Top Left)
+		#Allowed Values: TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT
+		position = "TOP_LEFT"

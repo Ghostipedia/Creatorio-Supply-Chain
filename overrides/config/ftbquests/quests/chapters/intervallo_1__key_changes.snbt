@@ -1,0 +1,65 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "intervallo_1__key_changes"
+	group: "64E10135C7757B71"
+	icon: {
+		id: "createdeco:decal_warning"
+	}
+	id: "4A72DFF21B23D8CD"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				id: "minecraft:end_crystal"
+			}
+			id: "1B67CDAA9F6BB7B6"
+			tasks: [{
+				id: "7437CFAE76402FFD"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "minecraft:respawn_anchor"
+			}
+			id: "2A77DBAB6DFFE488"
+			tasks: [{
+				id: "30AEC25FF5918D4C"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "minecraft:grass_block"
+			}
+			id: "1351BA0E601248E9"
+			tasks: [{
+				id: "31B0D49856D959B8"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["627838DBD95B00AE"]
+			icon: {
+				id: "minecraft:diamond"
+			}
+			id: "59B828D0E89B2A0D"
+			min_width: 350
+			shape: "gear"
+			tasks: [{
+				id: "53D3FF99F3300BC2"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 2.5d
+		}
+	]
+}

@@ -1,0 +1,9 @@
+# Default: 8192.0
+# Range: 0.0 ~ 1.7976931348623157E308
+hydraulic_engine_stress_provide = 8192.0
+# Default: 8192.0
+# Range: 0.0 ~ 1.7976931348623157E308
+wind_engine_stress_provide = 8192.0
+# Default: 50.0
+# Range: 0.0 ~ 1.7976931348623157E308
+block_placer_power = 50.0

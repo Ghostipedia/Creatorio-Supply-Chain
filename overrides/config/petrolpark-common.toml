@@ -1,0 +1,13 @@
+#.
+#Add NeoForge Fluid Capability to Glass Bottle items, making them act more like Buckets
+#[May override other mods' functionality]
+glassBottleFluidCapability = true
+
+#.
+[compatibility]
+
+	#.
+	[compatibility.brewinAndChewin]
+		#.
+		#Some Fermenting/Pouring Recipes are possible in Lidded Basins and Spouts, if enabled.
+		fermentingInLiddedBasin = true

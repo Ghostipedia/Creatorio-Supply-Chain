@@ -1,0 +1,13 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "intervallo__steel"
+	group: "3B5D46B2B6E5A54B"
+	icon: {
+		id: "tfmg:steel_chemical_vat"
+	}
+	id: "50E2B5CED5BB7C22"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+}

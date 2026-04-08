@@ -1,0 +1,253 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "intervallo_0__the_world"
+	group: "64E10135C7757B71"
+	icon: {
+		id: "minecraft:oak_sapling"
+	}
+	id: "2624D8EC2FEA4139"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "5191777DC94F6A73"
+			tasks: [{
+				icon: {
+					id: "minecraft:oak_log"
+				}
+				id: "2C68BCFD1B18B5F0"
+				item: { components: { "ftbfiltersystem:filter": "or(item_tag(minecraft:logs))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5191777DC94F6A73"]
+			icon: {
+				id: "minecraft:wooden_pickaxe"
+			}
+			id: "627838DBD95B00AE"
+			tasks: [{
+				id: "000340FF1017ABC4"
+				item: { count: 1, id: "minecraft:wooden_pickaxe" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["627838DBD95B00AE"]
+			id: "443F55F618A0DAAB"
+			tasks: [{
+				id: "0A46AFDE7CA49BD8"
+				item: { count: 1, id: "minecraft:tuff" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["627838DBD95B00AE"]
+			id: "0B52B07B1788CA65"
+			tasks: [{
+				id: "0F89F46CC56B7425"
+				item: { count: 1, id: "minecraft:andesite" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			id: "0A339EE2533A3E5B"
+			tasks: [
+				{
+					id: "64D74D10891BFECB"
+					item: { count: 1, id: "minecraft:kelp" }
+					type: "item"
+				}
+				{
+					id: "1D25B6DB153982EB"
+					item: { count: 1, id: "minecraft:dried_kelp" }
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"0A339EE2533A3E5B"
+				"443F55F618A0DAAB"
+				"0B52B07B1788CA65"
+				"63C13561D4A2FF66"
+			]
+			id: "62C5799CDBB98AE3"
+			tasks: [{
+				id: "7542970CE9171559"
+				item: { count: 1, id: "creatoriocore:weak_putty" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			id: "63C13561D4A2FF66"
+			tasks: [{
+				id: "1F4AD0D5FA96FA17"
+				item: { count: 1, id: "minecraft:clay_ball" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"2D1D720089F4927A"
+				"601688A38EEEADF3"
+				"43775477581A2414"
+			]
+			id: "2139B0C91B4164A1"
+			min_width: 350
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "6693E37F135FEB4F"
+				item: { count: 1, id: "create:andesite_casing" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["7FF6529D92491048"]
+			id: "1BCD55E98CF7E5DE"
+			tasks: [{
+				id: "3761AAE1E711AD01"
+				item: { count: 1, id: "creatoriocore:primitive_assembly_component" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7FF6529D92491048"]
+			id: "2D1D720089F4927A"
+			tasks: [{
+				id: "087EBE855E1379E7"
+				item: { count: 1, id: "creatoriocore:andesite_alloy_braces" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"1BCD55E98CF7E5DE"
+				"7FF6529D92491048"
+			]
+			id: "601688A38EEEADF3"
+			tasks: [{
+				id: "29DABD9B3C02D96E"
+				item: { count: 1, id: "creatoriocore:andesite_casing_internals" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"67CE0B0A440DAC55"
+				"02B742F686F88CCF"
+			]
+			id: "43775477581A2414"
+			tasks: [{
+				id: "10443A1A76207725"
+				item: { count: 1, id: "creatoriocore:andesite_casing_modular_boards" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"62C5799CDBB98AE3"
+				"642BC1B6D27D40F9"
+			]
+			id: "7FF6529D92491048"
+			tasks: [{
+				id: "2525AD593E69D649"
+				item: { count: 1, id: "creatoriocore:primitive_andesite_alloy" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5191777DC94F6A73"]
+			id: "29B0DF13722C3A84"
+			tasks: [{
+				id: "147A84B21AC5038E"
+				item: { count: 1, id: "farmersdelight:cutting_board" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["29B0DF13722C3A84"]
+			id: "67CE0B0A440DAC55"
+			tasks: [{
+				id: "2608D38221FFA188"
+				item: { count: 1, id: "farmersdelight:tree_bark" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["42F433BBD4789381"]
+			id: "02B742F686F88CCF"
+			tasks: [{
+				id: "31180854092046FE"
+				item: { count: 1, id: "minecraft:slime_ball" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["7359BEFA3BFE2305"]
+			id: "42F433BBD4789381"
+			tasks: [{
+				id: "23B105756E1F59E9"
+				item: { count: 1, id: "create:dough" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["29B0DF13722C3A84"]
+			id: "7359BEFA3BFE2305"
+			tasks: [{
+				id: "29CD72D840CFC58C"
+				item: { count: 1, id: "create:wheat_flour" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			id: "642BC1B6D27D40F9"
+			tasks: [{
+				id: "19F035C652AB8238"
+				item: { count: 1, id: "minecraft:blast_furnace" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -5.0d
+		}
+	]
+}

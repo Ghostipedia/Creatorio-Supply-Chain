@@ -1,0 +1,23 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "intervallo_15__the_netherside"
+	group: "1D7A6AE4FC996FA8"
+	icon: {
+		id: "minecraft:nether_wart_block"
+	}
+	id: "64F2FDD1894A45D8"
+	order_index: 1
+	quest_links: [ ]
+	quests: [{
+		dependencies: ["288CC1F24527EDCA"]
+		id: "4B30FAEE13A9D0FA"
+		tasks: [{
+			id: "4D0710B0DA25A856"
+			item: { count: 1, id: "creatoriocore:nether_permit" }
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+}
