@@ -13,7 +13,15 @@ yeet('create_rns:resonance_buffer')
 yeet('create_rns:shattering_resonator')
 yeet('create_rns:stabilizing_resonator')
 yeet('create_rns:resonator')
-
+yeet('sophisticatedbackpacks:stack_upgrade_starter_tier')
+yeet('sophisticatedbackpacks:stack_upgrade_tier_1')
+yeet('sophisticatedbackpacks:stack_upgrade_tier_2')
+yeet('sophisticatedbackpacks:stack_upgrade_tier_3')
+yeet('sophisticatedbackpacks:stack_upgrade_tier_4')
+yeet('sophisticatedbackpacks:stack_downgrade_tier_1')
+yeet('sophisticatedbackpacks:stack_downgrade_tier_2')
+yeet('sophisticatedbackpacks:stack_downgrade_tier_3')
+yeet('sophisticatedbackpacks:stack_upgrade_omega_tier')
 ServerEvents.recipes(event => {
 
     event.remove({ id: 'create:haunting/soul_soil' })
@@ -49,12 +57,20 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'create:item_application/brass_casing_from_wood_using_deployer' })
     event.remove({ id: 'create:item_application/brass_casing_from_log_using_deployer' })
     event.remove({ id: 'create:mechanical_crafting/crushing_wheel' })
+    event.remove({ id: 'create:item_application/railway_casing_using_deployer' })
+    event.remove({ id: 'create:item_application/railway_casing' })
+    event.remove({ id: 'tfmg:crafting/materials/fireproof_bricks' })
+    event.remove({ id: 'create:sequenced_assembly/precision_mechanism' })
 
 
     //TFMG
     event.remove({ id: 'tfmg:casting/steel' })
     event.remove({ id: 'tfmg:compacting/cast_iron' })
     event.remove({ id: 'tfmg:smelting/fireproof_brick' })
+    event.remove({ id: 'tfmg:industrial_blasting/steel_from_dust' })
+    event.remove({ id: 'tfmg:industrial_blasting/steel_from_raw_iron' })
+    event.remove({ id: 'tfmg:industrial_blasting/silicon' })
+    event.remove({ id: 'tfmg:industrial_blasting/steel' })
 })
 
 

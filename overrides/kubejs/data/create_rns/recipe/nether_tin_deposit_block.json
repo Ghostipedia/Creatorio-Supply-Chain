@@ -1,7 +1,8 @@
 {
   "type": "create_rns:mining",
-  "deposit_block": "create_rns:redstone_deposit_block",
+  "deposit_block": "create_rns:tin_deposit_block",
   "replace_when_depleted": "create_rns:depleted_deposit_block",
+  "dimension": "minecraft:the_nether",
   "durability": {
     "core": 200000,
     "edge": 75000,
@@ -11,15 +12,7 @@
     {
       "items": [
         {
-          "item": "minecraft:cobblestone"
-        }
-      ]
-    },
-{
-      "chance": 0.15,
-      "items": [
-        {
-          "item": "minecraft:tuff"
+          "item": "minecraft:netherrack"
         }
       ]
     },
@@ -27,7 +20,7 @@
       "chance": 0.15,
       "items": [
         {
-          "item": "minecraft:calcite"
+          "item": "minecraft:basalt"
         }
       ]
     },
@@ -35,7 +28,23 @@
       "chance": 0.15,
       "items": [
         {
-          "item": "create:limestone"
+          "item": "minecraft:blackstone"
+        }
+      ]
+    },
+    {
+      "chance": 0.15,
+      "items": [
+        {
+          "item": "minecraft:soul_soil"
+        }
+      ]
+    },
+    {
+      "chance": 0.45,
+      "items": [
+        {
+          "item": "create:scoria"
         }
       ]
     },
@@ -43,15 +52,15 @@
       "chance": 0.05,
       "items": [
         {
-          "item": "creatoriocore:compacted_redstone_ore_geode"
+          "item": "creatoriocore:raw_tin"
         }
       ]
     },
     {
-      "chance": 0.01,
+      "chance": 0.05,
       "items": [
         {
-          "item": "creatoriocore:compacted_emerald_ore_geode"
+          "item": "minecraft:amethyst_shard"
         }
       ]
     }

@@ -19,7 +19,7 @@
       "chance": 0.05,
       "items": [
         {
-          "item": "tfmg:raw_lead"
+          "item": "creatoriocore:compacted_lead_ore_geode"
         }
       ]
     },
@@ -28,6 +28,14 @@
       "items": [
         {
           "item": "create_rns:lead_small_dust"
+        }
+      ]
+    },
+    {
+      "chance": 0.01,
+      "items": [
+        {
+          "item": "creatoriocore:compacted_lapis_ore_geode"
         }
       ]
     }

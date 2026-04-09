@@ -51,7 +51,7 @@
       "chance": 0.05,
       "items": [
         {
-          "item": "minecraft:raw_iron"
+          "item": "creatoriocore:compacted_iron_ore_geode"
         }
       ]
     },

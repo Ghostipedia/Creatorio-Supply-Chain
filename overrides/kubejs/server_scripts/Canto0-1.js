@@ -68,7 +68,14 @@ ServerEvents.recipes(event => {
         ],
         'minecraft:item.axe.strip'
     )
-
+    event.recipes.farmersdelight.cutting(
+        'minecraft:raw_iron',
+        'create:wrench',
+        [
+            'create:crushed_raw_iron'
+        ],
+        'minecraft:item.axe.strip'
+    )
 
     event.shapeless('4x creatoriocore:weak_putty', [
         '2x minecraft:clay_ball',
@@ -172,7 +179,7 @@ ServerEvents.recipes(event => {
         'B',
         'C'
     ], {
-        A: 'creatoriocore:brass_logic_core',
+        A: 'create:electron_tube',
         B: 'create:andesite_casing',
         C: 'create:brass_hand'
     })
@@ -261,8 +268,7 @@ ServerEvents.recipes(event => {
     event.recipes.create.mixing('create:rose_quartz', ['minecraft:quartz', '16x minecraft:redstone']).heated()
     event.recipes.create.mixing('create:andesite_alloy', ['minecraft:clay_ball', 'minecraft:iron_nugget', 'minecraft:andesite'])
 
-
-
+event.recipes.create.mixing('tfmg:cast_iron_ingot', ['creatoriocore:nether_slag', 'creatoriocore:coal_dust', 'minecraft:iron_ingot']).superheated()
     event.recipes.create.deploying('2x creatoriocore:brass_casing_modular_board', ['create:brass_sheet', Ingredient.of('#minecraft:planks')])
 
     event.recipes.create.mechanical_crafting(
@@ -277,7 +283,7 @@ ServerEvents.recipes(event => {
             'BBB BBB'
         ],
         {
-            A: 'creatoriocore:brass_gear_assembly',
+            A: 'creatoriocore:bronze_gear_assembly',
             B: 'creatoriocore:cypherwire_spool',
             C: 'create:precision_mechanism',
             D: 'create_rns:polished_resonant_amethyst'

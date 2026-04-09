@@ -1,0 +1,6 @@
+{
+  "structure": "create_rns:deposit_tin",
+  "dimension": "minecraft:the_nether",
+  "scanner_icon_item": "creatoriocore:raw_tin",
+  "map_icon_item": "create_rns:tin_deposit_block"
+}

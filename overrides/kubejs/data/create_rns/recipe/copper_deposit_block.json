@@ -51,7 +51,7 @@
       "chance": 0.05,
       "items": [
         {
-          "item": "minecraft:raw_copper"
+          "item": "creatoriocore:compacted_copper_ore_geode"
         }
       ]
     },

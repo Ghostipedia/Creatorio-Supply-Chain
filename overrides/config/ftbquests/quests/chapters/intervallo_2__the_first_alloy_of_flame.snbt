@@ -366,8 +366,9 @@
 			dependencies: ["28BDDAC44B6F299F"]
 			id: "7DA67033ED99E505"
 			tasks: [{
-				id: "21BBC677B551AC52"
-				type: "custom"
+				id: "68246A9459685D2C"
+				item: { count: 1, id: "creatoriocore:coal_dust" }
+				type: "item"
 			}]
 			x: 7.0d
 			y: 1.5d
@@ -376,6 +377,7 @@
 			dependencies: [
 				"7D0703BDC2B4E4BC"
 				"0B3113403B7776DB"
+				"2814D53DA3E35B3E"
 			]
 			id: "7256B68E35A6C299"
 			tasks: [{
@@ -423,6 +425,8 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["7903A59C9048C18E"]
+			hide_dependency_lines: true
 			id: "315BC5FCD12CF8E5"
 			tasks: [{
 				id: "4FCC1DCB69876614"
@@ -449,7 +453,7 @@
 		{
 			dependencies: [
 				"7256B68E35A6C299"
-				"18921FD66E4AD6E3"
+				"2814D53DA3E35B3E"
 			]
 			id: "29628DF6C3C4E804"
 			shape: "hexagon"
@@ -461,6 +465,75 @@
 			}]
 			x: 2.5d
 			y: 5.0d
+		}
+		{
+			dependencies: [
+				"125FB6490714A2B2"
+				"18921FD66E4AD6E3"
+			]
+			id: "2814D53DA3E35B3E"
+			tasks: [{
+				id: "68A1F56021B603E9"
+				item: { count: 1, id: "tfmg:fireproof_bricks" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["5718A6FDA611272F"]
+			id: "125FB6490714A2B2"
+			tasks: [{
+				id: "29A88DB3F9D4E4E7"
+				item: { count: 1, id: "minecraft:resin_clump" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["7903A59C9048C18E"]
+			hide_dependency_lines: true
+			icon: {
+				id: "minecraft:pale_oak_sapling"
+			}
+			id: "5718A6FDA611272F"
+			tasks: [{
+				biome: "minecraft:pale_garden"
+				icon: {
+					id: "minecraft:pale_oak_sapling"
+				}
+				id: "4D7FB5A3B24A4212"
+				type: "biome"
+			}]
+			x: -2.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0B0155162A9EB2C7"]
+			icon: {
+				id: "create:steam_engine"
+			}
+			id: "77CE122438A2367D"
+			shape: "gear"
+			tasks: [{
+				id: "0BBBB1463EC67819"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5580982B2C67888A"]
+			id: "59F62FD4C9374CB4"
+			size: 1.5d
+			tasks: [{
+				id: "2452FEAFA597BAB0"
+				item: { count: 1, id: "create:steam_engine" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
 		}
 	]
 }

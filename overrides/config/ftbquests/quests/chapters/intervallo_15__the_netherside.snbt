@@ -79,7 +79,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: -6.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["4B30FAEE13A9D0FA"]
@@ -106,8 +106,8 @@
 		}
 		{
 			dependencies: [
-				"35636EA132BBDEE8"
 				"401794BB39AC5E46"
+				"35636EA132BBDEE8"
 			]
 			id: "12E9884DF3A7AEA4"
 			tasks: [{
@@ -115,11 +115,11 @@
 				item: { count: 1, id: "creatoriocore:brass_logic_core" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: -1.5d
 			y: -7.5d
 		}
 		{
-			dependencies: ["12E9884DF3A7AEA4"]
+			dependencies: ["42B88F8EEEB6123C"]
 			id: "12BB6D9B9BDA5118"
 			shape: "heart"
 			size: 1.5d
@@ -129,7 +129,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -9.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["12E9884DF3A7AEA4"]
@@ -139,8 +139,8 @@
 				item: { count: 1, id: "create:package_frogport" }
 				type: "item"
 			}]
-			x: -1.5d
-			y: -8.5d
+			x: -3.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["4B30FAEE13A9D0FA"]
@@ -183,6 +183,17 @@
 			]
 			x: -3.0d
 			y: -2.5d
+		}
+		{
+			dependencies: ["35636EA132BBDEE8"]
+			id: "42B88F8EEEB6123C"
+			tasks: [{
+				id: "7EFE31C3FD34130F"
+				item: { count: 1, id: "create:electron_tube" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -8.5d
 		}
 	]
 }

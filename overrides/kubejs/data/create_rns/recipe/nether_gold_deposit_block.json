@@ -52,7 +52,7 @@
       "chance": 0.05,
       "items": [
         {
-          "item": "minecraft:raw_gold"
+          "item": "creatoriocore:compacted_gold_ore_geode"
         }
       ]
     },

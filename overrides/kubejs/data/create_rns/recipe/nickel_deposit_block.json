@@ -43,7 +43,7 @@
       "chance": 0.05,
       "items": [
         {
-          "item": "tfmg:raw_nickel"
+          "item": "creatoriocore:compacted_nickel_ore_geode"
         }
       ]
     },
