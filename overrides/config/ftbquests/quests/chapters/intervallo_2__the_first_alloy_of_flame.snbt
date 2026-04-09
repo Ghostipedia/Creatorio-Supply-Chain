@@ -50,14 +50,17 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["5580982B2C67888A"]
+			dependencies: [
+				"5580982B2C67888A"
+				"1E34A0F03ABBD0B2"
+			]
 			id: "5BF88C8574957810"
 			tasks: [{
 				id: "7CA0A97AD4B0387D"
 				item: { count: 1, id: "create:factory_gauge" }
 				type: "item"
 			}]
-			x: -1.5d
+			x: 1.5d
 			y: -3.5d
 		}
 		{
@@ -117,6 +120,347 @@
 			}]
 			x: 7.0d
 			y: 0.0d
+		}
+		{
+			dependencies: [
+				"28BDDAC44B6F299F"
+				"3CE25B1EE8244C3C"
+			]
+			id: "13EA6ABA27D0E53B"
+			tasks: [{
+				id: "0095EBBE55114D31"
+				item: { count: 1, id: "creatoriocore:compacted_lapis_ore_geode" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["13EA6ABA27D0E53B"]
+			id: "1E34A0F03ABBD0B2"
+			tasks: [{
+				id: "5EBF98FEA7795463"
+				item: { count: 1, id: "create_rns:resonant_amethyst" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["28BDDAC44B6F299F"]
+			id: "0B3A060DFBEC20FC"
+			tasks: [{
+				id: "077EEDDCA8C519BC"
+				item: { count: 1, id: "creatoriocore:crumbling_iron" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["28BDDAC44B6F299F"]
+			id: "57DFBF8A75476D23"
+			tasks: [{
+				id: "113162070287E9C8"
+				item: { count: 1, id: "creatoriocore:crumbling_nickel" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"57DFBF8A75476D23"
+				"0B3A060DFBEC20FC"
+			]
+			id: "612AE822AFDD5C3F"
+			tasks: [{
+				id: "3D5632D0F9873C33"
+				item: { count: 1, id: "creatoriocore:invar_ingot" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"76F1DEDE75E24D40"
+				"138ED0A7D5AFFA59"
+			]
+			id: "31827F99EB79070F"
+			tasks: [{
+				id: "655B2AA5296FD942"
+				item: { count: 1, id: "creatoriocore:bronze_ingot" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["28BDDAC44B6F299F"]
+			id: "138ED0A7D5AFFA59"
+			tasks: [{
+				id: "03AD18177CB22B3F"
+				item: { count: 1, id: "creatoriocore:crumbling_zinc" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["28BDDAC44B6F299F"]
+			id: "76F1DEDE75E24D40"
+			tasks: [{
+				id: "47860AC8C5BDA4AD"
+				item: { count: 1, id: "creatoriocore:crumbling_copper" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"612AE822AFDD5C3F"
+				"31827F99EB79070F"
+			]
+			id: "3AD00462186CB24F"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "705CD999842D3594"
+				item: { count: 1, id: "create:railway_casing" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3AD00462186CB24F"]
+			id: "2C44D098FCA0F2B7"
+			tasks: [{
+				id: "12B17B1D78B3B80A"
+				item: { count: 1, id: "create:track_station" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3AD00462186CB24F"]
+			id: "5172FB6CCB4319AE"
+			tasks: [{
+				id: "435EAD200ECA1AE0"
+				item: { count: 1, id: "create:track_signal" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3AD00462186CB24F"]
+			id: "4453A23E602B6E0D"
+			tasks: [{
+				id: "25B6B08D19A72104"
+				item: { count: 1, id: "create:track_observer" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3AD00462186CB24F"]
+			id: "4B8E7F5C9D0417F3"
+			tasks: [{
+				id: "097DE6F416C5A44E"
+				item: { count: 1, id: "create:controls" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["768C32E6DB015372"]
+			id: "0B0155162A9EB2C7"
+			tasks: [{
+				id: "72D7522AAF609178"
+				item: { count: 1, id: "create:blaze_cake" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"0932AD11674C333A"
+				"5DC1939EFE48B362"
+			]
+			id: "768C32E6DB015372"
+			tasks: [{
+				id: "56D3B33973B54565"
+				item: { count: 1, id: "create:blaze_cake_base" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["28BDDAC44B6F299F"]
+			id: "0932AD11674C333A"
+			tasks: [{
+				id: "3B03636354B0B66F"
+				item: { count: 1, id: "creatoriocore:nether_slag" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7903A59C9048C18E"]
+			id: "5DC1939EFE48B362"
+			tasks: [{
+				id: "77315E2E75374499"
+				item: { count: 1, id: "create:cinder_flour" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0932AD11674C333A"
+				"0B0155162A9EB2C7"
+				"7DA67033ED99E505"
+			]
+			id: "451B82B45C00EF86"
+			tasks: [{
+				id: "53B20C7DB0340E63"
+				item: { count: 1, id: "tfmg:cast_iron_ingot" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["451B82B45C00EF86"]
+			id: "7D0703BDC2B4E4BC"
+			tasks: [{
+				id: "4635D2E10BD1AA52"
+				item: { count: 1, id: "tfmg:coke_oven" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7D0703BDC2B4E4BC"]
+			id: "2407E60656FDD49A"
+			tasks: [{
+				id: "5A87C2D4A32C3D1E"
+				item: { count: 1, id: "tfmg:coal_coke" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["28BDDAC44B6F299F"]
+			id: "7DA67033ED99E505"
+			tasks: [{
+				id: "21BBC677B551AC52"
+				type: "custom"
+			}]
+			x: 7.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"7D0703BDC2B4E4BC"
+				"0B3113403B7776DB"
+			]
+			id: "7256B68E35A6C299"
+			tasks: [{
+				id: "60F135E26193E1CB"
+				item: { count: 1, id: "tfmg:blast_stove" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7D0703BDC2B4E4BC"]
+			id: "0B3113403B7776DB"
+			tasks: [{
+				id: "6F1A2A77F03C8094"
+				item: { count: 1, id: "tfmg:creosote_bucket" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7903A59C9048C18E"]
+			id: "113570248F8DC0A7"
+			tasks: [{
+				id: "77678D843B39070F"
+				item: { count: 1, id: "creatoriocore:sintered_flint" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"5DC1939EFE48B362"
+				"113570248F8DC0A7"
+			]
+			id: "7B47AC9EE84DD9BE"
+			tasks: [{
+				id: "523A2ABC37E65D6A"
+				item: { count: 1, id: "creatoriocore:kaolin_clay" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			id: "315BC5FCD12CF8E5"
+			tasks: [{
+				id: "4FCC1DCB69876614"
+				item: { count: 1, id: "tfmg:fireclay_ball" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"7B47AC9EE84DD9BE"
+				"315BC5FCD12CF8E5"
+			]
+			id: "18921FD66E4AD6E3"
+			tasks: [{
+				id: "33E1D76453EEE90D"
+				item: { count: 1, id: "creatoriocore:fireclay_kaolin_blend" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"7256B68E35A6C299"
+				"18921FD66E4AD6E3"
+			]
+			id: "29628DF6C3C4E804"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "4F9D3633FA292996"
+				item: { count: 1, id: "tfmg:blast_furnace_output" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.0d
 		}
 	]
 }

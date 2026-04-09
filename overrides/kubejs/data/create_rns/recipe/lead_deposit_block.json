@@ -1,0 +1,35 @@
+{
+  "type": "create_rns:mining",
+  "deposit_block": "create_rns:lead_deposit_block",
+  "replace_when_depleted": "create_rns:depleted_deposit_block",
+  "durability": {
+    "core": 200000,
+    "edge": 75000,
+    "random_spread": 0.2
+  },
+  "yields": [
+    {
+      "items": [
+        {
+          "item": "minecraft:cobblestone"
+        }
+      ]
+    },
+    {
+      "chance": 0.05,
+      "items": [
+        {
+          "item": "tfmg:raw_lead"
+        }
+      ]
+    },
+    {
+      "chance": 0.01,
+      "items": [
+        {
+          "item": "create_rns:lead_small_dust"
+        }
+      ]
+    }
+  ]
+}

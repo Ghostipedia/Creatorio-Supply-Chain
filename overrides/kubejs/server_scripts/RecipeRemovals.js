@@ -1,3 +1,19 @@
+
+let yeet = (itemName) => {
+  ServerEvents.recipes(event => {
+    event.remove({ output: itemName })
+    event.remove({ input: itemName })
+  })
+
+  ServerEvents.tags('item', event => {
+    event.add('c:hidden_from_recipe_viewers', itemName)
+  })
+}
+yeet('create_rns:resonance_buffer')
+yeet('create_rns:shattering_resonator')
+yeet('create_rns:stabilizing_resonator')
+yeet('create_rns:resonator')
+
 ServerEvents.recipes(event => {
 
     event.remove({ id: 'create:haunting/soul_soil' })
@@ -32,10 +48,13 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'create:item_application/brass_casing_from_log' })
     event.remove({ id: 'create:item_application/brass_casing_from_wood_using_deployer' })
     event.remove({ id: 'create:item_application/brass_casing_from_log_using_deployer' })
-    event.remove({ id: '' })
+    event.remove({ id: 'create:mechanical_crafting/crushing_wheel' })
 
 
-
+    //TFMG
+    event.remove({ id: 'tfmg:casting/steel' })
+    event.remove({ id: 'tfmg:compacting/cast_iron' })
+    event.remove({ id: 'tfmg:smelting/fireproof_brick' })
 })
 
 

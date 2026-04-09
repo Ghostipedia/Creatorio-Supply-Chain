@@ -91,6 +91,9 @@ ServerEvents.recipes(event => {
         C: 'minecraft:iron_block'
     })
     event.blasting('creatoriocore:primitive_andesite_alloy', 'creatoriocore:weak_putty')
+        .cookingTime(100)
+        .xp(0.7)
+        .id('creatoriocore:my_fan_blasting_recipe')
 
     event.shaped('creatoriocore:andesite_casing_internals', [
         ' AB',
@@ -220,10 +223,85 @@ ServerEvents.recipes(event => {
         C: 'minecraft:observer',
         D: 'create:brass_casing'
     })
+
+    event.shaped('3x create:factory_gauge', [
+        'A',
+        'B',
+        'C'
+    ], {
+        A: 'create_rns:polished_resonant_amethyst',
+        B: 'create:precision_mechanism',
+        C: 'create:display_link'
+    })
+
+
+
+    // SMELTING
+    event.smelting('minecraft:iron_ingot', 'creatoriocore:crumbling_iron')
+    event.smelting('minecraft:gold_ingot', 'creatoriocore:crumbling_gold')
+    event.smelting('create:zinc_ingot', 'creatoriocore:crumbling_zinc')
+    event.smelting('tfmg:nickel_ingot', 'creatoriocore:crumbling_nickel')
+    event.smelting('tfmg:lead_ingot', 'creatoriocore:crumbling_lead')
+    event.smelting('minecraft:copper_ingot', 'creatoriocore:crumbling_copper')
+    event.blasting('creatoriocore:sintered_flint', 'minecraft:flint')
+
+
+
+    //Crushing
+    event.recipes.create.crushing('2x creatoriocore:crumbling_iron', 'create:crushed_raw_iron')
+    event.recipes.create.crushing('2x creatoriocore:crumbling_gold', 'create:crushed_raw_gold')
+    event.recipes.create.crushing('2x creatoriocore:crumbling_zinc', 'create:crushed_raw_zinc')
+    event.recipes.create.crushing('2x creatoriocore:crumbling_nickel', 'create:crushed_raw_nickel')
+    event.recipes.create.crushing('2x creatoriocore:crumbling_lead', 'create:crushed_raw_lead')
+    event.recipes.create.crushing('2x creatoriocore:crumbling_copper', 'create:crushed_raw_copper')
+    event.recipes.create.crushing('creatoriocore:nether_slag', 'minecraft:nether_bricks')
+    //MIXER
+    event.recipes.create.mixing(Item.of('creatoriocore:weak_putty', 6), ['4x minecraft:clay_ball', 'minecraft:kelp', 'minecraft:wheat'])
+    event.recipes.create.mixing('create_rns:resonant_amethyst', ['minecraft:amethyst_shard', '8x minecraft:lapis_lazuli']).heated()
     event.recipes.create.mixing('create:rose_quartz', ['minecraft:quartz', '16x minecraft:redstone']).heated()
     event.recipes.create.mixing('create:andesite_alloy', ['minecraft:clay_ball', 'minecraft:iron_nugget', 'minecraft:andesite'])
+
+
+
     event.recipes.create.deploying('2x creatoriocore:brass_casing_modular_board', ['create:brass_sheet', Ingredient.of('#minecraft:planks')])
 
+    event.recipes.create.mechanical_crafting(
+        'minecraft:elytra[unbreakable={}]',
+        [
+            ' ABBBA ',
+            ' CDBDC ',
+            'ABB BBA',
+            'CDB BDC',
+            'BB   BB',
+            'DB   BD',
+            'BBB BBB'
+        ],
+        {
+            A: 'creatoriocore:brass_gear_assembly',
+            B: 'creatoriocore:cypherwire_spool',
+            C: 'create:precision_mechanism',
+            D: 'create_rns:polished_resonant_amethyst'
+        }
+    )
+
+
+
+
+    event.recipes.create.mechanical_crafting(
+        '2x  create:crushing_wheel', // the crate-looking output
+        [
+            ' SSS ',
+            'SSPSS',
+            'SPBPS',
+            'SSPSS',
+            ' SSS '
+        ],
+        {
+            S: 'create:andesite_alloy',      // the light colored sheets
+            P: 'create:brass_casing',     // the planks
+            B: 'minecraft:andesite'        // the grey block in the center (andesite alloy block? stone?)
+        }
+    )
     event.recipes.create.sequenced_assembly(
         // Outputs:
         [

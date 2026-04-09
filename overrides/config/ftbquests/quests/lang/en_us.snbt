@@ -76,16 +76,28 @@
 	]
 	quest.21991E4C2F1168A5.quest_subtitle: "A Packagers Best Friend"
 	quest.21991E4C2F1168A5.title: "Simple Frog Logistics"
+	quest.2407E60656FDD49A.title: "Coking it so good"
 	quest.288CC1F24527EDCA.quest_subtitle: "Lava Casting"
 	quest.288CC1F24527EDCA.title: "Portal Assembly?"
 	quest.28CB7776596C9EB8.quest_subtitle: "Finally, real Andesite!"
 	quest.293DBD176B301FBA.quest_subtitle: "Rubber Making"
+	quest.29628DF6C3C4E804.quest_subtitle: "The Start of Industry"
 	quest.29B0DF13722C3A84.quest_desc: ["The Cutting board is going to be effectively another workstation for you which allows you to create a variety of new components and also cut up foods!"]
 	quest.29B0DF13722C3A84.quest_subtitle: "Chop Chop"
 	quest.2A77DBAB6DFFE488.quest_subtitle: "The really warm place"
 	quest.2A77DBAB6DFFE488.title: "The Nether"
 	quest.2D1D720089F4927A.quest_desc: ["Andesite braces are used to construct the frame of your new casings, you will see these used in other recipes as well."]
 	quest.2D1D720089F4927A.quest_subtitle: "Strong Supports"
+	quest.35636EA132BBDEE8.quest_desc: [
+		"You'll need a lot of redstone for this."
+		""
+		""
+		"I strongly recommend either a cinder flour + strength potion setup for redstone or wash a bucketload of crushed iron for the chance at getting a few stacks."
+		""
+		""
+		"You'll be able to harvest huge deposits of redstone soon, for now you'll have to make due."
+	]
+	quest.35636EA132BBDEE8.quest_subtitle: "Painful"
 	quest.42F433BBD4789381.quest_desc: [
 		"Add some water in a bucket with your flour to create dough."
 		""
@@ -178,6 +190,7 @@
 		"It's sufficient, but for now it will result in most of your casings being on average slightly more expensive!"
 	]
 	quest.7FF6529D92491048.quest_subtitle: "Poor Quality"
+	task.21BBC677B551AC52.title: "coal dust"
 	task.2C68BCFD1B18B5F0.title: "Any Logs"
 	task.5F2C3EDD65EF4C64.title: "Work In progress"
 	task.79374C059FE9C606.title: "I did it!"
