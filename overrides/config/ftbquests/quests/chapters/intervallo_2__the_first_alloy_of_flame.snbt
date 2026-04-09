@@ -2,21 +2,121 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "intervallo_2__the_first_alloy_of_flame"
-	group: "1D7A6AE4FC996FA8"
+	group: "78E1BA510443F331"
 	icon: {
 		id: "create:brass_ingot"
 	}
 	id: "7113839087C79230"
-	order_index: 2
+	order_index: 0
 	quest_links: [ ]
-	quests: [{
-		id: "7903A59C9048C18E"
-		tasks: [{
-			id: "54EDB2C25F632916"
-			item: { count: 1, id: "minecraft:obsidian" }
-			type: "item"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			dependencies: ["12BB6D9B9BDA5118"]
+			id: "7903A59C9048C18E"
+			min_width: 400
+			tasks: [{
+				id: "46195540AD246261"
+				item: { count: 1, id: "create:deployer" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7903A59C9048C18E"]
+			id: "5580982B2C67888A"
+			min_width: 350
+			tasks: [{
+				count: 8L
+				id: "24F3A58A5AD51232"
+				item: { count: 1, id: "create:precision_mechanism" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"5580982B2C67888A"
+				"127EAB5A2F257EC0"
+			]
+			id: "72DF4F97F8396957"
+			tasks: [{
+				id: "6DE2078C01D14BDC"
+				item: { count: 1, id: "create:rotation_speed_controller" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5580982B2C67888A"]
+			id: "5BF88C8574957810"
+			tasks: [{
+				id: "7CA0A97AD4B0387D"
+				item: { count: 1, id: "create:factory_gauge" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5580982B2C67888A"]
+			id: "3CE25B1EE8244C3C"
+			tasks: [{
+				id: "26DBBA3E69BE61F3"
+				item: { count: 1, id: "create_rns:miner_bearing" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7903A59C9048C18E"]
+			id: "1D772F071FEC5338"
+			tasks: [{
+				id: "7DBDD97E06439553"
+				item: { count: 1, id: "creatoriocore:brass_casing_modular_board" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1D772F071FEC5338"]
+			id: "127EAB5A2F257EC0"
+			tasks: [{
+				id: "74D151C167E1FDD4"
+				item: { count: 1, id: "create:brass_casing" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["127EAB5A2F257EC0"]
+			id: "306818742C4BE630"
+			tasks: [{
+				count: 21L
+				id: "0F07F772BC201466"
+				item: { count: 1, id: "create:mechanical_crafter" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["306818742C4BE630"]
+			id: "28BDDAC44B6F299F"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "65339F7770C3F8D1"
+				item: { count: 1, id: "create:crushing_wheel" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.0d
+		}
+	]
 }

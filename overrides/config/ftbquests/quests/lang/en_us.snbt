@@ -1,14 +1,12 @@
 {
-	chapter.0186DAFD6ECD51CE.title: "Intervallo 6 - Distant Depsoits"
 	chapter.0EE739BD5B64D518.title: "What kind of mango is this, i don't know"
 	chapter.2624D8EC2FEA4139.title: "Intervallo 0 - The World"
-	chapter.3F06CE53014416DC.title: "Intervallo 7 - Exotic Alloys"
-	chapter.40A081E845208E63.title: "Intervallo 8 - Netherside Metallurgy"
+	chapter.3F06CE53014416DC.title: "Intervallo 6 - Automation Fever"
 	chapter.4798EF4AFA445C12.title: "Intervallo 3 - Clunky Contraptions"
-	chapter.4A2588BD18F8EBD1.title: "Intervallo 10 - The Rise of Electricity"
+	chapter.4A2588BD18F8EBD1.title: "Intervallo 8 - The Rise of Electricity"
 	chapter.4A72DFF21B23D8CD.title: "Intervallo 2 - Key Changes"
 	chapter.4C15316CD6852494.title: "What kind of mango is this, i don't know"
-	chapter.50E2B5CED5BB7C22.title: "Intervallo 9 - Robust Steel Industry"
+	chapter.50E2B5CED5BB7C22.title: "Intervallo 7 - Robust Steel Industry"
 	chapter.64F2FDD1894A45D8.title: "Intervallo 4 - The Netherside"
 	chapter.7113839087C79230.title: "Intervallo 5 - The First Alloy of Flame"
 	chapter.727DAF4086AF11A3.title: "What kind of mango is this, i don't know"
@@ -21,6 +19,17 @@
 	chapter_group.67C78D47BBCE53D5.title: "Canto 4 - Aluminium"
 	chapter_group.78E1BA510443F331.title: "Canto 2 - Brass and Rails"
 	file.0000000000000001.title: "Creatorio"
+	quest.0205D771F2295CC9.quest_desc: [
+		"One of the Automation Challenges Presented in this pack is to automate redstone fully."
+		""
+		""
+		"This is a small optional goal. But required to 100% the QB"
+		""
+		""
+		"There are no strict requirements for 'completeing' this quest beyond redstone needs to be automatically produced without player input."
+		"If you accomplished that, feel free to check this quest off."
+	]
+	quest.0205D771F2295CC9.quest_subtitle: "Automation Challenge : Automate Redstone"
 	quest.02B742F686F88CCF.quest_desc: [
 		"Oh hey, dying your flour violent neon green makes it resemble enough of a slimeball you don't question it."
 		""
@@ -31,6 +40,19 @@
 	]
 	quest.02B742F686F88CCF.quest_subtitle: "Green Enough"
 	quest.064314D458FC80F7.title: "Contraptions"
+	quest.0A291D506EC39422.quest_subtitle: "Capture a Blaze"
+	quest.12BB6D9B9BDA5118.quest_desc: [
+		"This is currently the highest level of implemented content in the Modpack"
+		""
+		""
+		"Brass technology will appear next update."
+		""
+		"Focus on setting up your base to handle the crazy automation to come, as the gloves are coming off soon and you will be expected to automate nested recipes with increasing complexity."
+		""
+		""
+		"Thanks for Trying out Create : Supply Chain!"
+	]
+	quest.12BB6D9B9BDA5118.quest_subtitle: "The Start of Proper Automation"
 	quest.1351BA0E601248E9.quest_subtitle: "The place you spawned in."
 	quest.1351BA0E601248E9.title: "The Overworld"
 	quest.14AB5971D7E8C8D1.quest_subtitle: "Storing Fluids"
@@ -44,6 +66,16 @@
 	]
 	quest.2139B0C91B4164A1.quest_subtitle: "The End of the Tutorial"
 	quest.2139B0C91B4164A1.title: "Onward Heros!"
+	quest.21991E4C2F1168A5.quest_desc: [
+		"Can be used alongside packagers to expand your stock link connection network and semi-automate many things. "
+		""
+		"Eventually Factory Gauges will allow high logistics automation of many components."
+		""
+		""
+		"With this, the amount of automation expectations and their complexity will increase through the brass and steel Canto's"
+	]
+	quest.21991E4C2F1168A5.quest_subtitle: "A Packagers Best Friend"
+	quest.21991E4C2F1168A5.title: "Simple Frog Logistics"
 	quest.288CC1F24527EDCA.quest_subtitle: "Lava Casting"
 	quest.288CC1F24527EDCA.title: "Portal Assembly?"
 	quest.28CB7776596C9EB8.quest_subtitle: "Finally, real Andesite!"
@@ -67,21 +99,28 @@
 		"THE NETHER"
 		""
 		"Your main goals here is to gather nether quartz and a blaze for a blaze burner."
-		""
-		""
-		"This is currently the highest level of implemented content in the pack. "
-		""
-		""
-		"Brass Creation and Brass technology will appear next update!"
-		""
-		""
-		""
-		"Thanks for Trying out Create : Supply Chain!"
 	]
 	quest.4B30FAEE13A9D0FA.quest_subtitle: ":3"
 	quest.4B30FAEE13A9D0FA.title: "The Nether"
 	quest.5191777DC94F6A73.quest_subtitle: "Easy, go punch a tree!"
 	quest.5191777DC94F6A73.title: "Acquiring Wood"
+	quest.5580982B2C67888A.quest_desc: [
+		"Now that you're starting to settle in comfortably, it's time to start towards your first major goal."
+		""
+		"The &6Recordkeepers Papyrus&r"
+		""
+		""
+		"However the paper alone is &lway too complex&r to start with, let's ease into things by crafting a couple of &bprecision assemblies&r, these unlock some of the strongest tools in create"
+		""
+		""
+		"Notably the \"&6Factory Gauge&r\" - Which allows you to automate sprawling chains of materials into final products. These Gauges will be a core part of what makes your base shine if you allocate all your production into them."
+		""
+		""
+		"&6Factory Gauges&r are Extremely Flexible and offer multiple playstyles from them existing alone. I'd strongly recommend you experiment with them to get the hang of them"
+	]
+	quest.5580982B2C67888A.quest_subtitle: "Geared Up and Ready"
+	quest.5580982B2C67888A.title: "Precision Mechanism"
+	quest.58AEC3478E1FC4A5.title: "Discover a Nether Fortress!"
 	quest.59B828D0E89B2A0D.quest_desc: [
 		"Redstone, Emeralds, Diamond, Lapis and Ancient Debris no longer spawn naturally."
 		""
@@ -95,6 +134,7 @@
 		"Or you know, you can also abuse villager trading, as I did not change anything with Villagers."
 	]
 	quest.59B828D0E89B2A0D.title: "Ore Changes"
+	quest.5BF88C8574957810.quest_subtitle: "Mightly Logistics"
 	quest.5C666F0B9ADA4164.quest_subtitle: "Item Handling"
 	quest.601688A38EEEADF3.quest_desc: ["This nifty little internal component will act as an insulator for early casings, once you advance sufficiently the natural strength of better alloys will replace this."]
 	quest.601688A38EEEADF3.quest_subtitle: "The Thing"
@@ -119,7 +159,17 @@
 		"You might get some flour, perfect to make a sticky slime ball."
 	]
 	quest.7359BEFA3BFE2305.quest_subtitle: "I NEED FLOUR!!!!"
-	quest.7903A59C9048C18E.quest_subtitle: "NYI"
+	quest.78B7D1320E2CC6C9.quest_desc: ["The Nether Chapter will contain more regarding flora and fauna in the nether eventually once the modlist solidifies fully, for now it just houses the mandatory nether steps to progress"]
+	quest.78B7D1320E2CC6C9.quest_subtitle: "Main Progression Only"
+	quest.7903A59C9048C18E.quest_desc: [
+		"Deployers among other devices are required to produce more elaborate produces in sequence."
+		""
+		"Known as \"&eSequenced Assembly&r\""
+		""
+		""
+		"The Majority of the pack will be designed around Sequenced Assembly and the processing of products for Assembly Tasks."
+	]
+	quest.7903A59C9048C18E.quest_subtitle: "Precise Assembly"
 	quest.7ABFAF9A936A2063.quest_subtitle: "Logistics"
 	quest.7BA8B35B1AA48D86.quest_subtitle: "Weak Wheels"
 	quest.7FF6529D92491048.quest_desc: [
@@ -129,4 +179,6 @@
 	]
 	quest.7FF6529D92491048.quest_subtitle: "Poor Quality"
 	task.2C68BCFD1B18B5F0.title: "Any Logs"
+	task.5F2C3EDD65EF4C64.title: "Work In progress"
+	task.79374C059FE9C606.title: "I did it!"
 }

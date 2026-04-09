@@ -1,4 +1,25 @@
 ServerEvents.recipes(event => {
+
+    // Andesite Version
+    event.recipes.farmersdelight.cutting(
+        'create:andesite_alloy',
+        '#minecraft:pickaxes',
+        [
+            '2xcreatoriocore:primitive_assembly_component'
+        ],
+        'minecraft:item.axe.strip'
+    )
+
+    event.recipes.farmersdelight.cutting(
+        'create:andesite_alloy',
+        '#minecraft:axes',
+        [
+            '4x creatoriocore:andesite_alloy_braces'
+        ],
+        'minecraft:item.axe.strip'
+    )
+
+
     event.recipes.farmersdelight.cutting(
         'creatoriocore:primitive_andesite_alloy',
         '#minecraft:pickaxes',
@@ -16,8 +37,29 @@ ServerEvents.recipes(event => {
         ],
         'minecraft:item.axe.strip'
     )
-
-
+    event.shaped('create:whisk', [
+        ' A ',
+        'BAB',
+        'BBB'
+    ], {
+        A: 'creatoriocore:primitive_andesite_alloy',
+        B: 'create:iron_sheet'
+    })
+    event.shaped('create:basin', [
+        'A A',
+        'AAA'
+    ], {
+        A: 'creatoriocore:primitive_andesite_alloy'
+    })
+    event.recipes.farmersdelight.cutting(
+        'minecraft:fern',
+        'create:wrench',
+        [
+            ChanceResult.of('minecraft:green_dye', 0.20),
+            ChanceResult.of('minecraft:wheat_seeds', 0.05)
+        ],
+        'minecraft:item.axe.strip'
+    )
     event.recipes.farmersdelight.cutting(
         'minecraft:wheat',
         'create:wrench',
@@ -69,7 +111,15 @@ ServerEvents.recipes(event => {
         B: 'farmersdelight:tree_bark',
         S: 'minecraft:slime_ball'
     })
-
+    event.shaped('12x creatoriocore:andesite_casing_modular_boards', [
+        'ABA',
+        'ACA',
+        'ABA'
+    ], {
+        A: 'create:andesite_alloy',
+        B: 'farmersdelight:tree_bark',
+        C: 'minecraft:slime_ball'
+    })
     event.shaped('create:andesite_casing', [
         'ABA',
         'CDC',
@@ -77,7 +127,7 @@ ServerEvents.recipes(event => {
     ], {
         A: 'creatoriocore:andesite_casing_modular_boards',
         B: 'creatoriocore:primitive_assembly_component',
-        C: 'creatoriocore:primitive_andesite_alloy',
+        C: 'creatoriocore:andesite_alloy_braces',
         D: 'creatoriocore:andesite_casing_internals'
     })
     event.shaped('2x create:andesite_funnel', [
@@ -114,7 +164,65 @@ ServerEvents.recipes(event => {
         B: 'create:cogwheel',
         C: 'minecraft:stick'
     })
+    event.shaped('create:deployer', [
+        'A',
+        'B',
+        'C'
+    ], {
+        A: 'creatoriocore:brass_logic_core',
+        B: 'create:andesite_casing',
+        C: 'create:brass_hand'
+    })
+    event.shaped('create:package_frogport', [
+        ' A ',
+        'BCB',
+        ' D '
+    ], {
+        A: 'create:brass_hand',
+        B: 'minecraft:slime_ball',
+        C: 'dndesires:overburden_casing',
+        D: 'creatoriocore:brass_logic_core'
+    })
+    event.shaped('creatoriocore:andesite_casing_internals', [
+        ' A ',
+        'ABA',
+        ' A '
+    ], {
+        A: 'create:andesite_alloy',
+        B: 'creatoriocore:primitive_assembly_component'
+    })
+    event.shaped('create_rns:miner_bearing', [
+        ' A ',
+        'BCB',
+        ' D '
+    ], {
+        A: 'minecraft:polished_andesite_slab',
+        B: 'create:precision_mechanism',
+        C: 'create:andesite_casing',
+        D: 'create:shaft'
+    })
+    event.shaped('create:transmitter', [
+        ' A ',
+        'BCB',
+        ' B '
+    ], {
+        A: 'create:electron_tube',
+        B: 'create:copper_sheet',
+        C: 'creatoriocore:brass_logic_core'
+    })
+    event.shaped('create:content_observer', [
+        ' A ',
+        'BCB',
+        ' D '
+    ], {
+        A: 'create:electron_tube',
+        B: 'creatoriocore:brass_casing_modular_board',
+        C: 'minecraft:observer',
+        D: 'create:brass_casing'
+    })
+    event.recipes.create.mixing('create:rose_quartz', ['minecraft:quartz', '16x minecraft:redstone']).heated()
     event.recipes.create.mixing('create:andesite_alloy', ['minecraft:clay_ball', 'minecraft:iron_nugget', 'minecraft:andesite'])
+    event.recipes.create.deploying('2x creatoriocore:brass_casing_modular_board', ['create:brass_sheet', Ingredient.of('#minecraft:planks')])
 
     event.recipes.create.sequenced_assembly(
         // Outputs:
@@ -134,5 +242,31 @@ ServerEvents.recipes(event => {
         .transitionalItem('create_connected:andesite_encased_cross_connector')
 
 
+    event.recipes.create.sequenced_assembly(
+        // Outputs:
+        [
+            'creatoriocore:brass_logic_core'
+        ],
+        // Input:
+        'create:brass_sheet',
+        // Sequence:
+        [
+            event.recipes.create.deploying('creatoriocore:incomplete_brass_logic_core', ['creatoriocore:incomplete_brass_logic_core', 'create:rose_quartz',]),
+            event.recipes.create.deploying('creatoriocore:incomplete_brass_logic_core', ['creatoriocore:incomplete_brass_logic_core', 'creatoriocore:primitive_assembly_component',]),
+            event.recipes.create.deploying('creatoriocore:incomplete_brass_logic_core', ['creatoriocore:incomplete_brass_logic_core', 'create:cogwheel',]),
+        ]
+    )
+        //Transitional Item: Used in the Sequence Steps Above normally.
+        .transitionalItem('creatoriocore:incomplete_brass_logic_core')
 
+    event.recipes.create.sequenced_assembly(
+        'create:brass_casing',
+        'create:cardboard_block',
+        [
+            event.recipes.create.deploying('creatoriocore:incomplete_brass_casing', ['creatoriocore:incomplete_brass_casing', 'creatoriocore:brass_casing_modular_board']),
+            event.recipes.create.deploying('creatoriocore:incomplete_brass_casing', ['creatoriocore:incomplete_brass_casing', 'create:brass_sheet']),
+            event.recipes.create.deploying('creatoriocore:incomplete_brass_casing', ['creatoriocore:incomplete_brass_casing', 'creatoriocore:brass_casing_modular_board']),
+            event.recipes.create.pressing('creatoriocore:incomplete_brass_casing', 'creatoriocore:incomplete_brass_casing')
+        ]
+    ).transitionalItem('creatoriocore:incomplete_brass_casing').loops(3)
 })
