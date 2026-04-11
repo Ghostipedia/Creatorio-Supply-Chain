@@ -61,6 +61,11 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'create:item_application/railway_casing' })
     event.remove({ id: 'tfmg:crafting/materials/fireproof_bricks' })
     event.remove({ id: 'create:sequenced_assembly/precision_mechanism' })
+    event.remove({ id: 'create_connected:sequenced_assembly/control_chip' })
+    event.remove({ id: 'createvintageneoforged:craft/spring_coiling_machine_wheel' })
+    event.remove({ id: 'create:crafting/logistics/factory_gauge' })
+    event.remove({ id: 'create:crafting/kinetics/steam_engine' })
+    event.remove({ id: 'farmersdelight:canvas' })
 
 
     //TFMG
@@ -71,6 +76,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'tfmg:industrial_blasting/steel_from_raw_iron' })
     event.remove({ id: 'tfmg:industrial_blasting/silicon' })
     event.remove({ id: 'tfmg:industrial_blasting/steel' })
+    event.remove({ id: 'tfmg:casting/silicon' })
 })
 
 

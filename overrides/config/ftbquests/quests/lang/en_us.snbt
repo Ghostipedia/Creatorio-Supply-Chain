@@ -41,12 +41,9 @@
 	quest.02B742F686F88CCF.quest_subtitle: "Green Enough"
 	quest.064314D458FC80F7.title: "Contraptions"
 	quest.0A291D506EC39422.quest_subtitle: "Capture a Blaze"
-	quest.125FB6490714A2B2.quest_desc: [
-		"When Creakings are active at night, hit them to discover where their creaking heart is"
-		""
-		"ideally, steal it with silk touch, you'll want to set up a creaking resin farm at home to produce resin steadily!"
-	]
-	quest.125FB6490714A2B2.quest_subtitle: "Creaking"
+	quest.0F33047A2923634C.quest_desc: ["The Wrench is a tool which allows you to instantly break items without dropping them on the ground. Just shift-right click with the wrench and the item will be deconstructed into your inventory."]
+	quest.0F33047A2923634C.quest_subtitle: "A quick reminder"
+	quest.0F33047A2923634C.title: "If you haven't, Make a Wrench"
 	quest.12BB6D9B9BDA5118.quest_desc: [
 		"This is currently the highest level of implemented content in the Modpack"
 		""
@@ -83,16 +80,18 @@
 	quest.21991E4C2F1168A5.quest_subtitle: "A Packagers Best Friend"
 	quest.21991E4C2F1168A5.title: "Simple Frog Logistics"
 	quest.2407E60656FDD49A.title: "Coking it so good"
+	quest.2417977FCE5FBC2A.quest_desc: [
+		"You do not need the vat to make a coke oven, that is just how the QB is layed out."
+		""
+		"Scream at FTB for better Quest Lines or something i don't know."
+	]
+	quest.2417977FCE5FBC2A.title: "Vat Chemistry"
 	quest.288CC1F24527EDCA.quest_subtitle: "Lava Casting"
 	quest.288CC1F24527EDCA.title: "Portal Assembly?"
 	quest.28CB7776596C9EB8.quest_subtitle: "Finally, real Andesite!"
 	quest.293DBD176B301FBA.quest_subtitle: "Rubber Making"
 	quest.29628DF6C3C4E804.quest_desc: [
 		"This will allow you to the walk the path of producing Steel and other exotic materials"
-		""
-		""
-		"This Marks the End of Creatorio for now! Thanks for Trying it out!"
-		""
 		""
 		""
 		"&o&7Mother oh mother, I understand now. To love the whole world, I must become a god.&r"
@@ -116,6 +115,15 @@
 		"You'll be able to harvest huge deposits of redstone soon, for now you'll have to make due."
 	]
 	quest.35636EA132BBDEE8.quest_subtitle: "Painful"
+	quest.35923DE99E1EEADD.quest_desc: [
+		"The Iron you pull from the ground is sufficient for standard applications, but lacks purity needed for steel. Your next objective is to refine iron into a capable material for Steel production. While you don't have total mastery over fluid chemistry or the vats to handle high tier molten metals... Your create machines seem to be eager to refine iron down into a pure granulated dust"
+		""
+		""
+		""
+		""
+		"&cNOTE : Steel production is not included in this version solely to avoid progression into TFMG where recipes haven't been touched. Other content on this page may be accessable!&r"
+	]
+	quest.35923DE99E1EEADD.quest_subtitle: "An Agonizing Process"
 	quest.42F433BBD4789381.quest_desc: [
 		"Add some water in a bucket with your flour to create dough."
 		""
@@ -131,6 +139,28 @@
 		"Let's work on making some. You'll need to automate several of them in series to produce enough."
 	]
 	quest.451B82B45C00EF86.quest_subtitle: "Prepared Iron"
+	quest.489A746093E094AC.quest_desc: [
+		"You'll want to start producing massive amounts of wheat and sugarcane to procure these."
+		""
+		""
+		"Some helpful tips."
+		""
+		"Goodluck Firstly."
+		"Secondly, you can compress &astraw&r into canvas at a &e2:1&r ratio vs the crafting of &e4:1&r"
+		"Thirdly, you can harvest &nstraw automatically with create harvesters&r and applicable plants."
+		""
+		""
+		"The one I personally tested it with was Wheat, there's probably more like Rice if i had to guess."
+		""
+		""
+		"To beat the pack's 100% goal you'll need about &413,500&r of these papers, so try to get them automated as soon as possible!"
+		""
+		""
+		""
+		""
+		"&o&7Mother oh mother, I get it I get it; This world is mine to discover and document, I will fill scrolls with every known existence in this universe. From the atoms to the animals to the people inhabiting this realm.&r"
+	]
+	quest.489A746093E094AC.quest_subtitle: "Production Strain"
 	quest.4B30FAEE13A9D0FA.quest_desc: [
 		"THE NETHER"
 		""
@@ -156,11 +186,7 @@
 	]
 	quest.5580982B2C67888A.quest_subtitle: "Geared Up and Ready"
 	quest.5580982B2C67888A.title: "Precision Mechanism"
-	quest.5718A6FDA611272F.quest_desc: [
-		"Tip : If you're having trouble finding a pale garden, check out the Natures Compass, it'll lead you to one"
-		"!"
-	]
-	quest.5718A6FDA611272F.quest_subtitle: "The Garden of Silence"
+	quest.576ED6E650BBF272.quest_subtitle: "Resin Globs"
 	quest.58AEC3478E1FC4A5.title: "Discover a Nether Fortress!"
 	quest.59B828D0E89B2A0D.quest_desc: [
 		"Redstone, Emeralds, Diamond, Lapis and Ancient Debris no longer spawn naturally."
@@ -207,6 +233,13 @@
 		"You might get some flour, perfect to make a sticky slime ball."
 	]
 	quest.7359BEFA3BFE2305.quest_subtitle: "I NEED FLOUR!!!!"
+	quest.7437E401A6970B49.quest_desc: [
+		"Due to the end being removed, the Elytra has now been retrofitted to your one stop shop for gliding/flight."
+		""
+		""
+		"It's quite expensive, get to work!"
+	]
+	quest.7437E401A6970B49.quest_subtitle: "Gliding and Flight"
 	quest.77CE122438A2367D.quest_desc: [
 		"Feeding a blaze cake to a blaze burner will make it burn hot for about 3 minutes."
 		""
@@ -234,6 +267,7 @@
 	]
 	quest.7FF6529D92491048.quest_subtitle: "Poor Quality"
 	task.2C68BCFD1B18B5F0.title: "Any Logs"
+	task.364E3BE63C9F17F2.title: "The Road to Steel"
 	task.4D7FB5A3B24A4212.title: "Visit the Pale Garden!"
 	task.5F2C3EDD65EF4C64.title: "Work In progress"
 	task.79374C059FE9C606.title: "I did it!"

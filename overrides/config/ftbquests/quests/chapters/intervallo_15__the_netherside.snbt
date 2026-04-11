@@ -7,6 +7,14 @@
 		id: "minecraft:nether_wart_block"
 	}
 	id: "64F2FDD1894A45D8"
+	images: [{
+		height: 8.0d
+		image: "kubejs:textures/quest_image/blackholethingy.png"
+		rotation: 0.0d
+		width: 8.0d
+		x: 0.1071428571428541d
+		y: -9.839285714285715d
+	}]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
@@ -121,7 +129,7 @@
 		{
 			dependencies: ["42B88F8EEEB6123C"]
 			id: "12BB6D9B9BDA5118"
-			shape: "heart"
+			shape: "none"
 			size: 1.5d
 			tasks: [{
 				id: "3602B2974405069D"

@@ -3,6 +3,8 @@ console.info('TOOLTIP SCRIPT LOADED')
 ItemEvents.modifyTooltips(event => {
     event.add('minecraft:elytra[unbreakable={}]', Text.of('Mechanized Wings with Integrated Hovering Capabilities').gray())
     event.add('minecraft:elytra[unbreakable={}]', Text.of('Enables Creative Flight and Elytra Gliding').red())
+    event.add('farmersdelight:straw', Text.of('Automatically farmable from ').white())
+    event.add('farmersdelight:straw', Text.of('Wheat with Create.').white())
     
     
     event.add('create_rns:tin_deposit_block', Text.of('Tin Only Spawns in the Nether.').red())

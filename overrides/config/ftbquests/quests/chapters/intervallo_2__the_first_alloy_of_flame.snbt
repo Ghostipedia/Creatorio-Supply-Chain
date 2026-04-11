@@ -7,6 +7,14 @@
 		id: "create:brass_ingot"
 	}
 	id: "7113839087C79230"
+	images: [{
+		height: 8.0d
+		image: "kubejs:textures/quest_image/blackholethingy.png"
+		rotation: 0.0d
+		width: 8.0d
+		x: 1.5952380952380807d
+		y: 6.636904761904766d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -200,8 +208,8 @@
 			dependencies: ["28BDDAC44B6F299F"]
 			id: "138ED0A7D5AFFA59"
 			tasks: [{
-				id: "03AD18177CB22B3F"
-				item: { count: 1, id: "creatoriocore:crumbling_zinc" }
+				id: "093FB974A7E60E05"
+				item: { count: 1, id: "creatoriocore:crumbling_tin" }
 				type: "item"
 			}]
 			x: 9.0d
@@ -348,8 +356,8 @@
 				item: { count: 1, id: "tfmg:coke_oven" }
 				type: "item"
 			}]
-			x: 7.0d
-			y: 3.0d
+			x: 5.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["7D0703BDC2B4E4BC"]
@@ -359,8 +367,8 @@
 				item: { count: 1, id: "tfmg:coal_coke" }
 				type: "item"
 			}]
-			x: 8.5d
-			y: 5.0d
+			x: 7.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["28BDDAC44B6F299F"]
@@ -385,8 +393,8 @@
 				item: { count: 1, id: "tfmg:blast_stove" }
 				type: "item"
 			}]
-			x: 5.0d
-			y: 5.0d
+			x: 3.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["7D0703BDC2B4E4BC"]
@@ -396,8 +404,8 @@
 				item: { count: 1, id: "tfmg:creosote_bucket" }
 				type: "item"
 			}]
-			x: 7.0d
-			y: 5.0d
+			x: 5.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["7903A59C9048C18E"]
@@ -433,8 +441,8 @@
 				item: { count: 1, id: "tfmg:fireclay_ball" }
 				type: "item"
 			}]
-			x: -2.0d
-			y: 5.0d
+			x: -0.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -447,8 +455,8 @@
 				item: { count: 1, id: "creatoriocore:fireclay_kaolin_blend" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: 5.0d
+			x: -2.0d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -456,20 +464,20 @@
 				"2814D53DA3E35B3E"
 			]
 			id: "29628DF6C3C4E804"
-			shape: "hexagon"
+			shape: "none"
 			size: 2.0d
 			tasks: [{
 				id: "4F9D3633FA292996"
 				item: { count: 1, id: "tfmg:blast_furnace_output" }
 				type: "item"
 			}]
-			x: 2.5d
-			y: 5.0d
+			x: 1.5d
+			y: 6.5d
 		}
 		{
 			dependencies: [
-				"125FB6490714A2B2"
 				"18921FD66E4AD6E3"
+				"576ED6E650BBF272"
 			]
 			id: "2814D53DA3E35B3E"
 			tasks: [{
@@ -477,37 +485,8 @@
 				item: { count: 1, id: "tfmg:fireproof_bricks" }
 				type: "item"
 			}]
-			x: 2.5d
-			y: 7.0d
-		}
-		{
-			dependencies: ["5718A6FDA611272F"]
-			id: "125FB6490714A2B2"
-			tasks: [{
-				id: "29A88DB3F9D4E4E7"
-				item: { count: 1, id: "minecraft:resin_clump" }
-				type: "item"
-			}]
-			x: 0.0d
-			y: 7.0d
-		}
-		{
-			dependencies: ["7903A59C9048C18E"]
-			hide_dependency_lines: true
-			icon: {
-				id: "minecraft:pale_oak_sapling"
-			}
-			id: "5718A6FDA611272F"
-			tasks: [{
-				biome: "minecraft:pale_garden"
-				icon: {
-					id: "minecraft:pale_oak_sapling"
-				}
-				id: "4D7FB5A3B24A4212"
-				type: "biome"
-			}]
-			x: -2.0d
-			y: 7.0d
+			x: 1.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["0B0155162A9EB2C7"]
@@ -520,7 +499,7 @@
 				id: "0BBBB1463EC67819"
 				type: "checkmark"
 			}]
-			x: 4.0d
+			x: 1.0d
 			y: 4.0d
 		}
 		{
@@ -534,6 +513,146 @@
 			}]
 			x: -2.0d
 			y: -2.0d
+		}
+		{
+			dependencies: ["451B82B45C00EF86"]
+			id: "2417977FCE5FBC2A"
+			tasks: [{
+				count: 18L
+				id: "031803ED2F2AE881"
+				item: { count: 1, id: "tfmg:cast_iron_chemical_vat" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2417977FCE5FBC2A"]
+			id: "576ED6E650BBF272"
+			tasks: [{
+				id: "2055A22FF4E8B7C5"
+				item: { count: 1, id: "minecraft:resin_clump" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["451B82B45C00EF86"]
+			id: "0A6113CFAA45E67C"
+			tasks: [{
+				id: "54B83639FCDD8BCB"
+				item: { count: 1, id: "createvintageneoforged:spring_coiling_machine" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0A6113CFAA45E67C"]
+			id: "32B4428F7672AB8C"
+			tasks: [{
+				id: "1AC4194FB5BE622C"
+				item: { count: 1, id: "creatoriocore:drawn_quartz_string" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2417977FCE5FBC2A"]
+			id: "2A79AC5A588DC554"
+			tasks: [{
+				id: "78C02FB4025250E2"
+				item: { count: 1, id: "creatoriocore:molten_lapis_bucket" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"32B4428F7672AB8C"
+				"2A79AC5A588DC554"
+			]
+			id: "6833AEBCF202E4FB"
+			tasks: [{
+				id: "13322CFBDB7A44C0"
+				item: { count: 1, id: "creatoriocore:cypherwire" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"6833AEBCF202E4FB"
+				"000D18FE58950EA5"
+				"2407E60656FDD49A"
+			]
+			id: "2D6A54F3A02F17EC"
+			tasks: [{
+				id: "240B47DF1FBA9FF8"
+				item: { count: 1, id: "creatoriocore:insulated_cypherwire" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["2407E60656FDD49A"]
+			id: "000D18FE58950EA5"
+			tasks: [{
+				id: "0E943DCD86530601"
+				item: { count: 1, id: "tfmg:coal_coke_dust" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"0A6113CFAA45E67C"
+				"2D6A54F3A02F17EC"
+			]
+			id: "113772AADAE72559"
+			tasks: [{
+				id: "7280E25FFC8FEA7F"
+				item: { count: 1, id: "creatoriocore:cypherwire_spool" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"113772AADAE72559"
+				"6CB861AB8ED07FAB"
+			]
+			id: "7437E401A6970B49"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "36FCB769F602F7F9"
+				item: { count: 1, id: "minecraft:elytra" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"31827F99EB79070F"
+				"612AE822AFDD5C3F"
+			]
+			id: "6CB861AB8ED07FAB"
+			tasks: [{
+				id: "7ADCA980FEA0B474"
+				item: { count: 1, id: "creatoriocore:bronze_gear_assembly" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 2.0d
 		}
 	]
 }

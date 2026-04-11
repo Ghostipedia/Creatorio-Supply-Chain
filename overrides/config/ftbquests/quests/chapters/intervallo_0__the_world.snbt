@@ -7,6 +7,14 @@
 		id: "minecraft:oak_sapling"
 	}
 	id: "2624D8EC2FEA4139"
+	images: [{
+		height: 8.0d
+		image: "kubejs:textures/quest_image/blackholethingy.png"
+		rotation: 0.0d
+		width: 8.0d
+		x: 0.05714285714285694d
+		y: -9.414285714285718d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -110,7 +118,7 @@
 			]
 			id: "2139B0C91B4164A1"
 			min_width: 350
-			shape: "hexagon"
+			shape: "none"
 			size: 2.0d
 			tasks: [{
 				id: "6693E37F135FEB4F"

@@ -265,8 +265,11 @@ ServerEvents.recipes(event => {
     //MIXER
     event.recipes.create.mixing(Item.of('creatoriocore:weak_putty', 6), ['4x minecraft:clay_ball', 'minecraft:kelp', 'minecraft:wheat'])
     event.recipes.create.mixing('create_rns:resonant_amethyst', ['minecraft:amethyst_shard', '8x minecraft:lapis_lazuli']).heated()
-    event.recipes.create.mixing('create:rose_quartz', ['minecraft:quartz', '16x minecraft:redstone']).heated()
+    event.recipes.create.mixing('create:rose_quartz', ['2x minecraft:quartz', '8x minecraft:redstone']).heated()
     event.recipes.create.mixing('create:andesite_alloy', ['minecraft:clay_ball', 'minecraft:iron_nugget', 'minecraft:andesite'])
+
+    //SQUISHING
+    event.recipes.create.compacting('farmersdelight:canvas', ['farmersdelight:straw', 'farmersdelight:straw'])
 
 event.recipes.create.mixing('tfmg:cast_iron_ingot', ['creatoriocore:nether_slag', 'creatoriocore:coal_dust', 'minecraft:iron_ingot']).superheated()
     event.recipes.create.deploying('2x creatoriocore:brass_casing_modular_board', ['create:brass_sheet', Ingredient.of('#minecraft:planks')])
@@ -317,13 +320,13 @@ event.recipes.create.mixing('tfmg:cast_iron_ingot', ['creatoriocore:nether_slag'
         '#minecraft:planks',
         // Sequence:
         [
-            event.recipes.create.deploying('create_connected:andesite_encased_cross_connector', ['create_connected:andesite_encased_cross_connector', 'create:andesite_alloy',]),
-            event.recipes.create.deploying('create_connected:andesite_encased_cross_connector', ['create_connected:andesite_encased_cross_connector', 'creatoriocore:primitive_assembly_component',]),
-            event.recipes.create.deploying('create_connected:andesite_encased_cross_connector', ['create_connected:andesite_encased_cross_connector', 'creatoriocore:andesite_casing_modular_boards',]),
+            event.recipes.create.deploying('creatoriocore:incomplete_andesite_casing', ['creatoriocore:incomplete_andesite_casing', 'create:andesite_alloy',]),
+            event.recipes.create.deploying('creatoriocore:incomplete_andesite_casing', ['creatoriocore:incomplete_andesite_casing', 'creatoriocore:primitive_assembly_component',]),
+            event.recipes.create.deploying('creatoriocore:incomplete_andesite_casing', ['creatoriocore:incomplete_andesite_casing', 'creatoriocore:andesite_casing_modular_boards',]),
         ]
     )
         //Transitional Item: Used in the Sequence Steps Above normally.
-        .transitionalItem('create_connected:andesite_encased_cross_connector')
+        .transitionalItem('creatoriocore:incomplete_andesite_casing')
 
 
     event.recipes.create.sequenced_assembly(

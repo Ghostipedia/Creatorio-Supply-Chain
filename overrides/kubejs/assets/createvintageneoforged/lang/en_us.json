@@ -1,0 +1,7 @@
+{
+  "createvintageneoforged.ponder.laser.header": "Processing Items with the Laser",
+  "createvintageneoforged.ponder.laser.text_1": "The Laser can process items provided beneath it",
+  "createvintageneoforged.ponder.laser.text_2": "The Input items can be dropped or placed on a Depot under the Laser",
+  "createvintageneoforged.ponder.laser.text_3": "When items are provided by a belt...",
+  "createvintageneoforged.ponder.laser.text_4": "The Laser will hold and process them automatically"
+}

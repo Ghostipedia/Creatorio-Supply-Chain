@@ -7,6 +7,14 @@
 		id: "minecraft:dried_kelp"
 	}
 	id: "4798EF4AFA445C12"
+	images: [{
+		height: 8.0d
+		image: "kubejs:textures/quest_image/blackholethingy.png"
+		rotation: 0.0d
+		width: 8.0d
+		x: 0.0892857142857224d
+		y: -11.392857142857139d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -110,15 +118,16 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["51931EE8089DA257"]
+			dependencies: ["7ABC34F43B2A001F"]
 			id: "0F33047A2923634C"
+			shape: "gear"
 			tasks: [{
 				id: "242BA9D0CD4CEC58"
 				item: { count: 1, id: "create:wrench" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: -3.0d
+			x: 1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["51931EE8089DA257"]
@@ -129,7 +138,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: -1.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["7BC2FBCB83C3F581"]
@@ -159,7 +168,7 @@
 				id: "minecraft:obsidian"
 			}
 			id: "288CC1F24527EDCA"
-			shape: "hexagon"
+			shape: "none"
 			size: 2.0d
 			tasks: [{
 				id: "76CF51AE11F85D0B"
