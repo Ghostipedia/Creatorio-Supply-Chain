@@ -9,5 +9,14 @@
 	id: "4A2588BD18F8EBD1"
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		id: "60B56E7AEAEF77AE"
+		tasks: [{
+			id: "35C67C9AAA63CC49"
+			item: { count: 1, id: "creatoriocore:soul_steel_casing" }
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
 }

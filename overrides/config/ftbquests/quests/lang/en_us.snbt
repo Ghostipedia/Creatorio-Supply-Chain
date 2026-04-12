@@ -3,7 +3,7 @@
 	chapter.2624D8EC2FEA4139.title: "Intervallo 0 - The World"
 	chapter.3F06CE53014416DC.title: "Intervallo 6 - Automation Fever"
 	chapter.4798EF4AFA445C12.title: "Intervallo 3 - Clunky Contraptions"
-	chapter.4A2588BD18F8EBD1.title: "Intervallo 8 - The Rise of Electricity"
+	chapter.4A2588BD18F8EBD1.title: "Intervallo 8 - The Rise of Souls"
 	chapter.4A72DFF21B23D8CD.title: "Intervallo 2 - Key Changes"
 	chapter.4C15316CD6852494.title: "What kind of mango is this, i don't know"
 	chapter.50E2B5CED5BB7C22.title: "Intervallo 7 - Robust Steel Industry"
@@ -124,6 +124,7 @@
 		"&cNOTE : Steel production is not included in this version solely to avoid progression into TFMG where recipes haven't been touched. Other content on this page may be accessable!&r"
 	]
 	quest.35923DE99E1EEADD.quest_subtitle: "An Agonizing Process"
+	quest.3CC265748B4DF058.quest_subtitle: "Steel at Last!"
 	quest.42F433BBD4789381.quest_desc: [
 		"Add some water in a bucket with your flour to create dough."
 		""
@@ -187,6 +188,13 @@
 	quest.5580982B2C67888A.quest_subtitle: "Geared Up and Ready"
 	quest.5580982B2C67888A.title: "Precision Mechanism"
 	quest.576ED6E650BBF272.quest_subtitle: "Resin Globs"
+	quest.57AEDC8C96065F80.quest_desc: [
+		"With this, you've overcame the challenge of Automating Steel with Blast Furnaces. Congratulations!"
+		""
+		""
+		"For now this is currently the highest point the pack offers. Come back soon!"
+	]
+	quest.57AEDC8C96065F80.quest_subtitle: "Congrats!"
 	quest.58AEC3478E1FC4A5.title: "Discover a Nether Fortress!"
 	quest.59B828D0E89B2A0D.quest_desc: [
 		"Redstone, Emeralds, Diamond, Lapis and Ancient Debris no longer spawn naturally."

@@ -7,14 +7,24 @@
 		id: "tfmg:silicon_ingot"
 	}
 	id: "3F06CE53014416DC"
-	images: [{
-		height: 10.0d
-		image: "kubejs:textures/quest_image/blackholethingy.png"
-		rotation: 0.0d
-		width: 10.0d
-		x: -10.857142857142875d
-		y: -0.9464285714285623d
-	}]
+	images: [
+		{
+			height: 10.0d
+			image: "kubejs:textures/quest_image/blackholethingy.png"
+			rotation: 0.0d
+			width: 10.0d
+			x: -10.857142857142875d
+			y: -0.9464285714285623d
+		}
+		{
+			height: 8.0d
+			image: "kubejs:textures/quest_image/blackholethingy.png"
+			rotation: 0.0d
+			width: 8.0d
+			x: 3.1214285714285523d
+			y: 8.10238095238094d
+		}
+	]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
@@ -139,8 +149,8 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
-			y: 2.0d
+			x: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["35923DE99E1EEADD"]
@@ -161,7 +171,7 @@
 				item: { count: 1, id: "creatoriocore:milled_iron" }
 				type: "item"
 			}]
-			x: 4.0d
+			x: 0.0d
 			y: 2.0d
 		}
 		{
@@ -172,8 +182,8 @@
 				item: { count: 1, id: "creatoriocore:sifted_iron" }
 				type: "item"
 			}]
-			x: 6.0d
-			y: 2.0d
+			x: 0.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["7ED9A50432CF1D62"]
@@ -308,6 +318,145 @@
 			}]
 			x: -11.0d
 			y: -1.0d
+		}
+		{
+			dependencies: ["7ED9A50432CF1D62"]
+			hide_dependency_lines: true
+			id: "7BC71302F8771862"
+			tasks: [{
+				id: "2342ADD0562D9F60"
+				item: { count: 1, id: "minecraft:dragon_breath" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"6A944C636FD19F8C"
+				"7BC71302F8771862"
+			]
+			id: "3CC265748B4DF058"
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				id: "6A4621C86EF4262D"
+				item: { count: 1, id: "tfmg:steel_ingot" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["62EF690CCBB86242"]
+			id: "6A944C636FD19F8C"
+			tasks: [{
+				id: "35DCC73BD64FABC2"
+				item: { count: 1, id: "creatoriocore:high_quality_coke_iron_blend" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["20CDD9E88762D841"]
+			id: "573E141D02C62513"
+			tasks: [{
+				id: "548E4F9074295877"
+				item: { count: 1, id: "dndesires:omni_gearbox" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["20CDD9E88762D841"]
+			id: "02340E118E72726F"
+			tasks: [{
+				id: "31DC9ADBEC19525E"
+				item: { count: 1, id: "createadditionallogistics:package_accelerator" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"01AF424A1AC53BCE"
+				"2A663CD3897FEF67"
+			]
+			id: "54162D6B0FEA70C6"
+			tasks: [{
+				id: "6EC3227697DECC1C"
+				item: { count: 1, id: "creatoriocore:cypherwire_housing" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"3CC265748B4DF058"
+				"54162D6B0FEA70C6"
+			]
+			id: "57AEDC8C96065F80"
+			shape: "none"
+			size: 1.5d
+			tasks: [{
+				id: "1CABBE21DF3138EA"
+				item: { count: 1, id: "tfmg:steel_casing" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7ED9A50432CF1D62"]
+			hide_dependency_lines: true
+			id: "01AF424A1AC53BCE"
+			tasks: [{
+				id: "77B295F41712C989"
+				item: { count: 1, id: "creatoriocore:cypherwire_spool" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"3C0603C17E402177"
+				"482C4DE087A0E543"
+			]
+			id: "2A663CD3897FEF67"
+			tasks: [{
+				id: "3B5695BCEDD7AA5D"
+				item: { count: 1, id: "tfmg:hardened_planks" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 3.5d
+		}
+		{
+			id: "482C4DE087A0E543"
+			tasks: [{
+				id: "00E7FD1C2175E397"
+				item: { count: 1, id: "tfmg:creosote_bucket" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7ED9A50432CF1D62"]
+			hide_dependency_lines: true
+			id: "3C0603C17E402177"
+			tasks: [{
+				id: "00F540684140E756"
+				item: { count: 1, id: "minecraft:resin_clump" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.5d
 		}
 	]
 }

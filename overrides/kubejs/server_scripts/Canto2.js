@@ -28,6 +28,101 @@ ServerEvents.recipes(event => {
         B: 'create:shaft',
         C: 'minecraft:copper_block'
     })
+    event.shaped('creatoriocore:ink_pearl_seeds', [
+        ' A ',
+        'ABA',
+        ' A '
+    ], {
+        A: 'minecraft:ink_sac',
+        B: 'farmersdelight:cabbage_seeds'
+    })
+    event.recipes.farmersdelight.cutting(
+        'minecraft:pale_oak_log',
+        '#minecraft:axes',
+        [
+            'minecraft:stripped_pale_oak_log',
+            'farmersdelight:tree_bark'
+        ],
+        'minecraft:item.axe.strip'
+    )
+    event.shaped('minecraft:shulker_shell', [
+        'AAA',
+        'A A'
+    ], {
+        A: 'creatoriocore:fired_ceramic_plate'
+    })
+    event.shaped('minecraft:dragon_head', [
+        'ABA',
+        'CDC',
+        'CBC'
+    ], {
+        A: 'minecraft:ender_eye',
+        B: 'minecraft:shulker_shell',
+        C: 'minecraft:nautilus_shell',
+        D: 'minecraft:crying_obsidian'
+    })
+    event.shaped('createadditionallogistics:package_accelerator', [
+        'ABA',
+        ' C ',
+        ' D '
+    ], {
+        A: 'create:cardboard_block',
+        B: 'create:precision_mechanism',
+        C: 'create:brass_casing',
+        D: 'create_connected:control_chip'
+    })
+    event.shaped('4x dndesires:omni_gearbox', [
+        'ABA',
+        'CDC',
+        'ABA'
+    ], {
+        A: 'create_connected:control_chip',
+        B: 'create:gearbox',
+        C: 'create:vertical_gearbox',
+        D: 'create:brass_casing'
+
+    })
+    // Ink Pearl → 50/50 warm or cool pigment
+    event.recipes.create.crushing([
+        CreateItem.of('creatoriocore:warm_ink_pigment', 0.5),
+        CreateItem.of('creatoriocore:cool_ink_pigment', 0.5)
+    ], 'creatoriocore:ink_pearls')
+
+    // Warm pigment → 7 warm-ish dyes
+    event.recipes.create.crushing([
+        CreateItem.of('minecraft:red_dye', 0.143),
+        CreateItem.of('minecraft:orange_dye', 0.143),
+        CreateItem.of('minecraft:yellow_dye', 0.143),
+        CreateItem.of('minecraft:pink_dye', 0.143),
+        CreateItem.of('minecraft:magenta_dye', 0.143),
+        CreateItem.of('minecraft:brown_dye', 0.143),
+        CreateItem.of('minecraft:white_dye', 0.143)
+    ], 'creatoriocore:warm_ink_pigment')
+
+    // Cool pigment → 7 cool-ish dyes  
+    event.recipes.create.crushing([
+        CreateItem.of('minecraft:blue_dye', 0.143),
+        CreateItem.of('minecraft:light_blue_dye', 0.143),
+        CreateItem.of('minecraft:cyan_dye', 0.143),
+        CreateItem.of('minecraft:purple_dye', 0.143),
+        CreateItem.of('minecraft:green_dye', 0.143),
+        CreateItem.of('minecraft:lime_dye', 0.143),
+        CreateItem.of('minecraft:gray_dye', 0.143)
+    ], 'creatoriocore:cool_ink_pigment')
+    event.recipes.tfmg.casting('tfmg:steel_ingot', Fluid.of('tfmg:molten_steel', 144)).processingTime(600)
+    event.recipes.tfmg.industrial_blasting([Fluid.of('tfmg:molten_steel', 144), Fluid.of('tfmg:molten_slag', 288)], ['creatoriocore:high_quality_coke_iron_blend', 'minecraft:dragon_breath']).processingTime(2400)
+    event.recipes.create.mixing(Fluid.of('creatoriocore:royal_ink', 1000), ['creatoriocore:lapis_redstone_mixture', Fluid.of('creatoriocore:high_quality_ink', 1000)]).heated()
+    event.recipes.create.mixing(Item.of('creatoriocore:lapis_redstone_mixture', 2), ['minecraft:redstone', 'creatoriocore:lapis_dust'])
+    event.recipes.create.compacting(Fluid.of('creatoriocore:high_quality_ink', 1000), ['creatoriocore:pure_ink_pearl', Fluid.of('minecraft:water', 1000)]).heated()
+    event.recipes.create.compacting(Item.of('minecraft:deepslate', 4), ['minecraft:blackstone', 'minecraft:sand', 'minecraft:gravel', Fluid.of('minecraft:lava', 250)])
+    event.recipes.create.haunting(Item.of('minecraft:dragon_breath', 4), 'minecraft:potion[minecraft:potion_contents={potion:"minecraft:long_strength"}]')
+    event.recipes.create.deploying('2x creatoriocore:andesite_casing_modular_boards', [Ingredient.of('#minecraft:wooden_slabs'), 'create:andesite_alloy'])
+    event.recipes.create.compacting('creatoriocore:fired_ceramic_plate', ['creatoriocore:fireclay_kaolin_blend', 'creatoriocore:insulated_cypherwire']).superheated()
+    event.smoking('createdeco:industrial_iron_ingot', 'minecraft:iron_ingot')
+    event.recipes.create.cutting(Item.of('supplementaries:lapis_bricks', 4), 'minecraft:lapis_block')
+    event.recipes.create.crushing('creatoriocore:coal_dust', 'minecraft:coal')
+    event.recipes.create.crushing(CreateItem.of('minecraft:blaze_powder', 0.15), 'create:scoria')
+    event.recipes.create.mixing(Fluid.of('creatoriocore:molten_lapis', 1000), 'minecraft:lapis_lazuli').superheated()
     event.smelting('tfmg:fireproof_brick', 'creatoriocore:fireclay_kaolin_blend')
     event.recipes.create.mixing(Item.of('creatoriocore:fireclay_kaolin_blend', 2), ['creatoriocore:kaolin_clay', 'tfmg:fireclay_ball'])
     event.recipes.create.mixing('creatoriocore:kaolin_clay', ['creatoriocore:sintered_flint', 'minecraft:clay_ball', 'create:cinder_flour'])
@@ -45,10 +140,10 @@ ServerEvents.recipes(event => {
     event.recipes.create.crushing(Item.of('creatoriocore:crumbling_tin', 2), 'create:crushed_raw_tin')
     event.recipes.create.crushing(Item.of('create:crushed_raw_tin', 2), 'creatoriocore:raw_tin')
     event.recipes.create.mixing(Item.of('creatoriocore:invar_ingot', 3), [Item.of('creatoriocore:crumbling_iron', 2), 'creatoriocore:crumbling_nickel']).heated()
-    event.recipes.tfmg.vat_machine_recipe('minecraft:resin_clump', Fluid.of('rubberworks:resin', 250)).heated()
+    event.recipes.tfmg.vat_machine_recipe('minecraft:resin_clump', [Fluid.of('rubberworks:resin', 250), Fluid.of('minecraft:water', 1000)]).heated()
     event.recipes.createvintageneoforged.vibrating('creatoriocore:silicon_dust', 'minecraft:quartz')
     event.recipes.createvintageneoforged.coiling('creatoriocore:drawn_quartz_string', 'minecraft:quartz')
-    event.recipes.createvintageneoforged.laser_cutting('creatoriocore:primitive_assembly_component', 'create:andesite_alloy')
+    event.recipes.createvintageneoforged.laser_cutting('creatoriocore:primitive_assembly_component', 'create:andesite_alloy').processingTime(40)
     event.recipes.createvintageneoforged.coiling('creatoriocore:bronze_rod', 'creatoriocore:bronze_ingot')
     event.recipes.createvintageneoforged.coiling('creatoriocore:invar_rod', 'creatoriocore:invar_ingot')
     event.recipes.createvintageneoforged.laser_cutting('creatoriocore:bronze_gear', 'creatoriocore:bronze_plate')
