@@ -1,0 +1,11 @@
+{
+  "type": "create_rns:mining",
+  "deposit_block": "create_rns:uranium_deposit_block",
+  "replace_when_depleted": "create_rns:depleted_deposit_block",
+  "durability": {
+    "core": 200000,
+    "edge": 75000,
+    "random_spread": 0.2
+  },
+  "yields": []
+}

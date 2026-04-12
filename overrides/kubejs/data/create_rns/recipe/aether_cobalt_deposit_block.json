@@ -1,0 +1,68 @@
+{
+  "type": "create_rns:mining",
+  "deposit_block": "create_rns:cobalt_deposit_block",
+  "replace_when_depleted": "create_rns:depleted_deposit_block",
+  "dimension": "aether:the_aether",
+  "durability": {
+    "core": 200000,
+    "edge": 75000,
+    "random_spread": 0.2
+  },
+  "yields": [
+    {
+      "items": [
+        {
+          "item": "aether:holystone"
+        }
+      ]
+    },
+    {
+      "chance": 0.15,
+      "items": [
+        {
+          "item": "aether:ambrosium_block"
+        }
+      ]
+    },
+    {
+      "chance": 0.15,
+      "items": [
+        {
+          "item": "aether:holystone"
+        }
+      ]
+    },
+    {
+      "chance": 0.15,
+      "items": [
+        {
+          "item": "aether:mossy_holystone"
+        }
+      ]
+    },
+    {
+      "chance": 0.45,
+      "items": [
+        {
+          "item": "aether:icestone"
+        }
+      ]
+    },
+    {
+      "chance": 0.08,
+      "items": [
+        {
+          "item": "aether:ambrosium_shard"
+        }
+      ]
+    },
+    {
+      "chance": 0.02,
+      "items": [
+        {
+          "item": "aether:ambrosium_ore"
+        }
+      ]
+    }
+  ]
+}

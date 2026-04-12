@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "create_rns:deposit_silver_aether",
+    "create_rns:deposit_cobalt_aether",
+    "create_rns:deposit_thorium_aether",
+    "create_rns:deposit_uranium_aether"
+  ]
+}

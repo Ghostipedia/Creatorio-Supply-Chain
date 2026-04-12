@@ -1,0 +1,26 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 98712345,
+    "separation": 8,
+    "spacing": 14
+  },
+  "structures": [
+    {
+      "structure": "create_rns:deposit_silver_aether",
+      "weight": 3
+    },
+    {
+      "structure": "create_rns:deposit_cobalt_aether",
+      "weight": 4
+    },
+    {
+      "structure": "create_rns:deposit_thorium_aether",
+      "weight": 1
+    },
+    {
+      "structure": "create_rns:deposit_uranium_aether",
+      "weight": 2
+    }
+  ]
+}

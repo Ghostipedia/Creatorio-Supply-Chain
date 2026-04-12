@@ -252,6 +252,40 @@ ServerEvents.recipes(event => {
     event.smelting('minecraft:copper_ingot', 'creatoriocore:crumbling_copper')
     event.blasting('creatoriocore:sintered_flint', 'minecraft:flint')
 
+    // Iron
+    event.smelting('minecraft:iron_ingot', 'creatoriocore:sifted_iron')
+    event.smelting('minecraft:iron_ingot', 'creatoriocore:milled_iron')
+    event.smelting('minecraft:iron_ingot', 'creatoriocore:crumbling_iron')
+
+    // Gold
+    event.smelting('minecraft:gold_ingot', 'creatoriocore:sifted_gold')
+    event.smelting('minecraft:gold_ingot', 'creatoriocore:milled_gold')
+    event.smelting('minecraft:gold_ingot', 'creatoriocore:crumbling_gold')
+
+    // Copper
+    event.smelting('minecraft:copper_ingot', 'creatoriocore:sifted_copper')
+    event.smelting('minecraft:copper_ingot', 'creatoriocore:milled_copper')
+    event.smelting('minecraft:copper_ingot', 'creatoriocore:crumbling_copper')
+
+    // Zinc
+    event.smelting('create:zinc_ingot', 'creatoriocore:sifted_zinc')
+    event.smelting('create:zinc_ingot', 'creatoriocore:milled_zinc')
+    event.smelting('create:zinc_ingot', 'creatoriocore:crumbling_zinc')
+
+    // Nickel
+    event.smelting('tfmg:nickel_ingot', 'creatoriocore:sifted_nickel')
+    event.smelting('tfmg:nickel_ingot', 'creatoriocore:milled_nickel')
+    event.smelting('tfmg:nickel_ingot', 'creatoriocore:crumbling_nickel')
+
+    // Lead
+    event.smelting('tfmg:lead_ingot', 'creatoriocore:sifted_lead')
+    event.smelting('tfmg:lead_ingot', 'creatoriocore:milled_lead')
+    event.smelting('tfmg:lead_ingot', 'creatoriocore:crumbling_lead')
+
+    // Tin
+    event.smelting('creatoriocore:tin_ingot', 'creatoriocore:sifted_tin')
+    event.smelting('creatoriocore:tin_ingot', 'creatoriocore:milled_tin')
+    event.smelting('creatoriocore:tin_ingot', 'creatoriocore:crumbling_tin')
 
 
     //Crushing
@@ -262,6 +296,32 @@ ServerEvents.recipes(event => {
     event.recipes.create.crushing('2x creatoriocore:crumbling_lead', 'create:crushed_raw_lead')
     event.recipes.create.crushing('2x creatoriocore:crumbling_copper', 'create:crushed_raw_copper')
     event.recipes.create.crushing('creatoriocore:nether_slag', 'minecraft:nether_bricks')
+    event.recipes.create.crushing(['minecraft:gravel',CreateItem.of('3x create:copper_nugget', 0.15)], 'minecraft:granite')
+
+
+
+    // Crumbling -> Milled
+    event.recipes.create.crushing(['creatoriocore:milled_iron', CreateItem.of('creatoriocore:milled_iron', 0.25)], 'creatoriocore:crumbling_iron')
+    event.recipes.create.crushing(['creatoriocore:milled_gold', CreateItem.of('creatoriocore:milled_gold', 0.25)], 'creatoriocore:crumbling_gold')
+    event.recipes.create.crushing(['creatoriocore:milled_copper', CreateItem.of('creatoriocore:milled_copper', 0.25)], 'creatoriocore:crumbling_copper')
+    event.recipes.create.crushing(['creatoriocore:milled_zinc', CreateItem.of('creatoriocore:milled_zinc', 0.25)], 'creatoriocore:crumbling_zinc')
+    event.recipes.create.crushing(['creatoriocore:milled_nickel', CreateItem.of('creatoriocore:milled_nickel', 0.25)], 'creatoriocore:crumbling_nickel')
+    event.recipes.create.crushing(['creatoriocore:milled_lead', CreateItem.of('creatoriocore:milled_lead', 0.25)], 'creatoriocore:crumbling_lead')
+    event.recipes.create.crushing(['creatoriocore:milled_tin', CreateItem.of('creatoriocore:milled_tin', 0.25)], 'creatoriocore:crumbling_tin')
+
+    // Milled -> Sifted
+    event.recipes.createvintageneoforged.vibrating(['creatoriocore:sifted_iron', CreateItem.of('creatoriocore:sifted_iron', 0.25)], 'creatoriocore:milled_iron')
+    event.recipes.createvintageneoforged.vibrating(['creatoriocore:sifted_gold', CreateItem.of('creatoriocore:sifted_gold', 0.25)], 'creatoriocore:milled_gold')
+    event.recipes.createvintageneoforged.vibrating(['creatoriocore:sifted_copper', CreateItem.of('creatoriocore:sifted_copper', 0.25)], 'creatoriocore:milled_copper')
+    event.recipes.createvintageneoforged.vibrating(['creatoriocore:sifted_zinc', CreateItem.of('creatoriocore:sifted_zinc', 0.25)], 'creatoriocore:milled_zinc')
+    event.recipes.createvintageneoforged.vibrating(['creatoriocore:sifted_nickel', CreateItem.of('creatoriocore:sifted_nickel', 0.25)], 'creatoriocore:milled_nickel')
+    event.recipes.createvintageneoforged.vibrating(['creatoriocore:sifted_lead', CreateItem.of('creatoriocore:sifted_lead', 0.25)], 'creatoriocore:milled_lead')
+    event.recipes.createvintageneoforged.vibrating(['creatoriocore:sifted_tin', CreateItem.of('creatoriocore:sifted_tin', 0.25)], 'creatoriocore:milled_tin')
+
+
+
+
+
     //MIXER
     event.recipes.create.mixing(Item.of('creatoriocore:weak_putty', 6), ['4x minecraft:clay_ball', 'minecraft:kelp', 'minecraft:wheat'])
     event.recipes.create.mixing('create_rns:resonant_amethyst', ['minecraft:amethyst_shard', '8x minecraft:lapis_lazuli']).heated()
@@ -271,7 +331,7 @@ ServerEvents.recipes(event => {
     //SQUISHING
     event.recipes.create.compacting('farmersdelight:canvas', ['farmersdelight:straw', 'farmersdelight:straw'])
 
-event.recipes.create.mixing('tfmg:cast_iron_ingot', ['creatoriocore:nether_slag', 'creatoriocore:coal_dust', 'minecraft:iron_ingot']).superheated()
+    event.recipes.create.mixing('tfmg:cast_iron_ingot', ['creatoriocore:nether_slag', 'creatoriocore:coal_dust', 'minecraft:iron_ingot']).superheated()
     event.recipes.create.deploying('2x creatoriocore:brass_casing_modular_board', ['create:brass_sheet', Ingredient.of('#minecraft:planks')])
 
     event.recipes.create.mechanical_crafting(

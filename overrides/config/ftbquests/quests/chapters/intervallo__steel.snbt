@@ -8,15 +8,11 @@
 	}
 	id: "50E2B5CED5BB7C22"
 	order_index: 0
-	quest_links: [ ]
-	quests: [{
-		id: "08E4ABA130E6806C"
-		tasks: [{
-			id: "506E84FAD70CA2FD"
-			item: { count: 1, id: "tfmg:steel_casing" }
-			type: "item"
-		}]
-		x: 0.0d
-		y: 0.0d
+	quest_links: [{
+		id: "250F7FE357E16FD2"
+		linked_quest: "57AEDC8C96065F80"
+		x: 0.5d
+		y: 0.5d
 	}]
+	quests: [ ]
 }

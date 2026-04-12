@@ -1,0 +1,6 @@
+{
+  "structure": "create_rns:deposit_uranium_aether",
+  "dimension": "aether:the_aether",
+  "scanner_icon_item": "deep_aether:skyjade",
+  "map_icon_item": "create_rns:uranium_deposit_block"
+}

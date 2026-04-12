@@ -72,6 +72,11 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'dndesires:crafting/omni_gearbox' })
   event.remove({ id: 'tfmg:item_application/steel_casing' })
   event.remove({ id: 'tfmg:item_application/steel_casing_using_deployer' })
+  event.remove({ id: 'create_rns:tin_deposit_block' })
+  event.remove({ id: 'create_rns:uranium_deposit_block' })
+  event.remove({ id: 'create_rns:silver_deposit_block' })
+  event.remove({ id: 'create_rns:thorium_deposit_block' })
+  event.remove({ id: 'create_rns:cobalt_deposit_block' })
 
 
   //TFMG

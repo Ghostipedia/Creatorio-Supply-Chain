@@ -1,0 +1,6 @@
+{
+  "structure": "create_rns:deposit_cobalt_aether",
+  "dimension": "aether:the_aether",
+  "scanner_icon_item": "aether:ambrosium_shard",
+  "map_icon_item": "create_rns:cobalt_deposit_block"
+}

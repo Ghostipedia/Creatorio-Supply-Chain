@@ -1,0 +1,6 @@
+{
+  "structure": "create_rns:deposit_thorium_aether",
+  "dimension": "aether:the_aether",
+  "scanner_icon_item": "aether:gravitite_ore",
+  "map_icon_item": "create_rns:thorium_deposit_block"
+}
