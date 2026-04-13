@@ -43,6 +43,7 @@
 	quest.02B742F686F88CCF.quest_subtitle: "Green Enough"
 	quest.064314D458FC80F7.title: "Contraptions"
 	quest.0A291D506EC39422.quest_subtitle: "Capture a Blaze"
+	quest.0E5659E1AB3385AC.quest_subtitle: "Early Soul Steel, the Bad Way"
 	quest.0F33047A2923634C.quest_desc: ["The Wrench is a tool which allows you to instantly break items without dropping them on the ground. Just shift-right click with the wrench and the item will be deconstructed into your inventory."]
 	quest.0F33047A2923634C.quest_subtitle: "A quick reminder"
 	quest.0F33047A2923634C.title: "If you haven't, Make a Wrench"
@@ -60,10 +61,20 @@
 	quest.12BB6D9B9BDA5118.quest_subtitle: "The Start of Proper Automation"
 	quest.1351BA0E601248E9.quest_subtitle: "The place you spawned in."
 	quest.1351BA0E601248E9.title: "The Overworld"
+	quest.140225D86D75BCBA.quest_subtitle: "The Slick Stuff"
 	quest.14AB5971D7E8C8D1.quest_subtitle: "Storing Fluids"
+	quest.14F41FF8849AAB78.quest_desc: [
+		"The Attached Quests don't require wire to craft (most of the time) but are linked to allow you to see some useful goodies directly added by Create: Power Grid."
+		""
+		""
+		"In our case, the power is used for TFMG machines as well as potentially any other machines that may need power"
+	]
+	quest.14F41FF8849AAB78.quest_subtitle: "Wire Movement"
+	quest.1A068CFE0E65C291.quest_subtitle: "A Combustion Fuel"
 	quest.1B67CDAA9F6BB7B6.quest_desc: ["I will add the stuff from the end (Endstone, Chorus, Elytra) as alt-recipes."]
 	quest.1B67CDAA9F6BB7B6.quest_subtitle: "End is Kil"
 	quest.1B67CDAA9F6BB7B6.title: "The End is gone, again"
+	quest.20CDD9E88762D841.quest_subtitle: "Required for High Tier Hardware"
 	quest.2139B0C91B4164A1.quest_desc: [
 		"You can now cobble together your first Andesite frames, while moderately costly, they're mostly made of basic rocks and plants you gathered in your local environment."
 		""
@@ -81,6 +92,7 @@
 	]
 	quest.21991E4C2F1168A5.quest_subtitle: "A Packagers Best Friend"
 	quest.21991E4C2F1168A5.title: "Simple Frog Logistics"
+	quest.2213986C9588E47E.quest_subtitle: "A Combustion Fuel"
 	quest.2407E60656FDD49A.title: "Coking it so good"
 	quest.2417977FCE5FBC2A.quest_desc: [
 		"You do not need the vat to make a coke oven, that is just how the QB is layed out."
@@ -88,6 +100,7 @@
 		"Scream at FTB for better Quest Lines or something i don't know."
 	]
 	quest.2417977FCE5FBC2A.title: "Vat Chemistry"
+	quest.2798F6913720944D.quest_subtitle: "A Combustion Fuel"
 	quest.288CC1F24527EDCA.quest_subtitle: "Lava Casting"
 	quest.288CC1F24527EDCA.title: "Portal Assembly?"
 	quest.28CB7776596C9EB8.quest_subtitle: "Finally, real Andesite!"
@@ -105,6 +118,7 @@
 	quest.2A77DBAB6DFFE488.title: "The Nether"
 	quest.2D1D720089F4927A.quest_desc: ["Andesite braces are used to construct the frame of your new casings, you will see these used in other recipes as well."]
 	quest.2D1D720089F4927A.quest_subtitle: "Strong Supports"
+	quest.33B250BF865C6A06.quest_subtitle: "A Combustion Fuel"
 	quest.35636EA132BBDEE8.quest_desc: [
 		"You'll need a lot of redstone for this."
 		""
@@ -180,8 +194,10 @@
 	]
 	quest.4B30FAEE13A9D0FA.quest_subtitle: ":3"
 	quest.4B30FAEE13A9D0FA.title: "The Nether"
+	quest.4F6C2C5007E48719.quest_subtitle: "Resistances"
 	quest.5191777DC94F6A73.quest_subtitle: "Easy, go punch a tree!"
 	quest.5191777DC94F6A73.title: "Acquiring Wood"
+	quest.537F0A416650C39D.quest_subtitle: "Gregtech!?!?!?!"
 	quest.5580982B2C67888A.quest_desc: [
 		"Now that you're starting to settle in comfortably, it's time to start towards your first major goal."
 		""
@@ -227,6 +243,21 @@
 		"But in short, put blaze burners below a copper tank, fuel them, give it water, and stick steam engines on it somewhere to get a massive output of SU."
 	]
 	quest.59F62FD4C9374CB4.quest_subtitle: "Proper Power"
+	quest.5A4C8A467987883D.quest_desc: [
+		"Personally, I would watch the ponder for this to get the best idea of how it works."
+		""
+		""
+		"Essentially, you assemble a multiblock pumpjack above an oil spout and then proceed to extract oil from it."
+		""
+		""
+		""
+		"Logically, the next step here is distillation, we'll focus on that next."
+		""
+		""
+		""
+		"Hope you've got decent steel infrastructure, all these things use a bunch of it!"
+	]
+	quest.5A4C8A467987883D.quest_subtitle: "A Bit of an Explaination"
 	quest.5BF88C8574957810.quest_subtitle: "Mightly Logistics"
 	quest.5C666F0B9ADA4164.quest_subtitle: "Item Handling"
 	quest.601688A38EEEADF3.quest_desc: ["This nifty little internal component will act as an insulator for early casings, once you advance sufficiently the natural strength of better alloys will replace this."]
@@ -241,6 +272,9 @@
 		"Chop up some wood on a cutting board for bark."
 	]
 	quest.67CE0B0A440DAC55.quest_subtitle: "Wood Chips"
+	quest.6A5B365EA0944C16.quest_desc: ["Steel Chem Vats can handle the production of Sulfuric Acid and Any Recipe that uses it as well."]
+	quest.6A5B365EA0944C16.quest_subtitle: "Acid Proof"
+	quest.6B56B9AEF34154E5.quest_subtitle: "Lubricant Precursor"
 	quest.7359BEFA3BFE2305.quest_desc: [
 		""
 		"GET MAD!"
@@ -279,6 +313,8 @@
 	quest.7903A59C9048C18E.quest_subtitle: "Precise Assembly"
 	quest.7ABFAF9A936A2063.quest_subtitle: "Logistics"
 	quest.7BA8B35B1AA48D86.quest_subtitle: "Weak Wheels"
+	quest.7F3BFF749EB42F08.quest_desc: ["Needed for Soul Steel, Make some!"]
+	quest.7F3BFF749EB42F08.quest_subtitle: "The Shiny Blue Stuff"
 	quest.7FF6529D92491048.quest_desc: [
 		"Your first attempts at making an alloy out of.... rocks? (why???), didn't go as well as you expected."
 		""

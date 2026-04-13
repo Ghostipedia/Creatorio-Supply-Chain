@@ -1,6 +1,6 @@
 {
   "type": "create_rns:deposit",
-  "biomes": "#create_rns:has_deposit",
+  "biomes": "#aether:is_aether",
   "placement_strategy": "overworld",
   "height": {
     "max": -4,

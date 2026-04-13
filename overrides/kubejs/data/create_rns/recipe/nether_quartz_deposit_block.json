@@ -28,6 +28,14 @@
       "chance": 0.15,
       "items": [
         {
+          "item": "tfmg:sulfur"
+        }
+      ]
+    },
+    {
+      "chance": 0.15,
+      "items": [
+        {
           "item": "minecraft:blackstone"
         }
       ]

@@ -85,5 +85,72 @@
 			x: 3.0d
 			y: 1.5d
 		}
+		{
+			dependencies: ["6F7AD08F1D7BB233"]
+			id: "0B6C2B82093C70A1"
+			tasks: [{
+				id: "735CC63150C7DF52"
+				item: { count: 1, id: "tfmg:steel_ingot" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0B6C2B82093C70A1"
+				"6F7AD08F1D7BB233"
+			]
+			id: "20D94002876BA1A3"
+			tasks: [{
+				id: "3A30060DAE331ED0"
+				item: { count: 1, id: "tfmg:plastic_sheet" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["20D94002876BA1A3"]
+			id: "60E9F5CA6C2C5C99"
+			tasks: [{
+				id: "156592E4497C0CA1"
+				item: { count: 1, id: "tfmg:aluminum_ingot" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6F7AD08F1D7BB233"]
+			id: "526B431165A4C168"
+			tasks: [{
+				id: "68BF616D51769A9C"
+				item: { count: 1, id: "create:factory_gauge" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			id: "063713759A5906E0"
+			tasks: [{
+				id: "418F4BB01529C2E6"
+				item: { count: 1, id: "creatoriocore:analog_data_indexer" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			id: "05BB9BFB1813AB16"
+			tasks: [{
+				id: "755142E006219738"
+				item: { count: 1, id: "creatoriocore:recordkeepers_grand_scroll_archive" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.5d
+		}
 	]
 }

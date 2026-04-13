@@ -7,12 +7,578 @@
 		id: "tfmg:steel_chemical_vat"
 	}
 	id: "50E2B5CED5BB7C22"
+	images: [
+		{
+			height: 8.0d
+			image: "kubejs:textures/quest_image/blackholethingy.png"
+			rotation: 0.0d
+			width: 8.0d
+			x: 2.107142857142854d
+			y: -1.8839285714285694d
+		}
+		{
+			height: 8.0d
+			image: "kubejs:textures/quest_image/blackholethingy.png"
+			rotation: 0.0d
+			width: 8.0d
+			x: 6.142857142857146d
+			y: 10.066964285714285d
+		}
+	]
 	order_index: 0
 	quest_links: [{
 		id: "250F7FE357E16FD2"
 		linked_quest: "57AEDC8C96065F80"
-		x: 0.5d
-		y: 0.5d
+		x: 2.0d
+		y: 3.0d
 	}]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["57AEDC8C96065F80"]
+			id: "38CB5E073B985276"
+			tasks: [{
+				id: "494569F0684E5CCA"
+				item: { count: 1, id: "tfmg:industrial_mixer" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["57AEDC8C96065F80"]
+			icon: {
+				id: "createdeco:decal_fluid"
+			}
+			id: "5A4C8A467987883D"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "6FF7D26197B0B2D1"
+					item: { count: 1, id: "tfmg:pumpjack_crank" }
+					type: "item"
+				}
+				{
+					id: "461CF602D4D8E81E"
+					item: { count: 1, id: "tfmg:pumpjack_hammer_connector" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "5B9AFC877F1F3BB2"
+					item: { count: 1, id: "tfmg:pumpjack_hammer_part" }
+					type: "item"
+				}
+				{
+					id: "74A6D8FDBB7A7ADE"
+					item: { count: 1, id: "tfmg:pumpjack_hammer_head" }
+					type: "item"
+				}
+				{
+					id: "1B911BD382A4C0B0"
+					item: { count: 1, id: "tfmg:pumpjack_hammer" }
+					type: "item"
+				}
+				{
+					id: "4C7E93FC99FE06C0"
+					item: { count: 1, id: "tfmg:pumpjack_base" }
+					type: "item"
+				}
+				{
+					id: "14D4982C11D03EFC"
+					item: { count: 1, id: "tfmg:industrial_pipe" }
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6B56B9AEF34154E5"]
+			id: "140225D86D75BCBA"
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "06F107BEECD90E0E"
+				item: { count: 1, id: "tfmg:lubrication_oil_bucket" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5A4C8A467987883D"]
+			id: "6B56B9AEF34154E5"
+			tasks: [{
+				id: "4BBD99C04240B0DD"
+				item: { count: 1, id: "tfmg:heavy_oil_bucket" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5A4C8A467987883D"]
+			id: "2798F6913720944D"
+			tasks: [{
+				id: "05407247D6FDDAFC"
+				item: { count: 1, id: "tfmg:diesel_bucket" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5A4C8A467987883D"]
+			id: "2213986C9588E47E"
+			tasks: [{
+				id: "31714EA6C9427CB8"
+				item: { count: 1, id: "tfmg:lpg_bucket" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5A4C8A467987883D"]
+			id: "1A068CFE0E65C291"
+			tasks: [{
+				id: "33D58A39AA4D5953"
+				item: { count: 1, id: "tfmg:gasoline_bucket" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5A4C8A467987883D"]
+			id: "33B250BF865C6A06"
+			tasks: [{
+				id: "71DBF2AD11E66C89"
+				item: { count: 1, id: "tfmg:kerosene_bucket" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5A4C8A467987883D"]
+			id: "1D06C8E8E5161021"
+			tasks: [{
+				id: "2CED2C59B7710A2D"
+				item: { count: 1, id: "tfmg:naphtha_bucket" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1D06C8E8E5161021"]
+			id: "0D2324C953CC331D"
+			tasks: [{
+				id: "369CA34C6D60CB61"
+				item: { count: 1, id: "tfmg:propylene_bucket" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"1D06C8E8E5161021"
+				"0D2324C953CC331D"
+				"38CB5E073B985276"
+			]
+			id: "51D6234D16C42CDC"
+			tasks: [{
+				id: "69FE83EA832F2585"
+				item: { count: 1, id: "tfmg:ethylene_bucket" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"3258E143D3B12006"
+				"51CD54E95650E69E"
+			]
+			id: "239F68BEBF9AB53A"
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "64552496E94E70F7"
+				item: { count: 1, id: "tfmg:plastic_sheet" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["51D6234D16C42CDC"]
+			id: "3258E143D3B12006"
+			tasks: [{
+				id: "57F96C0A1B02B681"
+				item: { count: 1, id: "tfmg:molten_plastic_bucket" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			id: "51CD54E95650E69E"
+			tasks: [{
+				id: "64588AC0DC22AE93"
+				item: { count: 1, id: "tfmg:air_intake" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["57AEDC8C96065F80"]
+			id: "28256BA0DE2A44CC"
+			tasks: [{
+				id: "47DC81F428AA2886"
+				item: { count: 1, id: "tfmg:steel_ingot" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"57AEDC8C96065F80"
+				"554C7B5EEB5DA46D"
+			]
+			id: "05CF7FA834AEB2CC"
+			shape: "none"
+			size: 1.25d
+			tasks: [{
+				id: "3700E17983FE568C"
+				item: { count: 1, id: "creatoriocore:soul_steel_casing" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"28256BA0DE2A44CC"
+				"7F3BFF749EB42F08"
+			]
+			id: "0E5659E1AB3385AC"
+			tasks: [{
+				id: "54E7EC507C895768"
+				item: { count: 1, id: "malum:soul_stained_steel_ingot" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0E5659E1AB3385AC"]
+			id: "554C7B5EEB5DA46D"
+			tasks: [{
+				id: "44BAA507F85D5C14"
+				item: { count: 1, id: "creatoriocore:soul_steel_casing_modular_board" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["57AEDC8C96065F80"]
+			id: "0D65C14737315849"
+			tasks: [{
+				id: "18BB1804AB5616CF"
+				item: { count: 1, id: "powergrid:electrical_gizmo" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"0D65C14737315849"
+				"1BDBAB716CB38E4D"
+			]
+			id: "3C438C3BCF92D6B1"
+			tasks: [
+				{
+					id: "7173D5531AB6E6FF"
+					item: { count: 1, id: "powergrid:generator_induction_rotor" }
+					type: "item"
+				}
+				{
+					id: "2439D570ECEDC58F"
+					item: { count: 1, id: "powergrid:copper_coil" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0E5659E1AB3385AC"]
+			id: "1BDBAB716CB38E4D"
+			tasks: [{
+				id: "2A7E22160E4AC78E"
+				item: { count: 1, id: "creatoriocore:extremely_precise_mechanism" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"37152DDE148905B6"
+				"3C438C3BCF92D6B1"
+			]
+			id: "7A214FE1A17269CA"
+			tasks: [{
+				id: "2E24FF1F29287BF4"
+				item: { count: 1, id: "powergrid:generator_commutator" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3C438C3BCF92D6B1"]
+			id: "37152DDE148905B6"
+			tasks: [{
+				id: "20F52BDA1F36625B"
+				item: { count: 1, id: "powergrid:generator_clutch" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3C438C3BCF92D6B1"]
+			id: "3203CFBBD0D66D44"
+			tasks: [{
+				id: "237FD40F20723697"
+				item: { count: 1, id: "powergrid:generator_housing" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3C438C3BCF92D6B1"]
+			icon: {
+				id: "powergrid:rheostat"
+			}
+			id: "4F6C2C5007E48719"
+			tasks: [
+				{
+					id: "3BBDD5373DE130CA"
+					item: { count: 1, id: "powergrid:rheostat" }
+					type: "item"
+				}
+				{
+					id: "1096722609F21E63"
+					item: { count: 1, id: "powergrid:power_resistor" }
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3C438C3BCF92D6B1"]
+			id: "14F41FF8849AAB78"
+			tasks: [{
+				id: "6031FF5D101DB143"
+				item: { count: 1, id: "powergrid:insulated_copper_wire" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["14F41FF8849AAB78"]
+			id: "01784B184ABCC90C"
+			tasks: [
+				{
+					id: "2A90268704FC8C58"
+					item: { count: 1, id: "powergrid:iron_wire" }
+					type: "item"
+				}
+				{
+					id: "0211FA4174BDDF7D"
+					item: { count: 1, id: "powergrid:golden_wire" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3C438C3BCF92D6B1"]
+			id: "597CDC1413CF1BC1"
+			tasks: [{
+				id: "64951404D0CEFC75"
+				item: { count: 1, id: "powergrid:electromagnet" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["14F41FF8849AAB78"]
+			id: "0AE9CFFDCE8C7565"
+			tasks: [{
+				id: "1ECA0963D710E88B"
+				item: { count: 1, id: "powergrid:growth_lamp" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["14F41FF8849AAB78"]
+			id: "13DDA184F40F118C"
+			tasks: [{
+				id: "6A57C2AA66C22CB6"
+				item: { count: 1, id: "powergrid:basin_heater" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["14F41FF8849AAB78"]
+			id: "6FAA80E882029C54"
+			tasks: [{
+				id: "26BE1B686BB1677A"
+				item: { count: 1, id: "powergrid:electric_fan" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["38CB5E073B985276"]
+			id: "5CF52065D292AA83"
+			tasks: [{
+				id: "2AC85683559B22C2"
+				item: { count: 1, id: "tfmg:mixer_blade" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["239F68BEBF9AB53A"]
+			id: "21F711039971BFE6"
+			tasks: [{
+				id: "3D66B817296AEEFE"
+				item: { count: 1, id: "tfmg:empty_circuit_board" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["21F711039971BFE6"]
+			id: "187E6C27BF4BF458"
+			tasks: [{
+				id: "786171763AFED0CC"
+				item: { count: 1, id: "tfmg:coated_circuit_board" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["187E6C27BF4BF458"]
+			id: "033EEBF05957ECCB"
+			tasks: [{
+				id: "42F09354EF773CBA"
+				item: { count: 1, id: "tfmg:etched_circuit_board" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"033EEBF05957ECCB"
+				"56AAEE5C3192A047"
+				"7E0D9F9B85CFB6EF"
+				"27D652FB51EA4360"
+			]
+			id: "537F0A416650C39D"
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				id: "093DD1D48F01135F"
+				item: { count: 1, id: "tfmg:circuit_board" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["57AEDC8C96065F80"]
+			hide_dependency_lines: true
+			id: "27D652FB51EA4360"
+			tasks: [{
+				id: "7CA5D548D92233A0"
+				item: { count: 1, id: "tfmg:transistor_item" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["57AEDC8C96065F80"]
+			hide_dependency_lines: true
+			id: "56AAEE5C3192A047"
+			tasks: [{
+				id: "4DCF886095C90350"
+				item: { count: 1, id: "powergrid:resistor" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["57AEDC8C96065F80"]
+			hide_dependency_lines: true
+			id: "7E0D9F9B85CFB6EF"
+			tasks: [{
+				id: "235ECEB409506FC4"
+				item: { count: 1, id: "tfmg:capacitor_item" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["57AEDC8C96065F80"]
+			hide_dependency_lines: true
+			id: "6A5B365EA0944C16"
+			tasks: [{
+				id: "0967BA0687604990"
+				item: { count: 1, id: "tfmg:steel_chemical_vat" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6A5B365EA0944C16"]
+			id: "7F3BFF749EB42F08"
+			tasks: [{
+				id: "4D3B0101F556E7F1"
+				item: { count: 1, id: "tfmg:copper_sulfate" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.0d
+		}
+	]
 }

@@ -7,16 +7,38 @@
 		id: "tfmg:light_bulb"
 	}
 	id: "4A2588BD18F8EBD1"
+	images: [{
+		height: 8.0d
+		image: "kubejs:textures/quest_image/blackholethingy.png"
+		rotation: 0.0d
+		width: 8.0d
+		x: 0.1071428571428541d
+		y: -2.4107142857142776d
+	}]
 	order_index: 1
 	quest_links: [ ]
-	quests: [{
-		id: "60B56E7AEAEF77AE"
-		tasks: [{
-			id: "35C67C9AAA63CC49"
-			item: { count: 1, id: "creatoriocore:soul_steel_casing" }
-			type: "item"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			id: "60B56E7AEAEF77AE"
+			tasks: [{
+				id: "35C67C9AAA63CC49"
+				item: { count: 1, id: "creatoriocore:soul_steel_casing" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["60B56E7AEAEF77AE"]
+			id: "6B738D40D4612B92"
+			shape: "none"
+			tasks: [{
+				id: "266272970E8B0CF2"
+				item: { count: 1, id: "creatoriocore:analog_data_indexer" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+	]
 }
