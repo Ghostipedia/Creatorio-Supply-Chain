@@ -93,7 +93,7 @@ ServerEvents.recipes(event => {
             event.recipes.create.deploying('powergrid:incomplete_electrical_gizmo', ['powergrid:incomplete_electrical_gizmo', 'powergrid:integrated_circuit'])
         ]
     ).transitionalItem('powergrid:incomplete_electrical_gizmo')
-
+    event.recipes.create.crushing(CreateItem.of('minecraft:ancient_debris', 0.015), 'minecraft:red_nether_bricks')
     event.recipes.create.cutting(Item.of('creatoriocore:silicon_wafer', 4), 'creatoriocore:silicon_boule')
     event.recipes.create.cutting(Item.of('creatoriocore:silicon_strips', 4), 'creatoriocore:silicon_wafer')
     event.recipes.create.cutting(Item.of('creatoriocore:silicon_chips', 4), 'creatoriocore:silicon_strips')
@@ -152,7 +152,16 @@ ServerEvents.recipes(event => {
             { id: 'minecraft:nether_star' }
         ]
     })
-
+    event.recipes.create.sequenced_assembly(
+        'creatoriocore:extremely_precise_mechanism',
+        'create:precision_mechanism',
+        [
+            event.recipes.create.deploying('creatoriocore:incomplete_extremely_precise_mechanism', ['creatoriocore:incomplete_extremely_precise_mechanism', 'malum:soul_stained_steel_plating']),
+            event.recipes.create.deploying('creatoriocore:incomplete_extremely_precise_mechanism', ['creatoriocore:incomplete_extremely_precise_mechanism', 'tfmg:steel_cogwheel']),
+            event.recipes.create.deploying('creatoriocore:incomplete_extremely_precise_mechanism', ['creatoriocore:incomplete_extremely_precise_mechanism', 'createdeco:netherite_nugget']),
+            event.recipes.create.deploying('creatoriocore:incomplete_extremely_precise_mechanism', ['creatoriocore:incomplete_extremely_precise_mechanism', 'tfmg:steel_mechanism'])
+        ]
+    ).transitionalItem('creatoriocore:incomplete_extremely_precise_mechanism')
     event.recipes.create.sequenced_assembly(
         'creatoriocore:advanced_electron_tube',
         'create:electron_tube',

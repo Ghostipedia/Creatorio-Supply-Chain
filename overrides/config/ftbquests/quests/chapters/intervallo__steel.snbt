@@ -124,7 +124,7 @@
 				item: { count: 1, id: "tfmg:diesel_bucket" }
 				type: "item"
 			}]
-			x: -1.0d
+			x: 0.5d
 			y: 1.0d
 		}
 		{
@@ -135,7 +135,7 @@
 				item: { count: 1, id: "tfmg:lpg_bucket" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: 1.5d
 			y: 1.0d
 		}
 		{
@@ -146,7 +146,7 @@
 				item: { count: 1, id: "tfmg:gasoline_bucket" }
 				type: "item"
 			}]
-			x: -2.0d
+			x: -0.5d
 			y: 1.0d
 		}
 		{
@@ -157,7 +157,7 @@
 				item: { count: 1, id: "tfmg:kerosene_bucket" }
 				type: "item"
 			}]
-			x: -3.0d
+			x: -1.5d
 			y: 1.0d
 		}
 		{
@@ -319,7 +319,10 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["0E5659E1AB3385AC"]
+			dependencies: [
+				"0E5659E1AB3385AC"
+				"71DC59BCC640C831"
+			]
 			id: "1BDBAB716CB38E4D"
 			tasks: [{
 				id: "2A7E22160E4AC78E"
@@ -579,6 +582,29 @@
 			}]
 			x: 4.5d
 			y: -1.0d
+		}
+		{
+			dependencies: ["6E0E65D3F782B1D8"]
+			id: "71DC59BCC640C831"
+			tasks: [{
+				id: "22AFDE73124EE7B6"
+				item: { count: 1, id: "minecraft:ancient_debris" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["57AEDC8C96065F80"]
+			hide_dependency_lines: true
+			id: "6E0E65D3F782B1D8"
+			tasks: [{
+				id: "5E89FEC32973440E"
+				item: { count: 1, id: "minecraft:red_nether_bricks" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -0.5d
 		}
 	]
 }

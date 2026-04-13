@@ -240,6 +240,16 @@ ServerEvents.recipes(event => {
         B: 'create:precision_mechanism',
         C: 'create:display_link'
     })
+    event.recipes.create.deploying('2x creatoriocore:soul_steel_casing_modular_board', ['malum:soul_stained_steel_plating', 'tfmg:hardened_planks'])
+    event.custom({
+        type: 'dndesires:seething',
+        ingredients: [
+            { item: 'minecraft:snowball' }
+        ],
+        results: [
+            { id: 'minecraft:ghast_tear', chance: 0.15 }
+        ]
+    })
 
 
 
@@ -296,7 +306,7 @@ ServerEvents.recipes(event => {
     event.recipes.create.crushing('2x creatoriocore:crumbling_lead', 'create:crushed_raw_lead')
     event.recipes.create.crushing('2x creatoriocore:crumbling_copper', 'create:crushed_raw_copper')
     event.recipes.create.crushing('creatoriocore:nether_slag', 'minecraft:nether_bricks')
-    event.recipes.create.crushing(['minecraft:gravel',CreateItem.of('3x create:copper_nugget', 0.15)], 'minecraft:granite')
+    event.recipes.create.crushing(['minecraft:gravel', CreateItem.of('3x create:copper_nugget', 0.15)], 'minecraft:granite')
 
 
 
@@ -319,8 +329,9 @@ ServerEvents.recipes(event => {
     event.recipes.createvintageneoforged.vibrating(['creatoriocore:sifted_tin', CreateItem.of('creatoriocore:sifted_tin', 0.25)], 'creatoriocore:milled_tin')
 
 
-
-
+    //MISC
+    event.recipes.create.compacting('minecraft:blaze_rod', 'minecraft:blaze_powder')
+    event.recipes.create.haunting('minecraft:spider_eye', 'minecraft:oxeye_daisy')
 
     //MIXER
     event.recipes.create.mixing(Item.of('creatoriocore:weak_putty', 6), ['4x minecraft:clay_ball', 'minecraft:kelp', 'minecraft:wheat'])
