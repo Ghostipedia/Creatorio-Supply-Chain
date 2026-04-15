@@ -209,6 +209,10 @@
 			}
 			id: "064314D458FC80F7"
 			shape: "gear"
+			tasks: [{
+				id: "56E846727C4D240D"
+				type: "checkmark"
+			}]
 			x: -2.0d
 			y: -1.0d
 		}

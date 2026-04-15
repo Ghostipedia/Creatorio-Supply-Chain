@@ -7,6 +7,7 @@ ItemEvents.modifyTooltips(event => {
     event.add('farmersdelight:straw', Text.of('Wheat with Create.').white())
     
     
+    event.add('creatoriocore:steel_frogport', Text.of('TODO: UPDATE MODEL').red())
     event.add('create_rns:tin_deposit_block', Text.of('Tin Only Spawns in the Nether.').red())
     event.add('create_rns:tin_deposit_block', Text.of('Overworld Variant is there as a crash safeguard, does nothing.').red())
 

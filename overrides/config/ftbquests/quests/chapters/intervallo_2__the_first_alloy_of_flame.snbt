@@ -545,7 +545,7 @@
 				item: { count: 1, id: "createvintageneoforged:spring_coiling_machine" }
 				type: "item"
 			}]
-			x: 10.0d
+			x: 7.0d
 			y: 3.0d
 		}
 		{
@@ -556,59 +556,19 @@
 				item: { count: 1, id: "creatoriocore:drawn_quartz_string" }
 				type: "item"
 			}]
-			x: 10.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["2417977FCE5FBC2A"]
-			id: "2A79AC5A588DC554"
-			tasks: [{
-				id: "78C02FB4025250E2"
-				item: { count: 1, id: "creatoriocore:molten_lapis_bucket" }
-				type: "item"
-			}]
 			x: 7.0d
-			y: 5.0d
+			y: 4.5d
 		}
 		{
-			dependencies: [
-				"32B4428F7672AB8C"
-				"2A79AC5A588DC554"
-			]
-			id: "6833AEBCF202E4FB"
-			tasks: [{
-				id: "13322CFBDB7A44C0"
-				item: { count: 1, id: "creatoriocore:cypherwire" }
-				type: "item"
-			}]
-			x: 10.0d
-			y: 5.0d
-		}
-		{
-			dependencies: [
-				"6833AEBCF202E4FB"
-				"000D18FE58950EA5"
-				"2407E60656FDD49A"
-			]
+			dependencies: ["32B4428F7672AB8C"]
 			id: "2D6A54F3A02F17EC"
 			tasks: [{
 				id: "240B47DF1FBA9FF8"
 				item: { count: 1, id: "creatoriocore:insulated_cypherwire" }
 				type: "item"
 			}]
-			x: 10.0d
-			y: 6.5d
-		}
-		{
-			dependencies: ["2407E60656FDD49A"]
-			id: "000D18FE58950EA5"
-			tasks: [{
-				id: "0E943DCD86530601"
-				item: { count: 1, id: "tfmg:coal_coke_dust" }
-				type: "item"
-			}]
-			x: 8.5d
-			y: 6.5d
+			x: 9.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -621,8 +581,8 @@
 				item: { count: 1, id: "creatoriocore:cypherwire_spool" }
 				type: "item"
 			}]
-			x: 11.5d
-			y: 4.5d
+			x: 9.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -637,8 +597,8 @@
 				item: { count: 1, id: "minecraft:elytra" }
 				type: "item"
 			}]
-			x: 13.5d
-			y: 4.5d
+			x: 10.5d
+			y: 3.5d
 		}
 		{
 			dependencies: [

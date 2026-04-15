@@ -374,7 +374,7 @@
 			id: "02340E118E72726F"
 			tasks: [{
 				id: "31DC9ADBEC19525E"
-				item: { count: 1, id: "createadditionallogistics:package_accelerator" }
+				item: { components: { "ftbquests:missing_item": "createadditionallogistics:package_accelerator" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 4.5d

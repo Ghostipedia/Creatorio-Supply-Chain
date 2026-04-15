@@ -53,42 +53,23 @@
 				item: { count: 1, id: "minecraft:tuff" }
 				type: "item"
 			}]
-			x: -2.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["627838DBD95B00AE"]
-			id: "0B52B07B1788CA65"
-			tasks: [{
-				id: "0F89F46CC56B7425"
-				item: { count: 1, id: "minecraft:andesite" }
-				type: "item"
-			}]
 			x: 0.0d
 			y: -3.5d
 		}
 		{
 			id: "0A339EE2533A3E5B"
-			tasks: [
-				{
-					id: "64D74D10891BFECB"
-					item: { count: 1, id: "minecraft:kelp" }
-					type: "item"
-				}
-				{
-					id: "1D25B6DB153982EB"
-					item: { count: 1, id: "minecraft:dried_kelp" }
-					type: "item"
-				}
-			]
-			x: -3.5d
+			tasks: [{
+				id: "64D74D10891BFECB"
+				item: { count: 1, id: "minecraft:kelp" }
+				type: "item"
+			}]
+			x: -2.0d
 			y: -2.0d
 		}
 		{
 			dependencies: [
 				"0A339EE2533A3E5B"
 				"443F55F618A0DAAB"
-				"0B52B07B1788CA65"
 				"63C13561D4A2FF66"
 			]
 			id: "62C5799CDBB98AE3"

@@ -101,6 +101,45 @@ ServerEvents.recipes(event => {
     event.recipes.createvintageneoforged.coiling('powergrid:copper_coil', 'create:copper_sheet')
     event.recipes.create.pressing('malum:soul_stained_steel_plating', 'malum:soul_stained_steel_ingot')
     event.recipes.create.mixing('malum:soul_stained_steel_ingot', ['tfmg:copper_sulfate', 'minecraft:dragon_breath', 'tfmg:steel_ingot', Fluid.of('creatoriocore:molten_lapis', 1000)]).superheated()
+    event.recipes.create.mixing('creatoriocore:high_quality_coke_iron_blend', ['creatoriocore:sifted_iron', 'tfmg:coal_coke_dust', 'create_aquatic_ambitions:calcium_rich_powder']).superheated()
+    event.recipes.create.pressing(Item.of('rubberworks:rubber_sheet', 8), 'tfmg:rubber_sheet')
+    event.shapeless('creatoriocore:steel_repackager', 'creatoriocore:steel_packager')
+    event.shapeless('creatoriocore:steel_packager', 'creatoriocore:steel_repackager')
+    event.shaped('2x creatoriocore:entangled_repackager', [
+        'ABA',
+        'CDC',
+        'ABA'
+    ], {
+        A: 'creatoriocore:cypherwire_spool',
+        B: 'minecraft:ender_eye',
+        C: 'create:repackager',
+        D: 'create_connected:control_chip'
+    })
+    event.shaped('creatoriocore:steel_frogport', [
+        'ABA',
+        'CDC',
+        'BEB'
+    ], {
+        A: 'tfmg:rubber_sheet',
+        B: 'tfmg:steel_ingot',
+        C: 'create_connected:control_chip',
+        D: 'create:package_frogport',
+        E: 'create:precision_mechanism'
+    })
+    event.shaped('creatoriocore:steel_packager', [
+        ' A ',
+        'ABA',
+        'CAC'
+    ], {
+        A: 'tfmg:steel_ingot',
+        B: 'create:cardboard_block',
+        C: 'create_connected:control_chip'
+    })
+
+
+
+
+
     // event.custom(
     //     {
     //         "type": "malum:spirit_infusion",
@@ -142,7 +181,6 @@ ServerEvents.recipes(event => {
     //         ]
     //     }
     // ).id("malum:spirit_infusion.frontiers.steel_stained_soul")
-
     event.custom({
         type: 'create_dragons_plus:ending',
         ingredients: [

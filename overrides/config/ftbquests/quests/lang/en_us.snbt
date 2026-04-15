@@ -43,6 +43,13 @@
 	quest.02B742F686F88CCF.quest_subtitle: "Green Enough"
 	quest.064314D458FC80F7.title: "Contraptions"
 	quest.0A291D506EC39422.quest_subtitle: "Capture a Blaze"
+	quest.0A6113CFAA45E67C.quest_desc: [
+		"Currently you can only process items by throwing them on top."
+		""
+		""
+		"I'll try to fix this eventually, but for now this machine will see minimal use..."
+	]
+	quest.0A6113CFAA45E67C.quest_subtitle: "The ponder is WRONG"
 	quest.0E5659E1AB3385AC.quest_subtitle: "Early Soul Steel, the Bad Way"
 	quest.0F33047A2923634C.quest_desc: ["The Wrench is a tool which allows you to instantly break items without dropping them on the ground. Just shift-right click with the wrench and the item will be deconstructed into your inventory."]
 	quest.0F33047A2923634C.quest_subtitle: "A quick reminder"
