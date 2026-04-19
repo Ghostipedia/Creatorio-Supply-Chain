@@ -1,0 +1,11 @@
+[general]
+	#Any console messages containing any of these strings will be hidden.
+	basicFilters = [
+		"Cannot invoke \"xaero.map.WorldMapSession.getMapProcessor()\" because \"session\" is null",
+		"Couldn't load vanilla shader from",
+		"Failed to get Road Sign Block Entity during generation."
+	]
+	#Any console messages containing any of these regular expressions will be hidden. Uses Java regex syntax. Backslashes must be doubled, i.e. use \\s instead of \s to match whitespace.
+	regexFilters = []
+	#Any console messages from loggers with a name containing any of these strings will be hidden.
+	loggerFilters = []
