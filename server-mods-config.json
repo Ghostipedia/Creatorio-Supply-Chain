@@ -1,5 +1,16 @@
 {
   "blacklist": [
+    {"name": "Chloride (Embedium++)", "id": 931925 },
+    {"name": "Create Better FPS", "id": 1217518 },
+    {"name": "Distraction Free Receipes", "id": 1167848 },
+    {"name": "Immediately Fast", "id": 686911  },
+    {"name": "Iris Shaders", "id": 455508 },
+    {"name": "Legendary Tooltips", "id": 532127 },
+    {"name": "Mouse Tweaks", "id": 60089 },
+    {"name": "Prism", "id": 638111 },
+    {"name": "Sodium", "id": 394468 },
+    {"name": "Sodium/Embeddium Otions API", "id": 1103431 },
+    {"name": "Too Many Recipe Viewwers", "id": 1194921 }
   ],
   "manual_download": [
   ],
