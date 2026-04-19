@@ -18,6 +18,7 @@
   "server_only": [],
   "modrinth_fallbacks": {
     "923238": { "slug": "create-design-n-decor", "name": "Create: Design n' Decor" },
-    "864781": { "slug": "create-dreams-and-desires", "name": "Create: Dreams n' Desires" }
+    "864781": { "slug": "create-dreams-and-desires", "name": "Create: Dreams n' Desires" },
+    "1210309": { "slug": "aether-basic-ores", "name": "Aether: Basic Ores" }
   }
 }
