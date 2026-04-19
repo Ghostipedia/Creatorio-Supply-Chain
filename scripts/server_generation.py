@@ -195,14 +195,27 @@ def update_server_scripts_with_versions(serverpack_dir):
     
     with open(manifest_path, 'r', encoding='utf-8') as f:
         manifest = json.load(f)
+    
     # Parse Minecraft version
     mc_version = manifest.get('minecraft', {}).get('version', None)
-    # Parse Forge version (modLoaders is a list of dicts with id like 'forge-47.2.20')
-    forge_version = None
+    
+    # Parse loader type and version (modLoaders is a list of dicts with id like 'forge-47.2.20' or 'neoforge-21.1.224')
+    loader_version = None
+    loader_type = None
     for loader in manifest.get('minecraft', {}).get('modLoaders', []):
-        if loader.get('id', '').startswith('forge-'):
-            forge_version = loader['id'].split('-')[1]
+        loader_id = loader.get('id', '')
+        if loader_id.startswith('neoforge-'):
+            loader_type = 'neoforge'
+            loader_version = loader_id.split('-', 1)[1]
             break
+        elif loader_id.startswith('forge-'):
+            loader_type = 'forge'
+            loader_version = loader_id.split('-', 1)[1]
+            break
+
+    if not loader_version or not loader_type:
+        print(f"WARNING: Could not determine mod loader from manifest")
+        return
 
     # Replace in startserver.bat
     bat_path = os.path.join(serverpack_dir, 'startserver.bat')
@@ -211,8 +224,10 @@ def update_server_scripts_with_versions(serverpack_dir):
             content = f.read()
         if mc_version:
             content = re.sub(r'set MINECRAFT_VERSION=\{\{MINECRAFT_VERSION\}\}', f'set MINECRAFT_VERSION={mc_version}', content)
-        if forge_version:
-            content = re.sub(r'set FORGE_VERSION=\{\{FORGE_VERSION\}\}', f'set FORGE_VERSION={forge_version}', content)
+        if loader_version:
+            content = re.sub(r'set NEOFORGE_VERSION=\{\{NEOFORGE_VERSION\}\}', f'set NEOFORGE_VERSION={loader_version}', content)
+        if loader_type:
+            content = re.sub(r'set LOADER_TYPE=\{\{LOADER_TYPE\}\}', f'set LOADER_TYPE={loader_type}', content)
         with open(bat_path, 'w', encoding='utf-8') as f:
             f.write(content)
 
@@ -223,8 +238,10 @@ def update_server_scripts_with_versions(serverpack_dir):
             content = f.read()
         if mc_version:
             content = re.sub(r'MINECRAFT_VERSION=\{\{MINECRAFT_VERSION\}\}', f'MINECRAFT_VERSION={mc_version}', content)
-        if forge_version:
-            content = re.sub(r'FORGE_VERSION=\{\{FORGE_VERSION\}\}', f'FORGE_VERSION={forge_version}', content)
+        if loader_version:
+            content = re.sub(r'NEOFORGE_VERSION=\{\{NEOFORGE_VERSION\}\}', f'NEOFORGE_VERSION={loader_version}', content)
+        if loader_type:
+            content = re.sub(r'LOADER_TYPE=\{\{LOADER_TYPE\}\}', f'LOADER_TYPE={loader_type}', content)
         with open(sh_path, 'w', encoding='utf-8') as f:
             f.write(content)
 
