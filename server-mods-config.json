@@ -17,6 +17,7 @@
   ],
   "server_only": [],
   "modrinth_fallbacks": {
-    "923238": { "slug": "create-design-n-decor", "name": "Create: Design n' Decor" }
+    "923238": { "slug": "create-design-n-decor", "name": "Create: Design n' Decor" },
+    "864781": { "slug": "create-dreams-and-desires", "name": "Create: Dreams n' Desires" }
   }
 }
