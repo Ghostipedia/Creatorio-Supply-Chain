@@ -50,7 +50,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: build-artifacts-${{ github.event.release.tag_name }}
-          path: Creatorio.Supply.Chain*.zip
+          path: Creatorio*.zip
           if-no-files-found: error
           retention-days: 3
 
@@ -65,13 +65,13 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: build-artifacts-${{ github.event.release.tag_name }}
-      - name: Upload client pack to release
+      - name: Upload client + server packs to release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ github.event.release.tag_name }}
           files: |
             ./Creatorio.Supply.Chain.${{ github.event.release.tag_name }}.zip
-            ./Creatorio.Supply.Chain.Server.${{ github.event.release.tag_name }}.zip
+            ./Creatorio - Supply Chain Server Files - ${{ github.event.release.tag_name }}.zip
           fail_on_unmatched_files: false
 
   publish-curseforge:
@@ -92,7 +92,9 @@ jobs:
         with:
           curseforge-id: ${{ vars.CURSE_ID }}
           curseforge-token: ${{ secrets.CURSE_TOKEN }}
-          files: ./Creatorio.Supply.Chain*.zip
+          files: |
+            ./Creatorio.Supply.Chain.${{ github.event.release.tag_name }}.zip
+            ./Creatorio - Supply Chain Server Files - ${{ github.event.release.tag_name }}.zip
           name: "Creatorio Supply Chain ${{ github.event.release.tag_name }}"
           version: ${{ github.event.release.tag_name }}
           changelog: ${{ github.event.release.body }}

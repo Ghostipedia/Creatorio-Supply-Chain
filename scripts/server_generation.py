@@ -82,7 +82,10 @@ def generate_serverpack_zip(version=None, curseforge_api_key=None):
         readme_update(root_dir, serverpack_dir)
 
         # Zip the directory (only include the contents, not the root folder)
-        zip_name = f'Creatorio.Supply.Chain.Server.{version}.zip' if version else f'Creatorio.Supply.Chain.Server.zip'
+        zip_name = (
+            f'Creatorio - Supply Chain Server Files - {version}.zip'
+            if version else 'Creatorio - Supply Chain Server Files.zip'
+        )
         zip_path = os.path.join(root_dir, zip_name)
         
         print(f"Creating server zip file at {zip_path}")
