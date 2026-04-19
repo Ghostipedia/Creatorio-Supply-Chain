@@ -9,6 +9,7 @@ sys.path.append(os.path.dirname(__file__))
 
 from utils import copy_any, load_json, save_json
 from curse_client import get_mod_website_url, get_mod_download_url, get_api_key, get_headers
+from modrinth_client import get_download_url as get_modrinth_download_url
 
 SERVERPACK_DIRECTORY = "serverpack"
 MAX_CONCURRENT_DOWNLOADS = 8
@@ -185,23 +186,10 @@ def generate_filtered_manifest(root_dir, serverpack_dir):
     print(f'Filtered manifest.json generated at: {output_path}')
 
 
-def update_server_scripts_with_versions(serverpack_dir):
-    import re
-    manifest_path = os.path.join(serverpack_dir, 'manifest.json')
-    
-    if not os.path.exists(manifest_path):
-        print(f"WARNING: manifest.json not found at {manifest_path}, cannot update server scripts")
-        return
-    
-    with open(manifest_path, 'r', encoding='utf-8') as f:
-        manifest = json.load(f)
-    
-    # Parse Minecraft version
+def parse_mc_and_loader(manifest):
     mc_version = manifest.get('minecraft', {}).get('version', None)
-    
-    # Parse loader type and version (modLoaders is a list of dicts with id like 'forge-47.2.20' or 'neoforge-21.1.224')
-    loader_version = None
     loader_type = None
+    loader_version = None
     for loader in manifest.get('minecraft', {}).get('modLoaders', []):
         loader_id = loader.get('id', '')
         if loader_id.startswith('neoforge-'):
@@ -212,6 +200,21 @@ def update_server_scripts_with_versions(serverpack_dir):
             loader_type = 'forge'
             loader_version = loader_id.split('-', 1)[1]
             break
+    return mc_version, loader_type, loader_version
+
+
+def update_server_scripts_with_versions(serverpack_dir):
+    import re
+    manifest_path = os.path.join(serverpack_dir, 'manifest.json')
+
+    if not os.path.exists(manifest_path):
+        print(f"WARNING: manifest.json not found at {manifest_path}, cannot update server scripts")
+        return
+
+    with open(manifest_path, 'r', encoding='utf-8') as f:
+        manifest = json.load(f)
+
+    mc_version, loader_type, loader_version = parse_mc_and_loader(manifest)
 
     if not loader_version or not loader_type:
         print(f"WARNING: Could not determine mod loader from manifest")
@@ -263,6 +266,10 @@ def download_mods_from_curseforge(serverpack_dir, curseforge_api_key=None):
     config = load_json(config_path)
     manual_download_ids = {mod['id'] for mod in config.get('manual_download', [])}
     server_only_mods = {mod['id']: mod for mod in config.get('server_only', [])}
+    modrinth_fallbacks = {
+        str(pid): entry for pid, entry in config.get('modrinth_fallbacks', {}).items()
+    }
+    mc_version, loader_type, _loader_version = parse_mc_and_loader(manifest)
 
     def download_mod(mod):
         project_id = mod.get('projectID')
@@ -280,10 +287,21 @@ def download_mods_from_curseforge(serverpack_dir, curseforge_api_key=None):
             file_id = server_only_mods[project_id]['fileID']
         if not project_id or not file_id:
             raise RuntimeError(f"ERROR: Failed to parse project id or file id for mod '{mod}'")
-        # Use the passed API key
         file_url = get_mod_download_url(project_id, file_id, api_key=api_key)
         if not file_url:
-            raise RuntimeError(f"ERROR: No download url found for mod {project_id} {file_id}")
+            fallback = modrinth_fallbacks.get(str(project_id))
+            if fallback and mc_version and loader_type:
+                slug = fallback['slug']
+                name = fallback.get('name', slug)
+                file_url = get_modrinth_download_url(slug, mc_version, loader_type)
+                if file_url:
+                    print(f"\tCF blocked {name} ({project_id}) - using Modrinth mirror '{slug}'")
+        if not file_url:
+            raise RuntimeError(
+                f"ERROR: No download url found for mod {project_id} {file_id} "
+                f"(CF blocked, no Modrinth fallback configured - add '{project_id}' "
+                f"to modrinth_fallbacks in server-mods-config.json)"
+            )
         print(f"\tDownloading {file_url}")
         mod_resp = requests.get(file_url, stream=True)
         if mod_resp.status_code == 200:

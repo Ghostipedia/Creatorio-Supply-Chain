@@ -15,5 +15,8 @@
   ],
   "manual_download": [
   ],
-  "server_only": []
+  "server_only": [],
+  "modrinth_fallbacks": {
+    "923238": { "slug": "create-design-n-decor", "name": "Create: Design n' Decor" }
+  }
 }
