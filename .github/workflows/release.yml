@@ -87,15 +87,15 @@ jobs:
         with:
           name: build-artifacts-${{ github.event.release.tag_name }}
 
-      - name: Upload client pack to Curseforge
+      - name: Upload client + server packs to Curseforge
         uses: Kir-Antipov/mc-publish@v3.3.0
         with:
           curseforge-id: ${{ vars.CURSE_ID }}
           curseforge-token: ${{ secrets.CURSE_TOKEN }}
-          files: ./Creatorio.Supply.Chain.${{ github.event.release.tag_name }}.zip
+          files: ./Creatorio.Supply.Chain*.zip
           name: "Creatorio Supply Chain ${{ github.event.release.tag_name }}"
           version: ${{ github.event.release.tag_name }}
           changelog: ${{ github.event.release.body }}
           version-type: release
-          loaders: forge
-          game-versions: 1.20.1
+          loaders: neoforge
+          game-versions: 1.21.1
