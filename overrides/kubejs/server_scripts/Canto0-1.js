@@ -254,12 +254,18 @@ ServerEvents.recipes(event => {
 
 
     // SMELTING
-    event.smelting('minecraft:iron_ingot', 'creatoriocore:crumbling_iron')
-    event.smelting('minecraft:gold_ingot', 'creatoriocore:crumbling_gold')
-    event.smelting('create:zinc_ingot', 'creatoriocore:crumbling_zinc')
-    event.smelting('tfmg:nickel_ingot', 'creatoriocore:crumbling_nickel')
-    event.smelting('tfmg:lead_ingot', 'creatoriocore:crumbling_lead')
-    event.smelting('minecraft:copper_ingot', 'creatoriocore:crumbling_copper')
+    event.smelting('minecraft:iron_ingot', 'creatoriocore:crumbling_iron').xp(0.1)
+    event.smelting('minecraft:gold_ingot', 'creatoriocore:crumbling_gold').xp(0.1)
+    event.smelting('create:zinc_ingot', 'creatoriocore:crumbling_zinc').xp(0.1)
+    event.smelting('tfmg:nickel_ingot', 'creatoriocore:crumbling_nickel').xp(0.1)
+    event.smelting('tfmg:lead_ingot', 'creatoriocore:crumbling_lead').xp(0.1)
+    event.smelting('minecraft:copper_ingot', 'creatoriocore:crumbling_copper').xp(0.1)
+    event.blasting('minecraft:iron_ingot', 'creatoriocore:crumbling_iron').xp(0.1)
+    event.blasting('minecraft:gold_ingot', 'creatoriocore:crumbling_gold').xp(0.1)
+    event.blasting('create:zinc_ingot', 'creatoriocore:crumbling_zinc').xp(0.1)
+    event.blasting('tfmg:nickel_ingot', 'creatoriocore:crumbling_nickel').xp(0.1)
+    event.blasting('tfmg:lead_ingot', 'creatoriocore:crumbling_lead').xp(0.1)
+    event.blasting('minecraft:copper_ingot', 'creatoriocore:crumbling_copper').xp(0.1)
     event.blasting('creatoriocore:sintered_flint', 'minecraft:flint')
 
     // Iron
