@@ -238,5 +238,18 @@
 			x: -3.5d
 			y: -5.0d
 		}
+		{
+			dependencies: ["5191777DC94F6A73"]
+			icon: {
+				id: "create:crafting_blueprint"
+			}
+			id: "4389066D2B9F140E"
+			tasks: [{
+				id: "2AAA37C9C569C1EB"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
 	]
 }

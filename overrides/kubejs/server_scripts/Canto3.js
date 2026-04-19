@@ -8,10 +8,27 @@ ServerEvents.recipes(event => {
         'creatoriocore:cypherwire_housing',
         ['tfmg:hardened_planks', 'creatoriocore:cypherwire_spool']
     )
-    event.recipes.create.item_application(
-        'powergrid:conductive_casing',
-        ['tfmg:steel_casing', 'powergrid:electrical_gizmo']
-    )
+    event.shaped('creatoriocore:induction_magnet', [
+        'ABA',
+        'CDC',
+        'ABA'
+    ], {
+        A: 'tfmg:heavy_plate',
+        B: 'tfmg:nickel_ingot',
+        C: 'minecraft:redstone_block',
+        D: 'tfmg:steel_casing'
+    })
+
+
+    event.shaped('create_new_age:generator_coil', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'minecraft:copper_block',
+        B: 'tfmg:steel_block',
+        C: 'creatoriocore:extremely_precise_mechanism'
+    })
     event.shaped('tfmg:steel_distillation_controller', [
         'ABA',
         'CDC',
@@ -47,58 +64,87 @@ ServerEvents.recipes(event => {
         E: 'tfmg:screw',
         F: 'tfmg:large_steel_cogwheel'
     })
-    event.shaped('powergrid:rheostat', [
-        'AB ',
-        'CDC',
-        'CEC'
+    event.shaped('creatoriocore:transformer_hv_ehv', [
+        'ABC',
+        'ABC',
+        'DDD'
     ], {
-        A: 'creatoriocore:coal_dust',
-        B: 'create:shaft',
-        C: 'powergrid:resistive_coil',
-        D: 'create_connected:control_chip',
-        E: 'powergrid:conductive_casing'
+        A: 'creatoriocore:wire_steel',
+        B: 'tfmg:steel_mechanism',
+        C: 'creatoriocore:wire_aluminium',
+        D: 'tfmg:steel_casing'
     })
-
-
-    event.recipes.create.mechanical_crafting(
-        'powergrid:generator_induction_rotor',
-        [
-            'BDB',
-            'DQD',
-            'BDB'
-        ],
-        {
-            D: 'powergrid:magnet',
-            Q: 'create:shaft',
-            B: 'powergrid:copper_coil'
-        }
-    )
+    event.shaped('creatoriocore:transformer_mv_hv', [
+        'ABC',
+        'ABC',
+        'DDD'
+    ], {
+        A: 'creatoriocore:wire_gold',
+        B: 'tfmg:steel_mechanism',
+        C: 'creatoriocore:wire_steel',
+        D: 'tfmg:steel_casing'
+    })
+    event.shaped('creatoriocore:transformer_lv_mv', [
+        'ABC',
+        'ABC',
+        'DDD'
+    ], {
+        A: 'creatoriocore:wire_copper',
+        B: 'tfmg:steel_mechanism',
+        C: 'creatoriocore:wire_gold',
+        D: 'tfmg:steel_casing'
+    })
+    event.shaped('creatoriocore:connector_lv', [
+        ' A ',
+        'ABA',
+        ' B '
+    ], {
+        A: 'create:copper_sheet',
+        B: 'minecraft:terracotta'
+    })
+    event.shaped('creatoriocore:connector_mv', [
+        ' A ',
+        'ABA',
+        ' B '
+    ], {
+        A: 'create:golden_sheet',
+        B: 'minecraft:terracotta'
+    })
+    event.shaped('creatoriocore:connector_hv', [
+        ' A ',
+        'ABA',
+        ' B '
+    ], {
+        A: 'tfmg:heavy_plate',
+        B: 'minecraft:terracotta'
+    })
+    event.shaped('creatoriocore:connector_ehv', [
+        ' A ',
+        'ABA',
+        ' B '
+    ], {
+        A: 'tfmg:aluminum_sheet',
+        B: 'minecraft:terracotta'
+    })
+    event.recipes.createvintageneoforged.coiling('creatoriocore:wire_copper', 'create:copper_sheet')
+    event.recipes.createvintageneoforged.coiling('creatoriocore:wire_gold', 'create:golden_sheet')
+    event.recipes.createvintageneoforged.coiling('creatoriocore:wire_steel', 'tfmg:heavy_plate')
+    event.recipes.createvintageneoforged.coiling('creatoriocore:wire_aluminium', 'tfmg:aluminum_sheet')
     event.recipes.create.sequenced_assembly(
         'tfmg:circuit_board',
         'tfmg:etched_circuit_board',
         [
             event.recipes.create.deploying('tfmg:unfinished_circuit_board', ['tfmg:unfinished_circuit_board', 'tfmg:capacitor_item']),
-            event.recipes.create.deploying('tfmg:unfinished_circuit_board', ['tfmg:unfinished_circuit_board', 'powergrid:resistor']),
+            event.recipes.create.deploying('tfmg:unfinished_circuit_board', ['tfmg:unfinished_circuit_board', 'creatoriocore:silicon_chips']),
             event.recipes.create.deploying('tfmg:unfinished_circuit_board', ['tfmg:unfinished_circuit_board', 'tfmg:transistor_item']),
-            event.recipes.create.deploying('tfmg:unfinished_circuit_board', ['tfmg:unfinished_circuit_board', 'powergrid:resistor'])
+            event.recipes.create.deploying('tfmg:unfinished_circuit_board', ['tfmg:unfinished_circuit_board', 'creatoriocore:silicon_chips'])
         ]
     ).transitionalItem('tfmg:unfinished_circuit_board').loops(4)
-    event.recipes.create.sequenced_assembly(
-        'powergrid:electrical_gizmo',
-        'powergrid:zinc_sheet',
-        [
-            event.recipes.create.deploying('powergrid:incomplete_electrical_gizmo', ['powergrid:incomplete_electrical_gizmo', 'creatoriocore:advanced_electron_tube']),
-            event.recipes.create.deploying('powergrid:incomplete_electrical_gizmo', ['powergrid:incomplete_electrical_gizmo', 'tfmg:steel_mechanism']),
-            event.recipes.create.deploying('powergrid:incomplete_electrical_gizmo', ['powergrid:incomplete_electrical_gizmo', 'creatoriocore:silicon_chips']),
-            event.recipes.create.deploying('powergrid:incomplete_electrical_gizmo', ['powergrid:incomplete_electrical_gizmo', 'powergrid:integrated_circuit'])
-        ]
-    ).transitionalItem('powergrid:incomplete_electrical_gizmo')
     event.recipes.create.crushing(CreateItem.of('minecraft:ancient_debris', 0.015), 'minecraft:red_nether_bricks')
     event.recipes.create.cutting(Item.of('creatoriocore:silicon_wafer', 4), 'creatoriocore:silicon_boule')
     event.recipes.create.cutting(Item.of('creatoriocore:silicon_strips', 4), 'creatoriocore:silicon_wafer')
     event.recipes.create.cutting(Item.of('creatoriocore:silicon_chips', 4), 'creatoriocore:silicon_strips')
     event.recipes.create.cutting(Item.of('creatoriocore:andesite_alloy_braces', 4), 'create:shaft')
-    event.recipes.createvintageneoforged.coiling('powergrid:copper_coil', 'create:copper_sheet')
     event.recipes.create.pressing('malum:soul_stained_steel_plating', 'malum:soul_stained_steel_ingot')
     event.recipes.create.mixing('malum:soul_stained_steel_ingot', ['tfmg:copper_sulfate', 'minecraft:dragon_breath', 'tfmg:steel_ingot', Fluid.of('creatoriocore:molten_lapis', 1000)]).superheated()
     event.recipes.create.mixing('creatoriocore:high_quality_coke_iron_blend', ['creatoriocore:sifted_iron', 'tfmg:coal_coke_dust', 'create_aquatic_ambitions:calcium_rich_powder']).superheated()
@@ -138,49 +184,20 @@ ServerEvents.recipes(event => {
 
 
 
+    event.recipes.create.compacting('deep_aether:bio_crystal', ['farmersdelight:organic_compost', 'minecraft:sand', Fluid.of('create_mechanical_chicken:chicken_nutrient', 250)]).heated()
+    event.recipes.create.compacting(Item.of('minecraft:coal', 4), 'deep_aether:bio_crystal').superheated()
 
 
-    // event.custom(
-    //     {
-    //         "type": "malum:spirit_infusion",
-    //         "extra_items": [
-    //             {
-    //                 "count": 4,
-    //                 "item": "gtceu:soulresin_ingot"
-    //             },
-    //             {
-    //                 "count": 1,
-    //                 "item": "malum:processed_soulstone"
-    //             },
-    //             {
-    //                 "count": 1,
-    //                 "item": "tconstruct:magma_bottle"
-    //             }
-    //         ],
-    //         "input": {
-    //             "count": 4,
-    //             "item": "gtceu:aluminium_ingot"
-    //         },
-    //         "output": {
-    //             "count": 4,
-    //             "item": "malum:soul_stained_steel_ingot"
-    //         },
-    //         "spirits": [
-    //             {
-    //                 "type": "wicked",
-    //                 "count": 3
-    //             },
-    //             {
-    //                 "type": "arcane",
-    //                 "count": 2
-    //             },
-    //             {
-    //                 "type": "earthen",
-    //                 "count": 1
-    //             },
-    //         ]
-    //     }
-    // ).id("malum:spirit_infusion.frontiers.steel_stained_soul")
+    event.custom({
+        type: 'creatoriocore:crogiolo',
+        ingredients: [{ item: 'creatoriocore:high_quality_coke_iron_blend' }, { item: 'tfmg:coal_coke_dust' }, { item: 'create_aquatic_ambitions:calcium_rich_powder' }, { item: 'minecraft:dragon_breath' }],
+        stages: [{ tier: 'warm', duration: 600 }, { tier: 'hot', duration: 600 }, { tier: 'blazing', duration: 600 }, { tier: 'searing', duration: 600 }],
+        results: [{ id: 'tfmg:molten_steel', amount: 288 }, { id: 'tfmg:molten_slag', amount: 288 }],
+        slag_ratio: 0.1
+    })
+
+
+
     event.custom({
         type: 'create_dragons_plus:ending',
         ingredients: [

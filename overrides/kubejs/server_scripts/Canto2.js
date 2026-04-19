@@ -110,7 +110,6 @@ ServerEvents.recipes(event => {
         CreateItem.of('minecraft:gray_dye', 0.143)
     ], 'creatoriocore:cool_ink_pigment')
     event.recipes.tfmg.casting('tfmg:steel_ingot', Fluid.of('tfmg:molten_steel', 144)).processingTime(600)
-    event.recipes.tfmg.industrial_blasting([Fluid.of('tfmg:molten_steel', 144), Fluid.of('tfmg:molten_slag', 288)], ['creatoriocore:high_quality_coke_iron_blend', 'minecraft:dragon_breath']).processingTime(2400)
     event.recipes.create.mixing(Fluid.of('creatoriocore:royal_ink', 1000), ['creatoriocore:lapis_redstone_mixture', Fluid.of('creatoriocore:high_quality_ink', 1000)]).heated()
     event.recipes.create.mixing(Item.of('creatoriocore:lapis_redstone_mixture', 2), ['minecraft:redstone', 'creatoriocore:lapis_dust'])
     event.recipes.create.compacting(Fluid.of('creatoriocore:high_quality_ink', 1000), ['creatoriocore:pure_ink_pearl', Fluid.of('minecraft:water', 1000)]).heated()
@@ -151,9 +150,68 @@ ServerEvents.recipes(event => {
     event.recipes.createvintageneoforged.laser_cutting('creatoriocore:invar_gear', 'creatoriocore:invar_plate')
     event.recipes.create.pressing('creatoriocore:invar_plate', 'creatoriocore:invar_ingot')
     event.recipes.create.pressing('creatoriocore:bronze_plate', 'creatoriocore:bronze_ingot')
-    event.recipes.tfmg.industrial_blasting(Fluid.of('tfmg:liquid_silicon', 250), 'creatoriocore:silicon_dust')
     event.recipes.tfmg.casting('tfmg:silicon_ingot', Fluid.of('tfmg:liquid_silicon', 500))
     event.recipes.tfmg.vat_machine_recipe('creatoriocore:insulated_cypherwire', ['4x creatoriocore:drawn_quartz_string', Fluid.of('rubberworks:resin', 1000)]).superheated().allowedVatTypes(['tfmg:cast_iron_vat'])
+    // Night Vision -> Hot Cinderfuel
+    event.custom({
+        type: 'create:mixing',
+        heat_requirement: 'heated',
+        ingredients: [
+            { item: 'minecraft:dried_kelp' },
+            { item: 'minecraft:egg' },
+            { type: 'neoforge:components', fluids: 'create:potion', components: { 'minecraft:potion_contents': { potion: 'minecraft:night_vision' } }, amount: 1000 }
+        ],
+        results: [{ id: 'creatoriocore:fuel_hot', amount: 1000 }]
+    })
+
+    // Swiftness -> Blazing Cinderfuel
+    event.custom({
+        type: 'create:mixing',
+        heat_requirement: 'heated',
+        ingredients: [
+            { item: 'minecraft:glow_berries' },
+            { item: 'minecraft:sweet_berries' },
+            { type: 'neoforge:components', fluids: 'create:potion', components: { 'minecraft:potion_contents': { potion: 'minecraft:swiftness' } }, amount: 1000 }
+        ],
+        results: [{ id: 'creatoriocore:fuel_blazing', amount: 1000 }]
+    })
+
+    // Fire Resistance -> Searing Cinderfuel
+    event.custom({
+        type: 'create:mixing',
+        heat_requirement: 'heated',
+        ingredients: [
+            { item: 'someassemblyrequired:tomato_slices' },
+            { item: 'farmersdelight:pumpkin_slice' },
+            { type: 'neoforge:components', fluids: 'create:potion', components: { 'minecraft:potion_contents': { potion: 'minecraft:fire_resistance' } }, amount: 1000 }
+        ],
+        results: [{ id: 'creatoriocore:fuel_searing', amount: 1000 }]
+    })
+    event.shaped('creatoriocore:foundry_frame', [
+        'AAA',
+        'BBB',
+        'AAA'
+    ], {
+        A: 'tfmg:cast_iron_sheet',
+        B: 'create:brass_casing'
+    })
+    event.shaped('creatoriocore:foundry_blaze', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'dndecor:dark_metal_block',
+        B: 'create:blaze_cake',
+        C: 'create:blaze_burner'
+    })
+    event.shaped('creatoriocore:refractory_casing', [
+        'AAA',
+        'ABA',
+        'AAA'
+    ], {
+        A: 'tfmg:cast_iron_sheet',
+        B: 'tfmg:fireproof_bricks'
+    })
     event.recipes.create.sequenced_assembly(
         'creatoriocore:bronze_gear_assembly',
         'creatoriocore:bronze_gear',
@@ -248,4 +306,13 @@ ServerEvents.recipes(event => {
             event.recipes.create.deploying('creatoriocore:incomplete_recordkeepers_grand_scroll_archive', ['creatoriocore:incomplete_recordkeepers_grand_scroll_archive', 'creatoriocore:recordkeepers_scroll'])
         ]
     ).transitionalItem('creatoriocore:incomplete_recordkeepers_grand_scroll_archive').loops(4)
+
+
+
+    event.custom({
+        type: 'creatoriocore:crogiolo',
+        ingredients: [{ item: 'creatoriocore:silicon_dust' }],
+        stages: [{ tier: 'hot', duration: 600 }, { tier: 'blazing', duration: 600 }],
+        results: [{ id: 'tfmg:liquid_silicon', amount: 250 }]
+    })
 })

@@ -29,8 +29,9 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["29628DF6C3C4E804"]
 			icon: {
-				id: "tfmg:blast_furnace_output"
+				id: "creatoriocore:foundry_blaze"
 			}
 			id: "7ED9A50432CF1D62"
 			tasks: [{
@@ -118,7 +119,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: -2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["7ED9A50432CF1D62"]
@@ -335,10 +336,10 @@
 			dependencies: [
 				"6A944C636FD19F8C"
 				"7BC71302F8771862"
+				"54CE29D3C36CB4D7"
 			]
 			id: "3CC265748B4DF058"
-			shape: "hexagon"
-			size: 1.0d
+			size: 1.5d
 			tasks: [{
 				id: "6A4621C86EF4262D"
 				item: { count: 1, id: "tfmg:steel_ingot" }
@@ -348,7 +349,10 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["62EF690CCBB86242"]
+			dependencies: [
+				"62EF690CCBB86242"
+				"54CE29D3C36CB4D7"
+			]
 			id: "6A944C636FD19F8C"
 			tasks: [{
 				id: "35DCC73BD64FABC2"
@@ -366,18 +370,7 @@
 				item: { count: 1, id: "dndesires:omni_gearbox" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["20CDD9E88762D841"]
-			id: "02340E118E72726F"
-			tasks: [{
-				id: "31DC9ADBEC19525E"
-				item: { components: { "ftbquests:missing_item": "createadditionallogistics:package_accelerator" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 4.5d
+			x: 7.0d
 			y: 0.0d
 		}
 		{
@@ -471,6 +464,28 @@
 			}]
 			x: 3.0d
 			y: 9.5d
+		}
+		{
+			dependencies: ["15B9F43B7AC1C15C"]
+			id: "54CE29D3C36CB4D7"
+			tasks: [{
+				id: "5F09038CA09D1B17"
+				item: { count: 1, id: "create_aquatic_ambitions:calcium_rich_powder" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7ED9A50432CF1D62"]
+			id: "15B9F43B7AC1C15C"
+			tasks: [{
+				id: "2DCD506DC0933CC2"
+				item: { count: 1, id: "create:limestone" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 5.5d
 		}
 	]
 }

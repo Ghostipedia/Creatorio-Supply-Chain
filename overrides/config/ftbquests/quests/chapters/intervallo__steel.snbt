@@ -276,7 +276,10 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["0E5659E1AB3385AC"]
+			dependencies: [
+				"0E5659E1AB3385AC"
+				"3D7151D129FF0276"
+			]
 			id: "554C7B5EEB5DA46D"
 			tasks: [{
 				id: "44BAA507F85D5C14"
@@ -287,34 +290,17 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["57AEDC8C96065F80"]
-			id: "0D65C14737315849"
-			tasks: [{
-				id: "18BB1804AB5616CF"
-				item: { count: 1, id: "powergrid:electrical_gizmo" }
-				type: "item"
-			}]
-			x: 4.0d
-			y: 3.0d
-		}
-		{
 			dependencies: [
-				"0D65C14737315849"
+				"57AEDC8C96065F80"
 				"1BDBAB716CB38E4D"
 			]
 			id: "3C438C3BCF92D6B1"
-			tasks: [
-				{
-					id: "7173D5531AB6E6FF"
-					item: { count: 1, id: "powergrid:generator_induction_rotor" }
-					type: "item"
-				}
-				{
-					id: "2439D570ECEDC58F"
-					item: { count: 1, id: "powergrid:copper_coil" }
-					type: "item"
-				}
-			]
+			size: 2.0d
+			tasks: [{
+				id: "5C336D8030B4F7B2"
+				item: { count: 1, id: "create_new_age:generator_coil" }
+				type: "item"
+			}]
 			x: 6.0d
 			y: 3.0d
 		}
@@ -331,136 +317,6 @@
 			}]
 			x: 6.0d
 			y: 0.5d
-		}
-		{
-			dependencies: [
-				"37152DDE148905B6"
-				"3C438C3BCF92D6B1"
-			]
-			id: "7A214FE1A17269CA"
-			tasks: [{
-				id: "2E24FF1F29287BF4"
-				item: { count: 1, id: "powergrid:generator_commutator" }
-				type: "item"
-			}]
-			x: 9.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["3C438C3BCF92D6B1"]
-			id: "37152DDE148905B6"
-			tasks: [{
-				id: "20F52BDA1F36625B"
-				item: { count: 1, id: "powergrid:generator_clutch" }
-				type: "item"
-			}]
-			x: 7.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["3C438C3BCF92D6B1"]
-			id: "3203CFBBD0D66D44"
-			tasks: [{
-				id: "237FD40F20723697"
-				item: { count: 1, id: "powergrid:generator_housing" }
-				type: "item"
-			}]
-			x: 7.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["3C438C3BCF92D6B1"]
-			icon: {
-				id: "powergrid:rheostat"
-			}
-			id: "4F6C2C5007E48719"
-			tasks: [
-				{
-					id: "3BBDD5373DE130CA"
-					item: { count: 1, id: "powergrid:rheostat" }
-					type: "item"
-				}
-				{
-					id: "1096722609F21E63"
-					item: { count: 1, id: "powergrid:power_resistor" }
-					type: "item"
-				}
-			]
-			x: 5.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["3C438C3BCF92D6B1"]
-			id: "14F41FF8849AAB78"
-			tasks: [{
-				id: "6031FF5D101DB143"
-				item: { count: 1, id: "powergrid:insulated_copper_wire" }
-				type: "item"
-			}]
-			x: 6.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["14F41FF8849AAB78"]
-			id: "01784B184ABCC90C"
-			tasks: [
-				{
-					id: "2A90268704FC8C58"
-					item: { count: 1, id: "powergrid:iron_wire" }
-					type: "item"
-				}
-				{
-					id: "0211FA4174BDDF7D"
-					item: { count: 1, id: "powergrid:golden_wire" }
-					type: "item"
-				}
-			]
-			x: 4.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["3C438C3BCF92D6B1"]
-			id: "597CDC1413CF1BC1"
-			tasks: [{
-				id: "64951404D0CEFC75"
-				item: { count: 1, id: "powergrid:electromagnet" }
-				type: "item"
-			}]
-			x: 7.5d
-			y: 4.5d
-		}
-		{
-			dependencies: ["14F41FF8849AAB78"]
-			id: "0AE9CFFDCE8C7565"
-			tasks: [{
-				id: "1ECA0963D710E88B"
-				item: { count: 1, id: "powergrid:growth_lamp" }
-				type: "item"
-			}]
-			x: 4.5d
-			y: 6.5d
-		}
-		{
-			dependencies: ["14F41FF8849AAB78"]
-			id: "13DDA184F40F118C"
-			tasks: [{
-				id: "6A57C2AA66C22CB6"
-				item: { count: 1, id: "powergrid:basin_heater" }
-				type: "item"
-			}]
-			x: 6.0d
-			y: 6.5d
-		}
-		{
-			dependencies: ["14F41FF8849AAB78"]
-			id: "6FAA80E882029C54"
-			tasks: [{
-				id: "26BE1B686BB1677A"
-				item: { count: 1, id: "powergrid:electric_fan" }
-				type: "item"
-			}]
-			x: 7.5d
-			y: 6.5d
 		}
 		{
 			dependencies: ["38CB5E073B985276"]
@@ -542,7 +398,7 @@
 			id: "56AAEE5C3192A047"
 			tasks: [{
 				id: "4DCF886095C90350"
-				item: { count: 1, id: "powergrid:resistor" }
+				item: { count: 1, id: "creatoriocore:silicon_chips" }
 				type: "item"
 			}]
 			x: 7.5d
@@ -569,8 +425,8 @@
 				item: { count: 1, id: "tfmg:steel_chemical_vat" }
 				type: "item"
 			}]
-			x: 6.0d
-			y: -1.0d
+			x: 4.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["6A5B365EA0944C16"]
@@ -581,7 +437,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: -1.0d
+			y: -0.2596726190476133d
 		}
 		{
 			dependencies: ["6E0E65D3F782B1D8"]
@@ -605,6 +461,50 @@
 			}]
 			x: 9.0d
 			y: -0.5d
+		}
+		{
+			dependencies: ["3C438C3BCF92D6B1"]
+			id: "30F191EE6BA18821"
+			tasks: [{
+				id: "2E14CF571AF14873"
+				item: { count: 1, id: "creatoriocore:induction_magnet" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3C438C3BCF92D6B1"]
+			id: "18D8F73BD6986D6B"
+			tasks: [{
+				id: "56302531A249E27E"
+				item: { count: 1, id: "creatoriocore:wire_copper" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3C438C3BCF92D6B1"]
+			id: "026B7D0460BEC167"
+			tasks: [{
+				id: "698EDC81B32D35B8"
+				item: { count: 1, id: "create_new_age:basic_energiser" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1BDBAB716CB38E4D"]
+			id: "3D7151D129FF0276"
+			tasks: [{
+				id: "2B2686209B18ED07"
+				item: { count: 1, id: "creatoriocore:welder" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.0d
 		}
 	]
 }

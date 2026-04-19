@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "id": "tfmg:steel_ingot"
+    },
+    "title": "Forged in Fire",
+    "description": "Obtain your first Steel Ingot",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "has_steel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfmg:steel_ingot"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    ["has_steel"]
+  ]
+}

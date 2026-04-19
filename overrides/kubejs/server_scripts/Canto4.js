@@ -7,9 +7,9 @@ ServerEvents.recipes(event => {
         'creatoriocore:advanced_electron_tube',
         [
             event.recipes.create.deploying('creatoriocore:incomplete_highly_advanced_electron_tube', ['creatoriocore:incomplete_highly_advanced_electron_tube', 'tfmg:circuit_board']),
-            event.recipes.create.deploying('creatoriocore:incomplete_highly_advanced_electron_tube', ['creatoriocore:incomplete_highly_advanced_electron_tube', 'powergrid:electrical_gizmo']),
+            event.recipes.create.deploying('creatoriocore:incomplete_highly_advanced_electron_tube', ['creatoriocore:incomplete_highly_advanced_electron_tube', 'creatoriocore:silicon_chips']),
             event.recipes.create.deploying('creatoriocore:incomplete_highly_advanced_electron_tube', ['creatoriocore:incomplete_highly_advanced_electron_tube', 'tfmg:circuit_board']),
-            event.recipes.create.deploying('creatoriocore:incomplete_highly_advanced_electron_tube', ['creatoriocore:incomplete_highly_advanced_electron_tube', 'powergrid:electrical_gizmo'])
+            event.recipes.create.deploying('creatoriocore:incomplete_highly_advanced_electron_tube', ['creatoriocore:incomplete_highly_advanced_electron_tube', 'creatoriocore:silicon_chips'])
         ]
     ).transitionalItem('creatoriocore:incomplete_highly_advanced_electron_tube')
 
