@@ -274,19 +274,16 @@ def download_mods_from_curseforge(serverpack_dir, curseforge_api_key=None):
     def download_mod(mod):
         project_id = mod.get('projectID')
         file_id = mod.get('fileID')
-        # Skip mods that are not required
         if not mod.get('required', True):
             print(f"Skipping optional mod {project_id} (required: false)")
-            return
-        # Skip mods that are in the manual download section
+            return None
         if project_id in manual_download_ids:
             print(f"Skipping manual download mod {project_id}")
-            return
-        # Only download server-only mods if they are in the config or regular mods
+            return None
         if project_id in server_only_mods:
             file_id = server_only_mods[project_id]['fileID']
         if not project_id or not file_id:
-            raise RuntimeError(f"ERROR: Failed to parse project id or file id for mod '{mod}'")
+            return f"Failed to parse project id or file id for mod '{mod}'"
         file_url = get_mod_download_url(project_id, file_id, api_key=api_key)
         if not file_url:
             fallback = modrinth_fallbacks.get(str(project_id))
@@ -297,27 +294,38 @@ def download_mods_from_curseforge(serverpack_dir, curseforge_api_key=None):
                 if file_url:
                     print(f"\tCF blocked {name} ({project_id}) - using Modrinth mirror '{slug}'")
         if not file_url:
-            raise RuntimeError(
-                f"ERROR: No download url found for mod {project_id} {file_id} "
-                f"(CF blocked, no Modrinth fallback configured - add '{project_id}' "
-                f"to modrinth_fallbacks in server-mods-config.json)"
-            )
+            return (f"No download url for projectID={project_id} fileID={file_id} "
+                    f"(CF blocked, no Modrinth fallback configured)")
         print(f"\tDownloading {file_url}")
         mod_resp = requests.get(file_url, stream=True)
-        if mod_resp.status_code == 200:
-            filename = file_url.split('/')[-1]
-            out_path = os.path.join(mods_dir, filename)
-            with open(out_path, 'wb') as out_file:
-                for chunk in mod_resp.iter_content(chunk_size=8192):
-                    out_file.write(chunk)
-        else:
-            raise RuntimeError(f"ERROR: Failed to download mod {project_id} {file_id}")
+        if mod_resp.status_code != 200:
+            return f"HTTP {mod_resp.status_code} downloading projectID={project_id} fileID={file_id}"
+        filename = file_url.split('/')[-1]
+        out_path = os.path.join(mods_dir, filename)
+        with open(out_path, 'wb') as out_file:
+            for chunk in mod_resp.iter_content(chunk_size=8192):
+                out_file.write(chunk)
+        return None
 
+    failures = []
     max_workers = min(MAX_CONCURRENT_DOWNLOADS, len(files))
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         futures = [executor.submit(download_mod, mod) for mod in files]
         for future in as_completed(futures):
-            future.result()
+            try:
+                err = future.result()
+                if err:
+                    failures.append(err)
+            except Exception as e:
+                failures.append(f"Unexpected exception: {e}")
+
+    if failures:
+        print()
+        print(f"=== {len(failures)} mod(s) failed to download ===")
+        for msg in failures:
+            print(f"  - {msg}")
+        print("=" * 60)
+        raise RuntimeError(f"{len(failures)} mod(s) failed to download (see list above)")
 
 
 def readme_update(root_dir, serverpack_dir):
