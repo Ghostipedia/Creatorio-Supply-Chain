@@ -1,0 +1,101 @@
+name: Curseforge Release
+
+on:
+  release:
+    types: [ published ]
+
+jobs:
+  validate:
+    name: Validate Modpack
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Validate modpack structure
+        run: |
+          python scripts/validate.py
+
+  build:
+    name: Build Modpack
+    needs: validate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+          cache: 'pip'
+
+      - name: Install Python dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Run release script
+        env:
+          RELEASE_VERSION: ${{ github.event.release.tag_name }}
+          IS_PRERELEASE: ${{ github.event.release.prerelease }}
+          CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_KEY }}
+        run: |
+          python scripts/release.py
+
+      - name: Upload Build Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-artifacts-${{ github.event.release.tag_name }}
+          path: Creatorio.Supply.Chain*.zip
+          if-no-files-found: error
+          retention-days: 3
+
+  upload-release-artifacts:
+    name: Upload Artifacts
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Download artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: build-artifacts-${{ github.event.release.tag_name }}
+      - name: Upload client pack to release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.event.release.tag_name }}
+          files: |
+            ./Creatorio.Supply.Chain.${{ github.event.release.tag_name }}.zip
+            ./Creatorio.Supply.Chain.Server.${{ github.event.release.tag_name }}.zip
+          fail_on_unmatched_files: false
+
+  publish-curseforge:
+    name: Publish to Curseforge
+    needs: build
+    if: ${{ !github.event.release.prerelease }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Download artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: build-artifacts-${{ github.event.release.tag_name }}
+
+      - name: Upload client pack to Curseforge
+        uses: Kir-Antipov/mc-publish@v3.3.0
+        with:
+          curseforge-id: ${{ vars.CURSE_ID }}
+          curseforge-token: ${{ secrets.CURSE_TOKEN }}
+          files: ./Creatorio.Supply.Chain.${{ github.event.release.tag_name }}.zip
+          name: "Creatorio Supply Chain ${{ github.event.release.tag_name }}"
+          version: ${{ github.event.release.tag_name }}
+          changelog: ${{ github.event.release.body }}
+          version-type: release
+          loaders: forge
+          game-versions: 1.20.1
