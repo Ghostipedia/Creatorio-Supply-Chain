@@ -3,8 +3,8 @@ console.info('TOOLTIP SCRIPT LOADED')
 ItemEvents.modifyTooltips(event => {
     event.add('minecraft:elytra[unbreakable={}]', Text.of('Mechanized Wings with Integrated Hovering Capabilities').gray())
     event.add('minecraft:elytra[unbreakable={}]', Text.of('Enables Creative Flight and Elytra Gliding').red())
-    event.add('farmersdelight:straw', Text.of('Automatically farmable from ').white())
-    event.add('farmersdelight:straw', Text.of('Wheat with Create.').white())
+    event.add('farmersdelight:straw', Text.of('Automatically farmable from ').gray())
+    event.add('farmersdelight:straw', Text.of('Wheat with Create.').gray())
     
     
     event.add('creatoriocore:steel_frogport', Text.of('TODO: UPDATE MODEL').red())
