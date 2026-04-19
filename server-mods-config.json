@@ -7,10 +7,11 @@
     {"name": "Iris Shaders", "id": 455508 },
     {"name": "Legendary Tooltips", "id": 532127 },
     {"name": "Mouse Tweaks", "id": 60089 },
-    {"name": "Prism", "id": 638111 },
     {"name": "Sodium", "id": 394468 },
     {"name": "Sodium/Embeddium Otions API", "id": 1103431 },
-    {"name": "Too Many Recipe Viewwers", "id": 1194921 }
+    {"name": "Too Many Recipe Viewwers", "id": 1194921 },
+    {"name": "Prism", "id": 638111 },
+    {"name": "Iceberg", "id": 520110 }
   ],
   "manual_download": [
   ],
