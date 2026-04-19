@@ -42,6 +42,7 @@ jobs:
         env:
           RELEASE_VERSION: ${{ github.event.release.tag_name }}
           IS_PRERELEASE: ${{ github.event.release.prerelease }}
+          CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_KEY }}
         run: |
           python scripts/release.py
 
@@ -64,12 +65,14 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: build-artifacts-${{ github.event.release.tag_name }}
-      - name: Upload artifacts to release
+      - name: Upload client pack to release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ github.event.release.tag_name }}
-          files: ./Creatorio.Supply.Chain.${{ github.event.release.tag_name }}.zip
-          fail_on_unmatched_files: true
+          files: |
+            ./Creatorio.Supply.Chain.${{ github.event.release.tag_name }}.zip
+            ./Creatorio.Supply.Chain.Server.${{ github.event.release.tag_name }}.zip
+          fail_on_unmatched_files: false
 
   publish-curseforge:
     name: Publish to Curseforge
@@ -84,12 +87,12 @@ jobs:
         with:
           name: build-artifacts-${{ github.event.release.tag_name }}
 
-      - name: Upload to Curseforge
+      - name: Upload client pack to Curseforge
         uses: Kir-Antipov/mc-publish@v3.3.0
         with:
           curseforge-id: ${{ vars.CURSE_ID }}
           curseforge-token: ${{ secrets.CURSE_TOKEN }}
-          files: ./Creatorio.Supply.Chain*.zip
+          files: ./Creatorio.Supply.Chain.${{ github.event.release.tag_name }}.zip
           name: "Creatorio Supply Chain ${{ github.event.release.tag_name }}"
           version: ${{ github.event.release.tag_name }}
           changelog: ${{ github.event.release.body }}
