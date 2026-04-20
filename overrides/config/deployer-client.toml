@@ -1,0 +1,4 @@
+#Caching all input values to display when non instant updates are still processing
+panelCaching = true
+#Adds a simple goggle overlay on package entities
+packageGoggleInformation = true

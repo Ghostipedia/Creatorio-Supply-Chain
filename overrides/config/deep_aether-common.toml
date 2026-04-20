@@ -1,0 +1,37 @@
+[Gameplay]
+	#The item dropped when the Slider is defeated flawlessly, set value to null (with quotation marks!) to disable flawless boss drops from the slider
+	"Slider Flawless Boss Drop" = "deep_aether:slider_eye"
+	#The item dropped when the Valkyrie Queen is defeated flawlessly, set value to null (with quotation marks!) to disable flawless boss drops from the Valkyrie Queen
+	"Valkyrie Queen Flawless Boss Drop" = "deep_aether:medal_of_honor"
+	#The item dropped when the Sun Spirit is defeated flawlessly, set value to null (with quotation marks!) to disable flawless boss drops from the Sun Spirit
+	"Sun Spirit Flawless Boss Drop" = "deep_aether:sun_core"
+	#The item dropped when the Eye of the Storm is defeated flawlessly, set value to null (with quotation marks!) to disable flawless boss drops from the Eye of the Storm
+	"Eye of the Storm Flawless Boss Drop" = "deep_aether:floaty_scarf"
+	#The item dropped when the Aerwhale King is defeated flawlessly, set value to null (with quotation marks!) to disable flawless boss drops from the Aerwhale King. This Config Does nothing if Aether Lost Content isn't installed.
+	"Aerwhale King Flawless Boss Drop" = "deep_aether:aerwhale_saddle"
+	#The item dropped when the Slider Host Mimic is defeated flawlessly, set value to null (with quotation marks!) to disable flawless boss drops from the Slider Host Mimic. This Config Does nothing if Aether Genesis isn't installed.
+	"Slider Host Mimic Flawless Boss Drop" = "deep_aether:mimic_eye"
+	#The item dropped when the Sentry Guardian is defeated flawlessly, set value to null (with quotation marks!) to disable flawless boss drops from the Sentry Guardian. This Config Does nothing if Aether Genesis isn't installed.
+	"Sentry Guardian Flawless Boss Drop" = "deep_aether:sentry_alarm"
+	#The item dropped when the Labyrinth Eye is defeated flawlessly, set value to null (with quotation marks!) to disable flawless boss drops from the Labyrinth Eye. This Config Does nothing if Aether Genesis isn't installed.
+	"Labyrinth Eye Flawless Boss Drop" = "deep_aether:magnetic_cog"
+	#Damage multiplier applied to the Eye of The Storm
+	"Eye of The Storm Multiplier" = 1.0
+
+[Biomes]
+	#The weighting of Deep Aether regions in the Aether
+	"Deep Aether Biome Weight" = 15
+	#Disables Roseroot Forest biomes from generating. Might make some content unobtainable
+	"Disable Roseroot Forest Biomes" = false
+	#Disables Yagroot Swamp biomes from generating. Might make some content unobtainable
+	"Disable Yagroot Swamp Biomes" = false
+	#Disables Golden Heights biomes from generating. Might make some content unobtainable
+	"Disable Golden Heights Biomes" = false
+	#Disables Aerlavender Fields biomes from generating. Might make some content unobtainable
+	"Disable Aerlavender Fields Biomes" = false
+	#Disables Sacred Lands biomes from generating. Might make some content unobtainable
+	"Disable Sacred Lands Biomes" = false
+	#Disables Storm Cloud and Skyroot Rainforest biomes from generating. Might make some content unobtainable
+	"Disable Storm Cloud And Skyroot Rainforest Biomes" = false
+	#The weighting of Storm Cloud regions in the Aether
+	"Storm Cloud Biome Weight" = 1

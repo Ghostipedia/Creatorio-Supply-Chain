@@ -1,0 +1,18 @@
+#.
+#Settings of Simulated Items
+[items]
+	#.
+	#.
+	#When to display physics properties in block tooltips
+	#Allowed Values: ALWAYS, SHIFT, GOGGLES, SHIFT_GOGGLES, NEVER
+	displayProperties = "GOGGLES"
+	#.
+	#The sensitivity of scrolling when holding a sub-level with the Creative Physics Staff
+	# Default: 0.6000000238418579
+	# Range: 0.0 ~ 3.4028234663852886E38
+	physics_staff_scroll_sensitivity = 0.6000000238418579
+	#.
+	#The sensitivity of rotation when holding a sub-level with the Creative Physics Staff
+	# Default: 0.3499999940395355
+	# Range: 0.0 ~ 3.4028234663852886E38
+	physics_staff_rotate_sensitivity = 0.3499999940395355

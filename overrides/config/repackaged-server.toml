@@ -1,0 +1,4 @@
+#Makes so vanilla crafters respect order context from packaging requests
+vanillaCrafterUnpacking = true
+#Makes so boxes always unpack in the correct order, even without passing through a re-packager
+boxOrderFix = true

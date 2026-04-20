@@ -1,0 +1,9 @@
+[Gameplay]
+	#Always Enable halloween content, excluding the halloween slider
+	"Always Enable Halloween Content" = false
+	#Skyjade tools will be enchantable. Only takes effect if "Enable Skyjade Rework" is disabled. 
+	"Skyjade Enchant" = false
+	#Enables the new skyjade armor and toolset rework. 
+	"Enable Skyjade Rework" = false
+	#The cooldown of the stratus dash. Set to a value below zero to disable the cooldown.
+	"Stratus dash cooldown" = 5

@@ -1,8 +1,18 @@
 {
   "balm:jade": null,
+  "create_mechanical_chicken:data": null,
   "create_mob_spawners:spawner_progress": null,
+  "create_mobile_packages:bee_port": null,
   "create_rns:deposit_block_info": null,
+  "creatoriocore:welder": null,
+  "fluidlogistics:contraption_multi_fluid_tank": null,
+  "fluidlogistics:multi_fluid_tank": null,
+  "fluidlogistics:package_fluid_storage": null,
+  "fluidlogistics:package_item_storage": null,
   "ftbquests:barrier": null,
+  "immersiveengineering:multiblock_icon": null,
+  "immersiveengineering:multiblock_inventory": null,
+  "immersiveengineering:multiblock_tank": null,
   "jade:block_face": null,
   "jade:block_properties": null,
   "jade:block_states": null,
@@ -18,6 +28,7 @@
   "jade_access:entity_variant": null,
   "jade_access:held_item": null,
   "jade_access:sign": null,
+  "mechanical_cow:data": null,
   "minecraft:animal_owner": null,
   "minecraft:armor_stand": null,
   "minecraft:beehive": null,
@@ -64,5 +75,8 @@
   "minecraft:waxed": null,
   "minecraft:zombie_villager": null,
   "petrolpark:contamination": null,
-  "petrolpark:drying_rack": null
+  "petrolpark:drying_rack": null,
+  "supplementaries:hat_stand": null,
+  "supplementaries:present": null,
+  "supplementaries:safe": null
 }

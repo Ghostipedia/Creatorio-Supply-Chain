@@ -52,6 +52,9 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "create_mechanical_chicken": {
+    "data": true
+  },
   "jade_access": {
     "held_item": true,
     "sign": true,
@@ -59,11 +62,11 @@
     "entity": true,
     "entity_variant": true
   },
-  "create_rns": {
-    "deposit_block_info": true
-  },
   "ftbquests": {
     "barrier": true
+  },
+  "creatoriocore": {
+    "welder": true
   },
   "jade": {
     "coordinates.rel": false,
@@ -76,14 +79,26 @@
     "block_properties": false,
     "mod_name": true
   },
-  "petrolpark": {
-    "drying_rack": true,
-    "contamination": true
-  },
   "create_mob_spawners": {
     "spawner_progress": true
   },
   "balm": {
     "jade": true
+  },
+  "create_mobile_packages": {
+    "bee_port": true
+  },
+  "create_rns": {
+    "deposit_block_info": true
+  },
+  "supplementaries": {
+    "hat_stand": true
+  },
+  "petrolpark": {
+    "drying_rack": true,
+    "contamination": true
+  },
+  "mechanical_cow": {
+    "data": true
   }
 }

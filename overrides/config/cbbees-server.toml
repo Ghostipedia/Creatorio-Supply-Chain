@@ -1,0 +1,117 @@
+#Feature Toggles
+[features]
+	#Enable the 'Browse Online' button and createmod.com connectivity. Requires restart.
+	enableExternalBrowser = true
+
+#Mechanical Beehive Settings
+[beehive]
+	#Maximum number of active bees per hive
+	# Default: 16
+	# Range: 1 ~ 64
+	maxBeesPerHive = 16
+	#Minimum active bees when the hive has any RPM, so even slow shafts deploy at least this many bees
+	# Default: 1
+	# Range: 0 ~ 64
+	minActiveRobotsAtRpm = 1
+	#Base work range of a beehive before RPM scaling (at minimum RPM)
+	# Default: 1
+	# Range: 0 ~ 128
+	hiveBaseRange = 1
+	#Work range added per RPM: range = baseRange + RPM * this (16 RPM -> 5, 256 RPM -> 65)
+	# Default: 0.25
+	# Range: 0.01 ~ 10.0
+	hiveRangePerRpm = 0.25
+	#RPM divisor for bee speed and spring efficiency: multiplier = 1 + RPM / this value
+	# Default: 256.0
+	# Range: 1.0 ~ 1024.0
+	hiveRpmSpeedDivisor = 256.0
+	#RPM divisor for workforce scaling: extra bees = RPM / this value
+	# Default: 8.0
+	# Range: 1.0 ~ 256.0
+	hiveRpmRobotDivisor = 8.0
+
+#Bee Behavior Settings
+[behavior]
+	#Whether bees pick up item drops when breaking blocks
+	beePickupItems = true
+	#Default max active robots before RPM/upgrade scaling
+	# Default: 4
+	# Range: 1 ~ 64
+	defaultMaxActiveRobots = 4
+	#Default work range for BeeContext before hive overrides
+	# Default: 32.0
+	# Range: 1.0 ~ 256.0
+	defaultWorkRange = 32.0
+
+#Upgrade Effect Settings — controls how strong each upgrade is
+[upgrades]
+	#Speed multiplier bonus per Rapid Wings upgrade (default 0.25 = +25% per upgrade)
+	# Default: 0.25
+	# Range: 0.01 ~ 2.0
+	rapidWingsSpeedBonus = 0.25
+	#Extra concurrent bees per Swarm Intelligence upgrade
+	# Default: 8
+	# Range: 1 ~ 16
+	swarmIntelligenceBeeBonus = 8
+	#Break speed multiplier reduction per Honey Efficiency upgrade (0.25 = 25% faster)
+	# Default: 0.25
+	# Range: 0.01 ~ 1.0
+	honeyEfficiencyBreakSpeedReduction = 0.25
+	#Extra carry capacity per Honey Efficiency upgrade
+	# Default: 2
+	# Range: 1 ~ 16
+	honeyEfficiencyCarryBonus = 2
+	#Fuel consumption reduction per Honey Efficiency upgrade (0.15 = 15% less fuel)
+	# Default: 0.15
+	# Range: 0.01 ~ 1.0
+	honeyEfficiencyFuelReduction = 0.15
+
+#Clockwork Spring Settings — controls per-action energy drain on bees
+[spring]
+	#Spring tension drained per block placement (~50 placements per full spring)
+	# Default: 0.02
+	# Range: 0.0 ~ 1.0
+	springDrainPlace = 0.02
+	#Spring tension drained per block break (~66 breaks per full spring)
+	# Default: 0.015
+	# Range: 0.0 ~ 1.0
+	springDrainBreak = 0.015
+	#Spring tension drained per tick of flight (~10000 ticks per full spring)
+	# Default: 1.0E-4
+	# Range: 0.0 ~ 1.0
+	springDrainFlight = 1.0E-4
+	#Spring tension drained per item pickup (BumbleBee)
+	# Default: 0.01
+	# Range: 0.0 ~ 1.0
+	springDrainPickup = 0.01
+	#Spring tension drained per item deposit (BumbleBee)
+	# Default: 0.01
+	# Range: 0.0 ~ 1.0
+	springDrainDeposit = 0.01
+	#Base ticks to recharge a fully depleted spring at the hive (scales with RPM)
+	# Default: 200
+	# Range: 20 ~ 2000
+	springRechargeTicks = 200
+
+#Honey Fuel Settings — controls fuel consumption for portable beehive
+[honey_fuel]
+	#Honey consumed per full spring rewind in a portable beehive
+	# Default: 6
+	# Range: 1 ~ 1000
+	portableHoneyPerRewind = 6
+	#Maximum honey stored in a portable beehive
+	# Default: 400
+	# Range: 100 ~ 10000
+	portableMaxHoney = 400
+	#Honey fuel value per honey bottle
+	# Default: 100
+	# Range: 1 ~ 1000
+	honeyBottleFuelValue = 100
+	#Honey fuel value per honeycomb
+	# Default: 60
+	# Range: 1 ~ 1000
+	honeycombFuelValue = 60
+	#Honey fuel value per honey block
+	# Default: 400
+	# Range: 1 ~ 10000
+	honeyBlockFuelValue = 400
