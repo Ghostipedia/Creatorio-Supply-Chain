@@ -252,7 +252,7 @@ ServerEvents.recipes(event => {
     })
 
     // Quality of life
-    event.shaped('minecraft:chest', [
+    event.shaped('4x minecraft:chest', [
         'AAA',
         'A A',
         'AAA'
@@ -260,7 +260,7 @@ ServerEvents.recipes(event => {
         A: '#minecraft:logs'
     })
 
-    event.shaped('minecraft:stick', [
+    event.shaped('16x minecraft:stick', [
         'A',
         'A'
     ], {
