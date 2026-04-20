@@ -251,7 +251,21 @@ ServerEvents.recipes(event => {
         ]
     })
 
+    // Quality of life
+    event.shaped('minecraft:chest', [
+        'AAA',
+        'A A',
+        'AAA'
+    ], {
+        A: '#minecraft:logs'
+    })
 
+    event.shaped('minecraft:stick', [
+        'A',
+        'A'
+    ], {
+        A: '#minecraft:logs'
+    })
 
     // SMELTING
     event.smelting('minecraft:iron_ingot', 'creatoriocore:crumbling_iron').xp(0.1)
