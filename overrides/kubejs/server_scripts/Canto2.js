@@ -152,6 +152,36 @@ ServerEvents.recipes(event => {
     event.recipes.create.pressing('creatoriocore:bronze_plate', 'creatoriocore:bronze_ingot')
     event.recipes.tfmg.casting('tfmg:silicon_ingot', Fluid.of('tfmg:liquid_silicon', 500))
     event.recipes.tfmg.vat_machine_recipe('creatoriocore:insulated_cypherwire', ['4x creatoriocore:drawn_quartz_string', Fluid.of('rubberworks:resin', 1000)]).superheated().allowedVatTypes(['tfmg:cast_iron_vat'])
+    event.shaped('creatoriocore:copper_casing_internals', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'create:copper_sheet',
+        B: 'creatoriocore:copper_braces',
+        C: 'minecraft:copper_ingot'
+    })
+
+
+
+    event.recipes.create.cutting(Item.of('creatoriocore:copper_braces', 4), 'minecraft:copper_ingot')
+    event.shaped('6x creatoriocore:copper_braces', [
+        'AAA',
+        'BBB',
+        'AAA'
+    ], {
+        A: 'create:copper_sheet',
+        B: 'minecraft:copper_ingot'
+    })
+    event.shaped('4x create:copper_casing', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'creatoriocore:copper_braces',
+        B: 'create:andesite_casing',
+        C: 'creatoriocore:copper_casing_internals'
+    })
     // Night Vision -> Hot Cinderfuel
     event.custom({
         type: 'create:mixing',

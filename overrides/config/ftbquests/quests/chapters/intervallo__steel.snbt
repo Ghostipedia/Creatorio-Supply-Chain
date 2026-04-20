@@ -13,8 +13,8 @@
 			image: "kubejs:textures/quest_image/blackholethingy.png"
 			rotation: 0.0d
 			width: 8.0d
-			x: 2.107142857142854d
-			y: -1.8839285714285694d
+			x: 6.107142857142854d
+			y: -4.383928571428569d
 		}
 		{
 			height: 8.0d
@@ -50,7 +50,7 @@
 				id: "createdeco:decal_fluid"
 			}
 			id: "5A4C8A467987883D"
-			shape: "hexagon"
+			shape: "square"
 			tasks: [
 				{
 					id: "6FF7D26197B0B2D1"
@@ -95,7 +95,7 @@
 		{
 			dependencies: ["6B56B9AEF34154E5"]
 			id: "140225D86D75BCBA"
-			shape: "hexagon"
+			shape: "square"
 			size: 1.25d
 			tasks: [{
 				id: "06F107BEECD90E0E"
@@ -203,7 +203,7 @@
 				"51CD54E95650E69E"
 			]
 			id: "239F68BEBF9AB53A"
-			shape: "hexagon"
+			shape: "square"
 			size: 1.25d
 			tasks: [{
 				id: "64552496E94E70F7"
@@ -247,8 +247,9 @@
 		}
 		{
 			dependencies: [
-				"57AEDC8C96065F80"
 				"554C7B5EEB5DA46D"
+				"7DF4F9B03C4BCE20"
+				"58F234D7759F3F15"
 			]
 			id: "05CF7FA834AEB2CC"
 			shape: "none"
@@ -258,8 +259,8 @@
 				item: { count: 1, id: "creatoriocore:soul_steel_casing" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: -2.0d
+			x: 6.0d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -276,10 +277,7 @@
 			y: 0.5d
 		}
 		{
-			dependencies: [
-				"0E5659E1AB3385AC"
-				"3D7151D129FF0276"
-			]
+			dependencies: ["0E5659E1AB3385AC"]
 			id: "554C7B5EEB5DA46D"
 			tasks: [{
 				id: "44BAA507F85D5C14"
@@ -305,10 +303,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: [
-				"0E5659E1AB3385AC"
-				"71DC59BCC640C831"
-			]
+			dependencies: ["0E5659E1AB3385AC"]
 			id: "1BDBAB716CB38E4D"
 			tasks: [{
 				id: "2A7E22160E4AC78E"
@@ -420,13 +415,14 @@
 			dependencies: ["57AEDC8C96065F80"]
 			hide_dependency_lines: true
 			id: "6A5B365EA0944C16"
+			size: 1.5d
 			tasks: [{
 				id: "0967BA0687604990"
 				item: { count: 1, id: "tfmg:steel_chemical_vat" }
 				type: "item"
 			}]
 			x: 4.5d
-			y: 2.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["6A5B365EA0944C16"]
@@ -437,30 +433,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: -0.2596726190476133d
-		}
-		{
-			dependencies: ["6E0E65D3F782B1D8"]
-			id: "71DC59BCC640C831"
-			tasks: [{
-				id: "22AFDE73124EE7B6"
-				item: { count: 1, id: "minecraft:ancient_debris" }
-				type: "item"
-			}]
-			x: 7.5d
-			y: -0.5d
-		}
-		{
-			dependencies: ["57AEDC8C96065F80"]
-			hide_dependency_lines: true
-			id: "6E0E65D3F782B1D8"
-			tasks: [{
-				id: "5E89FEC32973440E"
-				item: { count: 1, id: "minecraft:red_nether_bricks" }
-				type: "item"
-			}]
-			x: 9.0d
-			y: -0.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["3C438C3BCF92D6B1"]
@@ -496,15 +469,82 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["1BDBAB716CB38E4D"]
+			dependencies: ["3C438C3BCF92D6B1"]
 			id: "3D7151D129FF0276"
+			size: 1.25d
 			tasks: [{
 				id: "2B2686209B18ED07"
 				item: { count: 1, id: "creatoriocore:welder" }
 				type: "item"
 			}]
+			x: 8.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"3D7151D129FF0276"
+				"54C6E5132F70D5FB"
+				"58F234D7759F3F15"
+			]
+			id: "7DF4F9B03C4BCE20"
+			tasks: [{
+				id: "1163C75D1523C3C8"
+				item: { count: 1, id: "creatoriocore:soul_stained_steel_casing_internals" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["57AEDC8C96065F80"]
+			hide_dependency_lines: true
+			id: "58F234D7759F3F15"
+			tasks: [{
+				id: "1901FAE3AB50A1B1"
+				item: { count: 1, id: "creatoriocore:soul_stained_steel_square_beam" }
+				type: "item"
+			}]
 			x: 6.0d
 			y: -1.0d
+		}
+		{
+			dependencies: [
+				"251807507BDA9EC6"
+				"23325C2A3EAEF62F"
+				"3D7151D129FF0276"
+			]
+			id: "54C6E5132F70D5FB"
+			tasks: [{
+				id: "29F605F58A17DDC9"
+				item: { count: 1, id: "creatoriocore:soul_stained_steel_corner_welded_reinforcement" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["57AEDC8C96065F80"]
+			hide_dependency_lines: true
+			id: "23325C2A3EAEF62F"
+			tasks: [{
+				id: "5B7292C595FA68D0"
+				item: { count: 1, id: "creatoriocore:soul_stained_steel_cut_plate" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["57AEDC8C96065F80"]
+			hide_dependency_lines: true
+			id: "251807507BDA9EC6"
+			tasks: [{
+				id: "6D51FB15307832E6"
+				item: { count: 1, id: "creatoriocore:soul_stained_steel_rivet" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: 0.5d
 		}
 	]
 }

@@ -126,6 +126,59 @@ ServerEvents.recipes(event => {
         A: 'tfmg:aluminum_sheet',
         B: 'minecraft:terracotta'
     })
+    event.shaped('creatoriocore:levitite_core', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'creatoriocore:bronze_gear_assembly',
+        B: 'aeronautics:levitite',
+        C: 'minecraft:netherite_block'
+    })
+    event.recipes.create.cutting(Item.of('creatoriocore:soul_stained_steel_cut_plate', 4), 'malum:soul_stained_steel_plating')
+    event.shaped('creatoriocore:soul_steel_casing', [
+        'ABC',
+        'DED',
+        'CBA'
+    ], {
+        A: 'creatoriocore:soul_stained_steel_corner_welded_reinforcement',
+        B: 'creatoriocore:soul_stained_steel_square_beam',
+        C: 'creatoriocore:soul_steel_casing_modular_board',
+        D: 'creatoriocore:soul_stained_steel_casing_internals',
+        E: 'tfmg:hardened_planks'
+    })
+    event.recipes.createvintageneoforged.turning(Item.of('creatoriocore:soul_stained_steel_braces', 1), 'malum:soul_stained_steel_ingot')
+    event.recipes.creatoriocore.welding({
+        inputs: [{ item: 'creatoriocore:soul_stained_steel_braces' }, { item: 'creatoriocore:soul_stained_steel_corner_welded_reinforcement' }, { item: 'creatoriocore:soul_stained_steel_braces' }],
+        result: { id: 'creatoriocore:soul_stained_steel_casing_internals', count: 1 },
+        duration: 200
+    })
+    event.recipes.creatoriocore.welding({
+        inputs: [{ item: 'tfmg:hardened_planks' }, { item: 'creatoriocore:soul_stained_steel_corner_welded_reinforcement' }, { item: 'creatoriocore:soul_stained_steel_braces' }],
+        result: { id: 'creatoriocore:soul_steel_casing_modular_board', count: 1 },
+        duration: 200
+    })
+    event.recipes.creatoriocore.welding({
+        inputs: [{ item: 'creatoriocore:soul_stained_steel_cut_plate' }, { item: 'creatoriocore:soul_stained_steel_cut_plate' }, { item: 'creatoriocore:soul_stained_steel_rivet' }],
+        result: { id: 'creatoriocore:soul_stained_steel_corner_welded_reinforcement', count: 1 },
+        duration: 200
+    })
+    event.recipes.creatoriocore.welding({
+        inputs: [{ item: 'creatoriocore:copper_cut_plate' }, { item: 'creatoriocore:copper_cut_plate' }, { item: 'creatoriocore:copper_rivet' }],
+        result: { id: 'creatoriocore:copper_corner_welded_reinforcement', count: 1 },
+        duration: 200
+    })
+    event.recipes.creatoriocore.welding({
+        inputs: [{ item: 'creatoriocore:brass_cut_plate' }, { item: 'creatoriocore:brass_cut_plate' }, { item: 'creatoriocore:brass_rivet' }],
+        result: { id: 'creatoriocore:brass_corner_welded_reinforcement', count: 1 },
+        duration: 200
+    })
+    event.recipes.create.cutting(Item.of('creatoriocore:copper_rivet', 4), 'creatoriocore:copper_braces')
+    event.recipes.create.cutting(Item.of('creatoriocore:soul_stained_steel_rivet', 4), 'creatoriocore:soul_stained_steel_braces')
+    event.recipes.create.cutting(Item.of('creatoriocore:brass_rivet', 4), 'creatoriocore:brass_braces')
+    event.recipes.createvintageneoforged.turning('creatoriocore:soul_stained_steel_square_beam', 'malum:soul_stained_steel_ingot')
+    event.recipes.createvintageneoforged.turning('creatoriocore:copper_square_beam', 'minecraft:copper_ingot')
+    event.recipes.createvintageneoforged.turning('creatoriocore:brass_square_beam', 'create:brass_ingot')
     event.recipes.createvintageneoforged.coiling('creatoriocore:wire_copper', 'create:copper_sheet')
     event.recipes.createvintageneoforged.coiling('creatoriocore:wire_gold', 'create:golden_sheet')
     event.recipes.createvintageneoforged.coiling('creatoriocore:wire_steel', 'tfmg:heavy_plate')

@@ -240,7 +240,7 @@ ServerEvents.recipes(event => {
         B: 'create:precision_mechanism',
         C: 'create:display_link'
     })
-    event.recipes.create.deploying('2x creatoriocore:soul_steel_casing_modular_board', ['malum:soul_stained_steel_plating', 'tfmg:hardened_planks'])
+
     event.custom({
         type: 'dndesires:seething',
         ingredients: [

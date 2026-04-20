@@ -73,6 +73,8 @@
 	quest.1B67CDAA9F6BB7B6.quest_desc: ["I will add the stuff from the end (Endstone, Chorus, Elytra) as alt-recipes."]
 	quest.1B67CDAA9F6BB7B6.quest_subtitle: "End is Kil"
 	quest.1B67CDAA9F6BB7B6.title: "The End is gone, again"
+	quest.1BDBAB716CB38E4D.quest_desc: ["If you're lost how to get netherite nuggets, look at the recipes for ancient debris, you can get it that way!"]
+	quest.1BDBAB716CB38E4D.quest_subtitle: "Wait, Netherite?"
 	quest.20CDD9E88762D841.quest_desc: ["This chiplet is used plenty by steel machines, you'll want to be prepared to craft a bunch!"]
 	quest.20CDD9E88762D841.quest_subtitle: "Required for High Tier Hardware"
 	quest.2139B0C91B4164A1.quest_desc: [
@@ -159,6 +161,7 @@
 	quest.35923DE99E1EEADD.quest_subtitle: "An Agonizing Process"
 	quest.3C438C3BCF92D6B1.quest_subtitle: "Power, Finally? "
 	quest.3CC265748B4DF058.quest_subtitle: "Steel at Last!"
+	quest.3D7151D129FF0276.quest_subtitle: "Metallic Glue"
 	quest.42F433BBD4789381.quest_desc: [
 		"Add some water in a bucket with your flour to create dough."
 		""
@@ -339,6 +342,7 @@
 	quest.7903A59C9048C18E.quest_subtitle: "Precise Assembly"
 	quest.7ABFAF9A936A2063.quest_subtitle: "Logistics"
 	quest.7BA8B35B1AA48D86.quest_subtitle: "Weak Wheels"
+	quest.7DF4F9B03C4BCE20.quest_subtitle: "Hope you're Ready"
 	quest.7ED9A50432CF1D62.title: "The Beginning of the Steel Industry"
 	quest.7F3BFF749EB42F08.quest_desc: ["Needed for Soul Steel, Make some!"]
 	quest.7F3BFF749EB42F08.quest_subtitle: "The Shiny Blue Stuff"

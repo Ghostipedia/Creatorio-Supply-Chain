@@ -323,6 +323,8 @@ yeet('create_new_age:reactor_heat_vent')
 
 ServerEvents.recipes(event => {
 
+  event.remove({ id: 'create:item_application/copper_casing_from_wood' })
+  event.remove({ id: 'create:item_application/copper_casing_from_log' })
   event.remove({ id: 'farmersdelight:wheat_dough_from_water' })
   event.remove({ id: 'farmersdelight:wheat_dough_from_egg' })
   event.remove({ id: 'create_new_age:energising/experience_bottle' })
