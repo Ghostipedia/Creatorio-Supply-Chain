@@ -97,6 +97,15 @@ ServerEvents.recipes(event => {
         B: 'create:andesite_casing',
         C: 'minecraft:iron_block'
     })
+    event.shaped('rubberworks:compressor', [
+        'AAA',
+        'ABA',
+        'CCC'
+    ], {
+        A: 'create:andesite_alloy',
+        B: 'create:andesite_casing',
+        C: 'minecraft:iron_block'
+    })
     event.blasting('creatoriocore:primitive_andesite_alloy', 'creatoriocore:weak_putty')
         .cookingTime(100)
         .xp(0.7)
