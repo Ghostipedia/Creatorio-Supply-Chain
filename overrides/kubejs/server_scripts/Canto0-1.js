@@ -97,6 +97,15 @@ ServerEvents.recipes(event => {
         B: 'create:andesite_casing',
         C: 'minecraft:iron_block'
     })
+    event.shaped('rubberworks:compressor', [
+        'AAA',
+        'ABA',
+        'CCC'
+    ], {
+        A: 'create:andesite_alloy',
+        B: 'create:andesite_casing',
+        C: 'minecraft:iron_block'
+    })
     event.blasting('creatoriocore:primitive_andesite_alloy', 'creatoriocore:weak_putty')
         .cookingTime(100)
         .xp(0.7)
@@ -251,7 +260,21 @@ ServerEvents.recipes(event => {
         ]
     })
 
+    // Quality of life
+    event.shaped('4x minecraft:chest', [
+        'AAA',
+        'A A',
+        'AAA'
+    ], {
+        A: '#minecraft:logs'
+    })
 
+    event.shaped('16x minecraft:stick', [
+        'A',
+        'A'
+    ], {
+        A: '#minecraft:logs'
+    })
 
     // SMELTING
     event.smelting('minecraft:iron_ingot', 'creatoriocore:crumbling_iron').xp(0.1)
