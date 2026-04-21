@@ -313,6 +313,15 @@ ServerEvents.recipes(event => {
             { id: 'minecraft:nether_star' }
         ]
     })
+    event.shaped('creatoriocore:great_respite_desk', [
+        'AAA',
+        'BBB',
+        'C C'
+    ], {
+        A: 'create:schematic_and_quill',
+        B: 'create:brass_casing',
+        C: 'create:brass_block'
+    })
     event.recipes.create.mixing(Fluid.of('supplementaries:lumisene', 1000), ['minecraft:glowstone_dust', 'minecraft:glow_berries', Fluid.of('minecraft:water', 1000)]).superheated()
     event.recipes.create.sequenced_assembly(
         'creatoriocore:cogwork_lattice',
