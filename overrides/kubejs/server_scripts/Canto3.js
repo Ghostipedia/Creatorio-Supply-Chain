@@ -313,6 +313,7 @@ ServerEvents.recipes(event => {
             { id: 'minecraft:nether_star' }
         ]
     })
+    event.recipes.create.mixing(Fluid.of('supplementaries:lumisene', 1000), ['minecraft:glowstone_dust', 'minecraft:glow_berries', Fluid.of('minecraft:water', 1000)]).superheated()
     event.recipes.create.sequenced_assembly(
         'creatoriocore:cogwork_lattice',
         'create:precision_mechanism',
