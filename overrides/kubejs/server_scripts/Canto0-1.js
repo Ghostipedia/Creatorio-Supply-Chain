@@ -336,7 +336,7 @@ ServerEvents.recipes(event => {
 
 
     //MISC
-    event.recipes.create.compacting('minecraft:blaze_rod', 'minecraft:blaze_powder')
+    event.recipes.create.compacting('minecraft:blaze_rod', '6x minecraft:blaze_powder')
     event.recipes.create.haunting('minecraft:spider_eye', 'minecraft:oxeye_daisy')
 
     //MIXER

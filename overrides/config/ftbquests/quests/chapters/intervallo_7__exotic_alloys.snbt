@@ -139,17 +139,10 @@
 			}
 			id: "35923DE99E1EEADD"
 			shape: "gear"
-			tasks: [
-				{
-					id: "364E3BE63C9F17F2"
-					type: "checkmark"
-				}
-				{
-					id: "1CE93D252DAE8F01"
-					item: { count: 1, id: "tfmg:steel_ingot" }
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "364E3BE63C9F17F2"
+				type: "checkmark"
+			}]
 			x: 2.0d
 			y: 0.0d
 		}

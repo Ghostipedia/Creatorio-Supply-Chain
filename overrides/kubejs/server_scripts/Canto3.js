@@ -234,8 +234,61 @@ ServerEvents.recipes(event => {
         B: 'create:cardboard_block',
         C: 'create_connected:control_chip'
     })
+    event.shaped('create_new_age:basic_energiser', [
+        'AAA',
+        'BCB',
+        'DBD'
+    ], {
+        A: 'create:sturdy_sheet',
+        B: 'tfmg:steel_casing',
+        C: 'creatoriocore:transformer_lv_mv',
+        D: 'tfmg:copper_electrode'
+    })
+    event.recipes.create.filling('malum:infernal_spirit', ['aether:golden_amber', Fluid.of('supplementaries:lumisene', 1000)])
+    event.recipes.create.filling('malum:earthen_spirit', ['deep_aether:skyjade', Fluid.of('supplementaries:lumisene', 1000)])
+    event.recipes.create.filling('malum:wicked_spirit', ['aether:zanite_gemstone', Fluid.of('supplementaries:lumisene', 1000)])
 
+    event.recipes.create.filling('malum:aerial_spirit', ['deep_aether:bio_crystal', Fluid.of('supplementaries:lumisene', 1000)])
+    event.recipes.create.filling('malum:aqueous_spirit', ['deep_aether:bio_crystal', Fluid.of('minecraft:water', 1000)])
+    event.recipes.create.filling('malum:sacred_spirit', ['deep_aether:aerglow_blossom', Fluid.of('minecraft:water', 1000)])
+    event.recipes.create.filling('malum:arcane_spirit', ['deep_aether:golden_swet_ball', Fluid.of('minecraft:water', 1000)])
+    event.recipes.create.filling('malum:eldritch_spirit', ['malum:soul_stained_steel_nugget', Fluid.of('minecraft:water', 1000)])
+    event.shaped('malum:spirit_altar', [
+        'ABC',
+        'DDD',
+        'EDE'
+    ], {
+        A: 'malum:infernal_spirit',
+        B: 'malum:block_of_soul_stained_steel',
+        C: 'malum:wicked_spirit',
+        D: 'creatoriocore:soul_steel_casing',
+        E: 'create_new_age:overcharged_golden_sheet'
+    })
+    event.shaped('8x malum:raw_soulstone', [
+        'ABC',
+        'BBB',
+        'DBE'
+    ], {
+        A: 'malum:aqueous_spirit',
+        B: 'minecraft:stone',
+        C: 'malum:earthen_spirit',
+        D: 'malum:infernal_spirit',
+        E: 'malum:wicked_spirit'
+    })
 
+    event.shaped('creatoriocore:schematigun', [
+        'ABC',
+        'DEF',
+        'CDG'
+    ], {
+        A: 'create:schematicannon',
+        B: 'creatoriocore:brass_logic_core',
+        C: 'create:electron_tube',
+        D: 'create:precision_mechanism',
+        E: 'create:potato_cannon',
+        F: 'create:schematic_and_quill',
+        G: 'minecraft:lectern'
+    })
 
     event.recipes.create.compacting('deep_aether:bio_crystal', ['farmersdelight:organic_compost', 'minecraft:sand', Fluid.of('create_mechanical_chicken:chicken_nutrient', 250)]).heated()
     event.recipes.create.compacting(Item.of('minecraft:coal', 4), 'deep_aether:bio_crystal').superheated()
@@ -260,6 +313,28 @@ ServerEvents.recipes(event => {
             { id: 'minecraft:nether_star' }
         ]
     })
+    event.shaped('malum:totemic_staff', [
+        'ABC',
+        ' DE',
+        'D A'
+    ], {
+        A: 'create_new_age:overcharged_gold',
+        B: 'tfmg:circuit_board',
+        C: 'malum:runewood_planks',
+        D: 'create_aquatic_ambitions:prismarine_alloy_rod',
+        E: 'malum:raw_soulstone'
+    })
+    event.recipes.create.compacting('malum:cthonic_gold', ['create_new_age:overcharged_gold', 'minecraft:cobbled_deepslate', 'minecraft:cobblestone', 'malum:infernal_spirit', 'malum:aqueous_spirit', Fluid.of('minecraft:lava', 1000), Fluid.of('create:honey', 1000)]).superheated()
+    event.recipes.create.sequenced_assembly(
+        'creatoriocore:schematic_shell',
+        'create:brass_nugget',
+        [
+            event.recipes.create.deploying('creatoriocore:schematic_shell', ['creatoriocore:schematic_shell', 'create:brass_sheet']),
+            event.recipes.create.deploying('creatoriocore:schematic_shell', ['creatoriocore:schematic_shell', 'minecraft:gunpowder']),
+            event.recipes.create.deploying('creatoriocore:schematic_shell', ['creatoriocore:schematic_shell', 'create:empty_schematic']),
+            event.recipes.create.deploying('creatoriocore:schematic_shell', ['creatoriocore:schematic_shell', 'create:brass_sheet'])
+        ]
+    ).transitionalItem('creatoriocore:schematic_shell')
     event.recipes.create.sequenced_assembly(
         'creatoriocore:extremely_precise_mechanism',
         'create:precision_mechanism',
@@ -280,6 +355,17 @@ ServerEvents.recipes(event => {
             event.recipes.create.filling('creatoriocore:incomplete_advanced_electron_tube', ['creatoriocore:incomplete_advanced_electron_tube', Fluid.of('creatoriocore:molten_lapis', 1000)])
         ]
     ).transitionalItem('creatoriocore:incomplete_advanced_electron_tube')
-
+    event.recipes.create.sequenced_assembly(
+        'creatoriocore:analog_data_indexer',
+        'creatoriocore:fired_ceramic_plate',
+        [
+            event.recipes.create.deploying('creatoriocore:incomplete_analog_data_indexer', ['creatoriocore:incomplete_analog_data_indexer', 'creatoriocore:bronze_gear_assembly']),
+            event.recipes.create.deploying('creatoriocore:incomplete_analog_data_indexer', ['creatoriocore:incomplete_analog_data_indexer', 'creatoriocore:primitive_assembly_component']),
+            event.recipes.create.deploying('creatoriocore:incomplete_analog_data_indexer', ['creatoriocore:incomplete_analog_data_indexer', 'create:precision_mechanism']),
+            event.recipes.create.deploying('creatoriocore:incomplete_analog_data_indexer', ['creatoriocore:incomplete_analog_data_indexer', 'tfmg:steel_mechanism']),
+            event.recipes.create.deploying('creatoriocore:incomplete_analog_data_indexer', ['creatoriocore:incomplete_analog_data_indexer', 'creatoriocore:extremely_precise_mechanism']),
+            event.recipes.create.deploying('creatoriocore:incomplete_analog_data_indexer', ['creatoriocore:incomplete_analog_data_indexer', 'simulated:gyroscopic_mechanism'])
+        ]
+    ).transitionalItem('creatoriocore:incomplete_analog_data_indexer').loops(9)
 
 })

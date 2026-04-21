@@ -40,5 +40,182 @@
 			x: 0.0d
 			y: -2.5d
 		}
+		{
+			dependencies: [
+				"6DE89522B6ACED59"
+				"60B56E7AEAEF77AE"
+				"4B0D8E7E029B4917"
+			]
+			id: "06A510DDC6440EC7"
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				id: "6845A74A495552A1"
+				item: { count: 1, id: "malum:spirit_altar" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["67EC75422D46AA16"]
+			id: "2A05435595EFFB06"
+			tasks: [{
+				id: "0931EA6CD4BDEE9E"
+				item: { count: 1, id: "aether:zanite_gemstone" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6F9E17A2C8C1B896"]
+			id: "3372FEFAB388B263"
+			tasks: [{
+				id: "24863A2FAB20B3C8"
+				item: { count: 1, id: "aether:golden_amber" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["60B56E7AEAEF77AE"]
+			hide_dependency_lines: true
+			id: "6F9E17A2C8C1B896"
+			tasks: [{
+				id: "2A37F14B7ED8F575"
+				item: { count: 1, id: "aether:golden_oak_sapling" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3372FEFAB388B263"
+				"059EC9F3B85C0936"
+			]
+			id: "6DE89522B6ACED59"
+			tasks: [{
+				id: "43DED2C5E0B80360"
+				item: { count: 1, id: "malum:infernal_spirit" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["60B56E7AEAEF77AE"]
+			icon: {
+				id: "supplementaries:lumisene_bottle"
+			}
+			id: "059EC9F3B85C0936"
+			tasks: [{
+				id: "6A4E04179F0FFE50"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["60B56E7AEAEF77AE"]
+			icon: {
+				id: "supplementaries:lumisene_bottle"
+			}
+			id: "67EC75422D46AA16"
+			tasks: [{
+				id: "47F285073F822643"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"05F4F29294B7031F"
+				"5D76D4B1441862EC"
+				"4B0D8E7E029B4917"
+				"6DE89522B6ACED59"
+			]
+			id: "42F90F9CA0C424EC"
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				id: "0F5562C64C71D1A5"
+				item: { count: 1, id: "malum:raw_soulstone" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["60B56E7AEAEF77AE"]
+			hide_dependency_lines: true
+			id: "76BB33A9C7DC0F5C"
+			tasks: [{
+				id: "7A647FEDA21C8D27"
+				item: { count: 1, id: "deep_aether:skyjade" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["60B56E7AEAEF77AE"]
+			hide_dependency_lines: true
+			id: "56A3AB3154B9285E"
+			tasks: [{
+				id: "5B8A35F91EC8CD89"
+				item: { count: 1, id: "deep_aether:bio_crystal" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["76BB33A9C7DC0F5C"]
+			id: "05F4F29294B7031F"
+			tasks: [{
+				id: "34D9A086AF55C710"
+				item: { count: 1, id: "malum:earthen_spirit" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["56A3AB3154B9285E"]
+			id: "5D76D4B1441862EC"
+			tasks: [{
+				id: "0E608C6C6120C2F1"
+				item: { count: 1, id: "malum:aqueous_spirit" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2A05435595EFFB06"]
+			id: "4B0D8E7E029B4917"
+			tasks: [{
+				id: "5155BD1C138E7599"
+				item: { count: 1, id: "malum:wicked_spirit" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["42F90F9CA0C424EC"]
+			id: "3348740EC936CD5A"
+			tasks: [{
+				id: "406E849E98B8D954"
+				item: { count: 1, id: "malum:totemic_staff" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.5d
+		}
 	]
 }

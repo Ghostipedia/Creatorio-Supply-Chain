@@ -322,7 +322,15 @@ yeet('create_new_age:reactor_fuel_acceptor')
 yeet('create_new_age:reactor_heat_vent')
 
 ServerEvents.recipes(event => {
-
+  
+  event.remove({ id: 'malum:totemic_staff' })
+  event.remove({ id: 'create_new_age:shaped/reinforced_energiser' })
+  event.remove({ id: 'create_new_age:shaped/advanced_energiser' })
+  event.remove({ id: 'create_new_age:shapeless/basic_energiser' })
+  event.remove({ id: 'malum:spirit_altar' })
+  event.remove({ id: 'supplementaries:lumisene_bucket' })
+  event.remove({ id: 'supplementaries:integration/lumisene_mixing' })
+  event.remove({ id: 'dndecor:industrial_plating_block_from_ingots_iron_stonecutting' })
   event.remove({ id: 'create:item_application/copper_casing_from_wood' })
   event.remove({ id: 'create:item_application/copper_casing_from_log' })
   event.remove({ id: 'farmersdelight:wheat_dough_from_water' })
