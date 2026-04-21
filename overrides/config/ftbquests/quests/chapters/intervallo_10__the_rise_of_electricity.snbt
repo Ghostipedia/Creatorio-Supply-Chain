@@ -217,5 +217,30 @@
 			x: 0.0d
 			y: 6.5d
 		}
+		{
+			dependencies: [
+				"3348740EC936CD5A"
+				"42F90F9CA0C424EC"
+			]
+			id: "229960C59DFC3805"
+			tasks: [{
+				id: "6C1323FC39731CAA"
+				item: { count: 1, id: "malum:runewood_totem_base" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.25d
+		}
+		{
+			dependencies: ["229960C59DFC3805"]
+			id: "6F9A62DF397EE320"
+			tasks: [{
+				id: "35CDB0530B9522FF"
+				item: { count: 1, id: "malum:blighted_gunk" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.5d
+		}
 	]
 }

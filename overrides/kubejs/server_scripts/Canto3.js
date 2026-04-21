@@ -313,6 +313,13 @@ ServerEvents.recipes(event => {
             { id: 'minecraft:nether_star' }
         ]
     })
+    event.recipes.create.sequenced_assembly(
+        'creatoriocore:cogwork_lattice',
+        'create:precision_mechanism',
+        [
+            event.recipes.create.deploying('create:precision_mechanism', ['create:precision_mechanism', 'create:precision_mechanism'])
+        ]
+    ).transitionalItem('create:precision_mechanism').loops(10)
     event.shaped('malum:totemic_staff', [
         'ABC',
         ' DE',
