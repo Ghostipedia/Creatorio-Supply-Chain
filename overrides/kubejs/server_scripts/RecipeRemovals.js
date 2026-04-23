@@ -320,6 +320,7 @@ yeet('create_new_age:reactor_rod')
 yeet('create_new_age:reactor_glass')
 yeet('create_new_age:reactor_fuel_acceptor')
 yeet('create_new_age:reactor_heat_vent')
+yeet('create_dragons_plus:fluid_hatch')
 
 ServerEvents.recipes(event => {
   
