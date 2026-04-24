@@ -5,4 +5,30 @@ ServerEvents.recipes(event => {
     ], {
         C: 'dndecor:storage_container'
     }).id('creatorio:item_vault_from_storage_container')
+
+    event.shaped('drivebywire:controller_hub', [
+    'ABA',
+    'CDC',
+    'AEA'
+  ], {
+    A: 'drivebywire:wire',
+    B: 'create:linked_controller',
+    C: 'creatoriocore:brass_logic_core',
+    D: 'create:brass_casing',
+    E: 'create:electron_tube'
+  })
+
+    event.shaped('drivebywire:tweaked_controller_hub', [
+    'ABA',
+    'CDC',
+    'AEA'
+  ], {
+    A: 'drivebywire:wire',
+    B: 'create_tweaked_controllers:tweaked_linked_controller',
+    C: 'creatoriocore:brass_logic_core',
+    D: 'create:brass_casing',
+    E: 'create:electron_tube'
+  })
+    
+    event.recipes.createvintageneoforged.coiling('4x drivebywire:wire', 'creatoriocore:insulated_cypherwire')
 })
