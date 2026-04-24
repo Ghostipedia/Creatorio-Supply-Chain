@@ -41,7 +41,7 @@ ServerEvents.recipes(event => {
     B: 'minecraft:stick',
     C: 'minecraft:shears'
   })
-
+    //saves wire settings when put on a vehicle and then printed with a schematic i believe
     event.shaped('drivebywire:backup_block', [
     'ABA',
     'BCB',
