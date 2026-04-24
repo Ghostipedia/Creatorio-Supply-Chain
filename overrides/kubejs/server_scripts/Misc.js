@@ -31,4 +31,24 @@ ServerEvents.recipes(event => {
   })
     
     event.recipes.createvintageneoforged.coiling('4x drivebywire:wire', 'creatoriocore:insulated_cypherwire')
+
+    event.shaped('drivebywire:wire_cutter', [
+    ' A ',
+    'BCA',
+    ' B '
+  ], {
+    A: 'create:iron_sheet',
+    B: 'minecraft:stick',
+    C: 'minecraft:shears'
+  })
+
+    event.shaped('drivebywire:backup_block', [
+    'ABA',
+    'BCB',
+    'ABA'
+  ], {
+    A: 'minecraft:black_wool',
+    B: 'drivebywire:wire',
+    C: 'create:andesite_casing'
+  })
 })
