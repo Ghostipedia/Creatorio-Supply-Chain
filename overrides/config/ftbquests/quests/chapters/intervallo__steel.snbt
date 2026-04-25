@@ -465,8 +465,8 @@
 				item: { count: 1, id: "create_new_age:basic_energiser" }
 				type: "item"
 			}]
-			x: 8.0d
-			y: 5.0d
+			x: 7.5d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -562,6 +562,54 @@
 			}]
 			x: 6.0d
 			y: 8.0d
+		}
+		{
+			dependencies: [
+				"0AEB21CB5AFF1FAD"
+				"2A2D9C645489750C"
+			]
+			icon: {
+				id: "creatoriocore:alveary_wall_casing"
+			}
+			id: "05FBA1BFC4AEEF92"
+			tasks: [
+				{
+					count: 27L
+					id: "1C5F4FA11914F116"
+					item: { count: 1, id: "creatoriocore:alveary_wall_casing" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "7F825CEDB9B60F93"
+					item: { count: 1, id: "minecraft:oak_slab" }
+					type: "item"
+				}
+			]
+			x: 11.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3D7151D129FF0276"]
+			id: "0AEB21CB5AFF1FAD"
+			tasks: [{
+				id: "7A92ECB544607791"
+				item: { count: 1, id: "creatoriocore:brass_casing_internals" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3D7151D129FF0276"]
+			id: "2A2D9C645489750C"
+			tasks: [{
+				id: "0C2E05E1062A4BB0"
+				item: { count: 1, id: "creatoriocore:brass_corner_welded_reinforcement" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: 2.0d
 		}
 	]
 }

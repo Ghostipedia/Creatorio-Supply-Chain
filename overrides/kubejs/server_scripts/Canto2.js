@@ -150,7 +150,6 @@ ServerEvents.recipes(event => {
     event.recipes.createvintageneoforged.turning('creatoriocore:invar_gear', 'creatoriocore:invar_plate')
     event.recipes.create.pressing('creatoriocore:invar_plate', 'creatoriocore:invar_ingot')
     event.recipes.create.pressing('creatoriocore:bronze_plate', 'creatoriocore:bronze_ingot')
-    event.recipes.tfmg.casting('tfmg:silicon_ingot', Fluid.of('tfmg:liquid_silicon', 500))
     event.recipes.tfmg.vat_machine_recipe('creatoriocore:insulated_cypherwire', ['4x creatoriocore:drawn_quartz_string', Fluid.of('rubberworks:resin', 1000)]).superheated().allowedVatTypes(['tfmg:cast_iron_vat'])
     event.shaped('creatoriocore:copper_casing_internals', [
         'ABA',

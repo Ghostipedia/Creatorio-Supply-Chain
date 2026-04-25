@@ -1,24 +1,27 @@
 {
-	chapter.0EE739BD5B64D518.title: "What kind of mango is this, i don't know"
+	chapter.117F2B078FB60304.title: "Intervallo 12 - The Stars Look Gray"
 	chapter.2624D8EC2FEA4139.title: "Intervallo 0 - The World"
 	chapter.3F06CE53014416DC.title: "Intervallo 6 - Automation Fever"
+	chapter.423A31F07AB29C78.title: "Intervallo 11 - Starward Assemblies"
 	chapter.4798EF4AFA445C12.title: "Intervallo 3 - Clunky Contraptions"
 	chapter.4A2588BD18F8EBD1.title: "Intervallo 8 - The Rise of Souls"
 	chapter.4A72DFF21B23D8CD.title: "Intervallo 2 - Key Changes"
-	chapter.4C15316CD6852494.title: "What kind of mango is this, i don't know"
+	chapter.4C15316CD6852494.title: "Intervallo 9 - Spirit Breaker"
 	chapter.50E2B5CED5BB7C22.title: "Intervallo 7 - Robust Steel Industry"
 	chapter.64F2FDD1894A45D8.title: "Intervallo 4 - The Netherside"
+	chapter.6885A1E221F54E31.title: "Intervallo 10 - Cogwork Soulbinding"
 	chapter.7113839087C79230.title: "Intervallo 5 - The First Alloy of Flame"
-	chapter.727DAF4086AF11A3.title: "What kind of mango is this, i don't know"
+	chapter.727DAF4086AF11A3.title: "Mother, oh Mother... I've..."
 	chapter.7469C0363A46619B.title: "Intervallo 1 - Milestones"
 	chapter_group.1D7A6AE4FC996FA8.title: "Canto 1 - Simple Alloys"
-	chapter_group.2CA1FFB1232CF0A9.title: "Canto 5 - Exotics"
+	chapter_group.2CA1FFB1232CF0A9.title: "Canto 5 - Apoteosi Esoterica"
 	chapter_group.3B5D46B2B6E5A54B.title: "Canto 3 - The Rise of Industry"
 	chapter_group.537D8EAD8B27133E.title: "Gran Finale"
 	chapter_group.64E10135C7757B71.title: "Canto 0 - Showtime"
-	chapter_group.67C78D47BBCE53D5.title: "Canto 4 - Aluminium"
+	chapter_group.67C78D47BBCE53D5.title: "Canto 4 - The Dancer of the World"
 	chapter_group.78E1BA510443F331.title: "Canto 2 - Brass and Rails"
 	file.0000000000000001.title: "Creatorio"
+	quest.0150BD23021CC1BE.quest_subtitle: "Breaching the Sky"
 	quest.0205D771F2295CC9.quest_desc: [
 		"One of the Automation Challenges Presented in this pack is to automate redstone fully."
 		""
@@ -41,6 +44,14 @@
 	]
 	quest.02B742F686F88CCF.quest_subtitle: "Green Enough"
 	quest.059EC9F3B85C0936.quest_subtitle: "You need the fluid!"
+	quest.05FBA1BFC4AEEF92.quest_desc: [
+		"This massive beehive can produce massive amounts of honey."
+		""
+		"Your Crogiolo forges will be very happy\\"
+		""
+		"Oh, the bees also love Glowberry milkshakes! they'll make 4x the produce if you feed them it constantly"
+	]
+	quest.05FBA1BFC4AEEF92.title: "The Busy Bees"
 	quest.064314D458FC80F7.title: "Contraptions"
 	quest.0A291D506EC39422.quest_subtitle: "Capture a Blaze"
 	quest.0A6113CFAA45E67C.quest_desc: [
@@ -71,11 +82,19 @@
 	quest.140225D86D75BCBA.quest_subtitle: "The Slick Stuff"
 	quest.14AB5971D7E8C8D1.quest_subtitle: "Storing Fluids"
 	quest.1A068CFE0E65C291.quest_subtitle: "A Combustion Fuel"
+	quest.1B48FC3752DE5D0C.quest_desc: [
+		"Right click a moon dew basin with a mirror and place the mirror with a large view of the sky."
+		""
+		"Your mirrors will collect moondew during the night, and the rate scales with how many mirrors you use!"
+	]
+	quest.1B48FC3752DE5D0C.quest_subtitle: "Moon dew"
 	quest.1B67CDAA9F6BB7B6.quest_desc: ["I will add the stuff from the end (Endstone, Chorus, Elytra) as alt-recipes."]
 	quest.1B67CDAA9F6BB7B6.quest_subtitle: "End is Kil"
 	quest.1B67CDAA9F6BB7B6.title: "The End is gone, again"
 	quest.1BDBAB716CB38E4D.quest_desc: ["If you're lost how to get netherite nuggets, look at the recipes for ancient debris, you can get it that way!"]
 	quest.1BDBAB716CB38E4D.quest_subtitle: "Wait, Netherite?"
+	quest.1FEDE524EF62EE88.quest_desc: ["This is the highest available content currently in the pack, stay tuned for Alu and more!"]
+	quest.1FEDE524EF62EE88.quest_subtitle: "Congrats"
 	quest.20CDD9E88762D841.quest_desc: ["This chiplet is used plenty by steel machines, you'll want to be prepared to craft a bunch!"]
 	quest.20CDD9E88762D841.quest_subtitle: "Required for High Tier Hardware"
 	quest.2139B0C91B4164A1.quest_desc: [

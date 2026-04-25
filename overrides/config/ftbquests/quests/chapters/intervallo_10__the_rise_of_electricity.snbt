@@ -7,14 +7,24 @@
 		id: "tfmg:light_bulb"
 	}
 	id: "4A2588BD18F8EBD1"
-	images: [{
-		height: 8.0d
-		image: "kubejs:textures/quest_image/blackholethingy.png"
-		rotation: 0.0d
-		width: 8.0d
-		x: 0.1071428571428541d
-		y: -2.4107142857142776d
-	}]
+	images: [
+		{
+			height: 8.0d
+			image: "kubejs:textures/quest_image/blackholethingy.png"
+			rotation: 0.0d
+			width: 8.0d
+			x: 0.1071428571428541d
+			y: -2.4107142857142776d
+		}
+		{
+			height: 8.0d
+			image: "kubejs:textures/quest_image/blackholethingy.png"
+			rotation: 0.0d
+			width: 8.0d
+			x: 0.1071428571428612d
+			y: 15.026785714285708d
+		}
+	]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
@@ -215,7 +225,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 6.5d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -229,7 +239,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 8.25d
+			y: 7.0d
 		}
 		{
 			dependencies: ["229960C59DFC3805"]
@@ -240,7 +250,54 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 10.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["6F9A62DF397EE320"]
+			icon: {
+				id: "creatoriocore:moondew_mirror"
+			}
+			id: "1B48FC3752DE5D0C"
+			shape: "square"
+			size: 1.5d
+			tasks: [
+				{
+					id: "3722665361475C13"
+					item: { count: 1, id: "creatoriocore:moondew_mirror" }
+					type: "item"
+				}
+				{
+					id: "62663CF465753001"
+					item: { count: 1, id: "creatoriocore:moondew_basin" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["1B48FC3752DE5D0C"]
+			id: "1FEDE524EF62EE88"
+			tasks: [{
+				id: "2416B6625BDD2489"
+				item: { count: 1, id: "creatoriocore:moondew_bucket" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["1FEDE524EF62EE88"]
+			id: "0CFB860707F3EE25"
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				id: "6932CECA0946E034"
+				item: { count: 1, id: "tfmg:industrial_aluminum_casing" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 15.0d
 		}
 	]
 }

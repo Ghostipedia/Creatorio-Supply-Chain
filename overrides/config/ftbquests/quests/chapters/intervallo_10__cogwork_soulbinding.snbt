@@ -1,13 +1,13 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "what_kind_of_mango_is_this_i_dont_know"
+	filename: "intervallo_10__cogwork_soulbinding"
 	group: "67C78D47BBCE53D5"
 	icon: {
-		id: "malum:paracausal_flame"
+		id: "creatoriocore:cogwork_lattice"
 	}
-	id: "4C15316CD6852494"
-	order_index: 0
+	id: "6885A1E221F54E31"
+	order_index: 1
 	quest_links: [ ]
 	quests: [ ]
 }

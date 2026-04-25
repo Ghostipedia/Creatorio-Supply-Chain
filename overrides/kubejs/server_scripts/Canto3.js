@@ -293,6 +293,44 @@ ServerEvents.recipes(event => {
     event.recipes.create.compacting('deep_aether:bio_crystal', ['farmersdelight:organic_compost', 'minecraft:sand', Fluid.of('create_mechanical_chicken:chicken_nutrient', 250)]).heated()
     event.recipes.create.compacting(Item.of('minecraft:coal', 4), 'deep_aether:bio_crystal').superheated()
 
+    event.shaped('creatoriocore:moondew_basin', [
+        'ABA',
+        'CDC',
+        'EEE'
+    ], {
+        A: 'creatoriocore:cypherwire_spool',
+        B: 'create:basin',
+        C: 'malum:blighted_gunk',
+        D: 'tfmg:steel_mechanism',
+        E: 'creatoriocore:foundry_frame'
+    })
+
+    event.recipes.create.filling('creatoriocore:distilled_soul_extract', ['malum:infernal_spirit', Fluid.of('creatoriocore:moondew', 1000)])
+    event.recipes.create.filling('creatoriocore:soul_ampule', ['malum:aerial_spirit', Fluid.of('creatoriocore:moondew', 1000)])
+    event.shaped('creatoriocore:voidlink_interfacer', [
+        'ABA',
+        'CDC',
+        'ACA'
+    ], {
+        A: 'create:stock_link',
+        B: 'create:stock_ticker',
+        C: 'tfmg:circuit_board',
+        D: 'tfmg:steel_casing'
+    })
+    event.shaped('creatoriocore:moondew_mirror', [
+        'ABA',
+        'CDC',
+        'EEE'
+    ], {
+        A: 'malum:blighted_gunk',
+        B: 'minecraft:glass_pane',
+        C: 'tfmg:steel_casing',
+        D: 'creatoriocore:cypherwire_spool',
+        E: 'minecraft:deepslate_bricks'
+    })
+
+
+
 
     event.custom({
         type: 'creatoriocore:crogiolo',
@@ -312,7 +350,7 @@ ServerEvents.recipes(event => {
             event.recipes.create.deploying('creatoriocore:aether_permit', ['creatoriocore:aether_permit', 'tfmg:steel_block']),
             event.recipes.create.filling('creatoriocore:aether_permit', ['creatoriocore:aether_permit', Fluid.of('tfmg:molten_plastic', 1000)]),
             event.recipes.create.pressing('creatoriocore:aether_permit', 'creatoriocore:aether_permit'),
-            event.recipes.create.deploying('creatoriocore:aether_permit', ['creatoriocore:aether_permit', 'creatoriocore:cypherwire_spool'])
+            event.recipes.create.deploying('creatoriocore:aether_permit', ['creatoriocore:aether_permit', 'tfmg:circuit_board'])
         ]
     ).transitionalItem('creatoriocore:aether_permit').loops(4)
 
@@ -353,6 +391,14 @@ ServerEvents.recipes(event => {
         D: 'create_aquatic_ambitions:prismarine_alloy_rod',
         E: 'malum:raw_soulstone'
     })
+    event.custom({
+        type: 'creatoriocore:crogiolo',
+        ingredients: [{ item: 'minecraft:amethyst_block' }],
+        stages: [{ tier: 'hot', duration: 1200 }],
+        results: [{ id: 'creatoriocore:molten_amethyst', amount: 1000 }]
+    })
+    event.recipes.create.mixing(Fluid.of('creatoriocore:sugar_water', 1000), ['minecraft:sugar', Fluid.of('minecraft:water', 750), Fluid.of('create:tea', 250)]).heated()
+    event.recipes.create.mixing(Fluid.of('creatoriocore:fuel_white_hot', 1000), ['create:chocolate_glazed_berries', 'deep_aether:goldenleaf_berries', 'aether:blue_berry', Fluid.of('creatoriocore:fuel_searing', 500), Fluid.of('creatoriocore:sugar_water', 1000)])
     event.recipes.create.compacting('malum:cthonic_gold', ['create_new_age:overcharged_gold', 'minecraft:cobbled_deepslate', 'minecraft:cobblestone', 'malum:infernal_spirit', 'malum:aqueous_spirit', Fluid.of('minecraft:lava', 1000), Fluid.of('create:honey', 1000)]).superheated()
     event.recipes.create.sequenced_assembly(
         'creatoriocore:schematic_shell',
@@ -396,5 +442,122 @@ ServerEvents.recipes(event => {
             event.recipes.create.deploying('creatoriocore:incomplete_analog_data_indexer', ['creatoriocore:incomplete_analog_data_indexer', 'simulated:gyroscopic_mechanism'])
         ]
     ).transitionalItem('creatoriocore:incomplete_analog_data_indexer').loops(9)
+    event.shaped('creatoriocore:huge_toolbox', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'createvintageneoforged:netherite_sheet',
+        B: 'create:sturdy_sheet',
+        C: 'create:brown_toolbox'
+    })
+    event.shaped('creatoriocore:welder', [
+        'ABA',
+        'CDC',
+        ' E '
+    ], {
+        A: 'createvintageneoforged:netherite_sheet',
+        B: 'creatoriocore:connector_lv',
+        C: 'create:sturdy_sheet',
+        D: 'tfmg:heavy_machinery_casing',
+        E: 'creatoriocore:soul_stained_steel_rivet'
+    })
+    event.shaped('creatoriocore:welding_depot', [
+        ' A ',
+        'ABA',
+        ' A '
+    ], {
+        A: 'create:sturdy_sheet',
+        B: 'creatoriocore:welding_depot'
+    })
+    event.recipes.create.sequenced_assembly(
+        'creatoriocore:alveary_wall_casing',
+        'dndesires:industrial_casing',
+        [
+            event.recipes.create.deploying('create:brass_casing', ['create:brass_casing', 'minecraft:honey_block']),
+            event.recipes.creatoriocore.welder_step({ ingredients: [{ item: 'create:brass_casing' }, { item: 'creatoriocore:brass_casing_internals' }, { item: 'creatoriocore:brass_square_beam' }, { item: 'creatoriocore:brass_corner_welded_reinforcement' }], results: [{ id: 'create:brass_casing', count: 1 }], processingDuration: 200 }),
+            event.recipes.create.deploying('create:brass_casing', ['create:brass_casing', 'minecraft:honeycomb_block']),
+            event.recipes.creatoriocore.welder_step({ ingredients: [{ item: 'create:brass_casing' }, { item: 'creatoriocore:brass_casing_internals' }, { item: 'creatoriocore:brass_square_beam' }, { item: 'creatoriocore:brass_corner_welded_reinforcement' }], results: [{ id: 'create:brass_casing', count: 1 }], processingDuration: 200 }),
+            event.recipes.create.deploying('create:brass_casing', ['create:brass_casing', 'minecraft:honey_block'])
+        ]
+    ).transitionalItem('create:brass_casing').loops(4)
+    event.recipes.createvintageneoforged.turning('creatoriocore:brass_braces', 'create:brass_ingot')
+    event.recipes.create.sequenced_assembly(
+        'createvintageneoforged:netherite_sheet',
+        'minecraft:netherite_block',
+        [
+            event.recipes.create.pressing('dndecor:netherite_cross_bolt', 'dndecor:netherite_cross_bolt'),
+            event.recipes.create.pressing('dndecor:netherite_cross_bolt', 'dndecor:netherite_cross_bolt'),
+            event.recipes.create.pressing('dndecor:netherite_cross_bolt', 'dndecor:netherite_cross_bolt')
+        ]
+    ).transitionalItem('dndecor:netherite_cross_bolt').loops(3)
+    event.recipes.creatoriocore.welding({
+        inputs: [{ item: 'creatoriocore:brass_braces' }, { item: 'creatoriocore:brass_braces' }, { item: 'creatoriocore:brass_braces' }],
+        result: { id: 'creatoriocore:brass_casing_internals', count: 1 },
+        duration: 200
+    })
+    event.recipes.create.crushing(
+        [
+            { id: 'creatoriocore:destabilized_gravitite_dust', count: 2 },
+            { id: 'creatoriocore:destabilized_gravitite_dust', count: 1, chance: 0.5 }
+        ],
+        'aether:gravitite_ore'
+    )
+
+    event.recipes.tfmg.vat_machine_recipe(
+        'creatoriocore:gravitite_crystal',
+        ['3x creatoriocore:destabilized_gravitite_dust', '1x aether:zanite_gemstone']
+    ).heated().allowedVatTypes(['tfmg:steel_vat'])
+
+    event.recipes.create.mixing(
+        'creatoriocore:smeaphormium_cluster',
+        ['1x creatoriocore:gravitite_crystal', '2x aether:zanite_gemstone']
+    ).superheated()
+
+    event.custom({
+        type: 'creatoriocore:crogiolo',
+        ingredients: [
+            { item: 'tfmg:bauxite_powder' },
+            { item: 'tfmg:bauxite_powder' },
+            { item: 'tfmg:bauxite_powder' },
+            { item: 'creatoriocore:smeaphormium_cluster' }
+        ],
+        stages: [
+            { tier: 'warm', duration: 400 },
+            { tier: 'hot', duration: 400 },
+            { tier: 'blazing', duration: 400 }
+        ],
+        results: [{ id: 'creatoriocore:impure_molten_aluminium', amount: 144 }],
+        slag_ratio: 0.0
+    })
+    event.recipes.create.compacting('tfmg:aluminum_ingot', Fluid.of('creatoriocore:molten_aluminium', 144))
+    event.recipes.create.mixing(
+        Fluid.of('creatoriocore:crystal_aluminium_mixture', 288),
+        [
+            Fluid.of('creatoriocore:impure_molten_aluminium', 144),
+            Fluid.of('creatoriocore:molten_amethyst', 144)
+        ]
+    ).heated()
+
+    event.recipes.create.compacting(
+        'creatoriocore:aluminium_slag',
+        [Fluid.of('creatoriocore:crystal_aluminium_mixture', 144)]
+    ).heated()
+
+    event.custom({
+        type: 'creatoriocore:crogiolo',
+        ingredients: [
+            { item: 'creatoriocore:aluminium_slag' },
+            { item: 'creatoriocore:aluminium_slag' },
+            { item: 'minecraft:dragon_breath' }
+        ],
+        stages: [
+            { tier: 'hot', duration: 600 },
+            { tier: 'blazing', duration: 600 },
+            { tier: 'searing', duration: 600 }
+        ],
+        results: [{ id: 'creatoriocore:molten_aluminium', amount: 144 }],
+        slag_ratio: 0.0
+    })
 
 })

@@ -321,13 +321,22 @@ yeet('create_new_age:reactor_glass')
 yeet('create_new_age:reactor_fuel_acceptor')
 yeet('create_new_age:reactor_heat_vent')
 yeet('create_dragons_plus:fluid_hatch')
+yeet('dndesires:stirling_engine')
+yeet('repackaged:brass_battery_10x12')
+yeet('repackaged:battery_charger')
+yeet('repackaged:energy_gauge')
 
 ServerEvents.recipes(event => {
-  
+  event.remove({ id: 'malum:void_favor/raw_soulstone' })
+  event.remove({ id: 'malum:spirit_infusion/paracausal_flame' })
+  event.remove({ id: 'malum:spirit_infusion/hallowed_gold_ingot' })
+
+  event.remove({ id: 'createvintageneoforged:hammering/netherite_ingot' })
+  event.remove({ id: 'dndesires:crafting/stirling_engine' })
+  event.remove({ id: 'tfmg:casting/plastic_sheet' })
   event.remove({ id: 'tfmg:vat_machine_recipe/arc_furnace_steel' })
   event.remove({ id: 'tfmg:vat_machine_recipe/aluminum' })
   event.remove({ id: 'tfmg:crafting/materials/fireproof_chemical_vat' })
-  event.remove({ id: 'tfmg:kjs/tfmg_silicon_ingot' })
   event.remove({ id: 'malum:totemic_staff' })
   event.remove({ id: 'create_new_age:shaped/reinforced_energiser' })
   event.remove({ id: 'create_new_age:shaped/advanced_energiser' })
@@ -370,6 +379,8 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'create:crafting/logistics/content_observer' })
   event.remove({ id: 'create:crafting/materials/transmitter' })
 
+  event.remove({ id: 'tfmg:item_application/aluminum_casing' })
+  event.remove({ id: 'creatoriocore:voidlink_interfacer' })
   event.remove({ id: 'create:crushing/redstone_ore' })
   event.remove({ id: 'create:crushing/deepslate_redstone_ore' })
   event.remove({ id: 'create:item_application/brass_casing_from_wood' })
