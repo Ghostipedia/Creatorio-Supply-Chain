@@ -462,14 +462,16 @@ ServerEvents.recipes(event => {
         D: 'tfmg:heavy_machinery_casing',
         E: 'creatoriocore:soul_stained_steel_rivet'
     })
+    event.recipes.create.cutting(Item.of('creatoriocore:copper_cut_plate', 4), 'create:copper_sheet')
     event.shaped('creatoriocore:welding_depot', [
         ' A ',
         'ABA',
         ' A '
     ], {
         A: 'create:sturdy_sheet',
-        B: 'creatoriocore:welding_depot'
+        B: 'create:depot'
     })
+    event.recipes.create.cutting(Item.of('creatoriocore:brass_cut_plate', 4), 'create:brass_sheet')
     event.recipes.create.sequenced_assembly(
         'creatoriocore:alveary_wall_casing',
         'dndesires:industrial_casing',
