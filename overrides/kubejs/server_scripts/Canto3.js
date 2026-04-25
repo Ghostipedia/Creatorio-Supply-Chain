@@ -301,8 +301,20 @@ ServerEvents.recipes(event => {
         results: [{ id: 'tfmg:molten_steel', amount: 288 }, { id: 'tfmg:molten_slag', amount: 288 }],
         slag_ratio: 0.1
     })
-
-
+    event.recipes.create.compacting('tfmg:plastic_sheet', ['creatoriocore:fired_ceramic_plate', Fluid.of('tfmg:molten_plastic', 250)]).heated()
+    event.recipes.create.filling('tfmg:silicon_ingot', ['creatoriocore:silicon_dust', Fluid.of('tfmg:liquid_silicon', 500)])
+    event.recipes.create.sequenced_assembly(
+        'creatoriocore:aether_permit',
+        'creatoriocore:nether_permit',
+        [
+            event.recipes.create.deploying('creatoriocore:aether_permit', ['creatoriocore:aether_permit', 'creatoriocore:cypherwire_spool']),
+            event.recipes.create.cutting('creatoriocore:aether_permit', 'creatoriocore:aether_permit'),
+            event.recipes.create.deploying('creatoriocore:aether_permit', ['creatoriocore:aether_permit', 'tfmg:steel_block']),
+            event.recipes.create.filling('creatoriocore:aether_permit', ['creatoriocore:aether_permit', Fluid.of('tfmg:molten_plastic', 1000)]),
+            event.recipes.create.pressing('creatoriocore:aether_permit', 'creatoriocore:aether_permit'),
+            event.recipes.create.deploying('creatoriocore:aether_permit', ['creatoriocore:aether_permit', 'creatoriocore:cypherwire_spool'])
+        ]
+    ).transitionalItem('creatoriocore:aether_permit').loops(4)
 
     event.custom({
         type: 'create_dragons_plus:ending',

@@ -385,7 +385,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: 8.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["57AEDC8C96065F80"]
@@ -469,7 +469,10 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["3C438C3BCF92D6B1"]
+			dependencies: [
+				"3C438C3BCF92D6B1"
+				"18D8F73BD6986D6B"
+			]
 			id: "3D7151D129FF0276"
 			size: 1.25d
 			tasks: [{
@@ -545,6 +548,20 @@
 			}]
 			x: 9.5d
 			y: 0.5d
+		}
+		{
+			dependencies: [
+				"537F0A416650C39D"
+				"3258E143D3B12006"
+			]
+			id: "0150BD23021CC1BE"
+			tasks: [{
+				id: "215ADFD1E8A3141F"
+				item: { count: 1, id: "creatoriocore:aether_permit" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 8.0d
 		}
 	]
 }

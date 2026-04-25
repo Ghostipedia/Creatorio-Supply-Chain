@@ -445,20 +445,6 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["57AEDC8C96065F80"]
-			id: "43E282183B51DA0C"
-			tasks: [{
-				dimension: "aether:the_aether"
-				icon: {
-					id: "createdeco:decal_up"
-				}
-				id: "0E35CABBDC7E862E"
-				type: "dimension"
-			}]
-			x: 3.0d
-			y: 9.5d
-		}
-		{
 			dependencies: ["15B9F43B7AC1C15C"]
 			id: "54CE29D3C36CB4D7"
 			tasks: [{

@@ -323,6 +323,10 @@ yeet('create_new_age:reactor_heat_vent')
 
 ServerEvents.recipes(event => {
   
+  event.remove({ id: 'tfmg:vat_machine_recipe/arc_furnace_steel' })
+  event.remove({ id: 'tfmg:vat_machine_recipe/aluminum' })
+  event.remove({ id: 'tfmg:crafting/materials/fireproof_chemical_vat' })
+  event.remove({ id: 'tfmg:kjs/tfmg_silicon_ingot' })
   event.remove({ id: 'malum:totemic_staff' })
   event.remove({ id: 'create_new_age:shaped/reinforced_energiser' })
   event.remove({ id: 'create_new_age:shaped/advanced_energiser' })
