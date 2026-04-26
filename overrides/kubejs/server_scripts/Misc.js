@@ -69,3 +69,11 @@ ServerEvents.recipes(event => {
   event.smoking('minecraft:dead_horn_coral_fan', 'minecraft:horn_coral_fan')
 })
 
+  //compost tag for ink pearls
+ServerEvents.tags('item', event => {
+  event.add('ratatouille:compostable_items_4to1', 'creatoriocore:ink_pearl_seeds')
+})
+ServerEvents.compostableRecipes(event => {
+    event.add(Item.of('creatoriocore:ink_pearl_seeds'), 0.3)
+})
+
