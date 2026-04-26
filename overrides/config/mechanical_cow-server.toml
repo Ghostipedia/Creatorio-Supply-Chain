@@ -11,17 +11,17 @@
 		#Output amount.
 		# Default: 100
 		# Range: > 1
-		outputAmount = 100
+		outputAmount = 1000
 		#.
 		#Fluid capacity.
 		# Default: 1000
 		# Range: > -2147483648
-		fluidCapacity = 1000
+		fluidCapacity = 10000
 		#.
 		#Required ingredient amount.
 		# Default: 4
 		# Range: > -2147483648
-		requiredIngredientAmount = 4
+		requiredIngredientAmount = 1
 		#.
 		#Required ingredient.
 		requiredIngredient = "minecraft:wheat"
