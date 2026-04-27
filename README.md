@@ -47,7 +47,7 @@ Experience the major story chapters of Creatorio through every Canto (chapter he
 
 **NOTE:** The questbook is currently under a constant state of development, and will experience changes. Please excuse the rough edges!
 
-## Sneak Peaks at Canto 2 and 3: the Age of Brass, Trains and the journey towards Electricity and Steel! 
+## Sneak Peaks at Cantos 2 & 3: the Age of Brass, Trains and the journey towards Electricity and Steel! 
 <img width="2560" height="1417" alt="Canto2" src="https://github.com/user-attachments/assets/60403860-3331-4637-8596-a140b097f7d8"><br>
 <img width="2560" height="1417" alt="Canto3" src="https://github.com/user-attachments/assets/f4f00515-10b1-4e96-a952-627ccf052099">
 
