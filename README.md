@@ -2,7 +2,7 @@
 
 ## **DISCORD:** [https://discord.com/invite/fkxPAq9VQp](https://discord.com/invite/fkxPAq9VQp)
 
-Creatorio is my attempt and re-imaging the joy I had playing Create-focused modpacks back in the days of 1.16.5 and 1.18 
+Creatorio is my attempt and reimagining the joy I had playing Create-focused modpacks back in the days of 1.16.5 and 1.18 
 
 Inspired by modpacks like "Create: Above and Beyond" and "Create: Arcane Engineering", as well as my first modpack "Cosmic Frontiers"
 
