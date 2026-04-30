@@ -11,12 +11,12 @@
 		#Output amount.
 		# Default: 1
 		# Range: > 1
-		outputAmount = 1
+		outputAmount = 2
 		#.
 		#Fluid capacity.
 		# Default: 1000
 		# Range: > -2147483648
-		fluidCapacity = 1000
+		fluidCapacity = 10000
 		#.
 		#Required fluid amount.
 		# Default: 100
