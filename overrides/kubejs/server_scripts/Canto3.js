@@ -462,6 +462,25 @@ ServerEvents.recipes(event => {
         D: 'tfmg:heavy_machinery_casing',
         E: 'creatoriocore:soul_stained_steel_rivet'
     })
+    event.shaped('repackaged:packager_connector', [
+        ' A ',
+        'ABA',
+        ' A '
+    ], {
+        A: 'tfmg:steel_nugget',
+        B: 'creatoriocore:brass_logic_core'
+    })
+
+    event.recipes.create.sequenced_assembly(
+        '4x tfmg:transistor_item',
+        'tfmg:plastic_sheet',
+        [
+            event.recipes.create.deploying('tfmg:unfinished_transistor', ['tfmg:unfinished_transistor', 'creatoriocore:copper_cut_plate']),
+            event.recipes.create.deploying('tfmg:unfinished_transistor', ['tfmg:unfinished_transistor', 'tfmg:n_semiconductor']),
+            event.recipes.create.deploying('tfmg:unfinished_transistor', ['tfmg:unfinished_transistor', 'tfmg:p_semiconductor']),
+            event.recipes.create.deploying('tfmg:unfinished_transistor', ['tfmg:unfinished_transistor', 'tfmg:n_semiconductor'])
+        ]
+    ).transitionalItem('tfmg:unfinished_transistor').loops(2)
     event.recipes.create.cutting(Item.of('creatoriocore:copper_cut_plate', 4), 'create:copper_sheet')
     event.shaped('creatoriocore:welding_depot', [
         ' A ',
@@ -471,18 +490,21 @@ ServerEvents.recipes(event => {
         A: 'create:sturdy_sheet',
         B: 'create:depot'
     })
+    event.recipes.create.mixing('tfmg:p_semiconductor', ['tfmg:steel_ingot', 'tfmg:silicon_ingot'])
     event.recipes.create.cutting(Item.of('creatoriocore:brass_cut_plate', 4), 'create:brass_sheet')
     event.recipes.create.sequenced_assembly(
         'creatoriocore:alveary_wall_casing',
         'dndesires:industrial_casing',
         [
-            event.recipes.create.deploying('create:brass_casing', ['create:brass_casing', 'minecraft:honey_block']),
-            event.recipes.creatoriocore.welder_step({ ingredients: [{ item: 'create:brass_casing' }, { item: 'creatoriocore:brass_casing_internals' }, { item: 'creatoriocore:brass_square_beam' }, { item: 'creatoriocore:brass_corner_welded_reinforcement' }], results: [{ id: 'create:brass_casing', count: 1 }], processingDuration: 200 }),
-            event.recipes.create.deploying('create:brass_casing', ['create:brass_casing', 'minecraft:honeycomb_block']),
-            event.recipes.creatoriocore.welder_step({ ingredients: [{ item: 'create:brass_casing' }, { item: 'creatoriocore:brass_casing_internals' }, { item: 'creatoriocore:brass_square_beam' }, { item: 'creatoriocore:brass_corner_welded_reinforcement' }], results: [{ id: 'create:brass_casing', count: 1 }], processingDuration: 200 }),
-            event.recipes.create.deploying('create:brass_casing', ['create:brass_casing', 'minecraft:honey_block'])
+            event.recipes.create.deploying('creatoriocore:alveary_wall_casing', ['creatoriocore:alveary_wall_casing', 'minecraft:honey_block']),
+            event.recipes.create.deploying('creatoriocore:alveary_wall_casing', ['creatoriocore:alveary_wall_casing', 'creatoriocore:brass_casing_modular_board']),
+            event.recipes.create.deploying('creatoriocore:alveary_wall_casing', ['creatoriocore:alveary_wall_casing', 'minecraft:honeycomb_block']),
+            event.recipes.create.deploying('creatoriocore:alveary_wall_casing', ['creatoriocore:alveary_wall_casing', 'creatoriocore:brass_casing_modular_board']),
+            event.recipes.create.deploying('creatoriocore:alveary_wall_casing', ['creatoriocore:alveary_wall_casing', 'minecraft:honey_block']),
+            event.recipes.create.deploying('creatoriocore:alveary_wall_casing', ['creatoriocore:alveary_wall_casing', 'creatoriocore:brass_casing_modular_board']),
+            event.recipes.create.deploying('creatoriocore:alveary_wall_casing', ['creatoriocore:alveary_wall_casing', 'minecraft:honeycomb_block'])
         ]
-    ).transitionalItem('create:brass_casing').loops(4)
+    ).transitionalItem('creatoriocore:alveary_wall_casing').loops(10)
     event.recipes.createvintageneoforged.turning('creatoriocore:brass_braces', 'create:brass_ingot')
     event.recipes.create.sequenced_assembly(
         'createvintageneoforged:netherite_sheet',
@@ -506,10 +528,13 @@ ServerEvents.recipes(event => {
         'aether:gravitite_ore'
     )
 
-    event.recipes.tfmg.vat_machine_recipe(
-        'creatoriocore:gravitite_crystal',
-        ['3x creatoriocore:destabilized_gravitite_dust', '1x aether:zanite_gemstone']
-    ).heated().allowedVatTypes(['tfmg:steel_vat'])
+    event.custom({
+        type: 'creatoriocore:reaction',
+        ingredients: [{ item: 'creatoriocore:destabilized_gravitite_dust' }, { item: 'creatoriocore:destabilized_gravitite_dust' }, { item: 'creatoriocore:destabilized_gravitite_dust' }, { item: 'aether:zanite_gemstone' }],
+        item_results: [{ id: 'creatoriocore:gravitite_crystal' }],
+        duration: 200,
+        heat: 'blazing'
+    })
 
     event.recipes.create.mixing(
         'creatoriocore:smeaphormium_cluster',

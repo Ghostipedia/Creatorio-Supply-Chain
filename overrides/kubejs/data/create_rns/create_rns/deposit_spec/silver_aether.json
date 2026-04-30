@@ -1,6 +1,0 @@
-{
-  "structure": "create_rns:deposit_silver_aether",
-  "dimension": "aether:the_aether",
-  "scanner_icon_item": "aether:zanite_gemstone",
-  "map_icon_item": "create_rns:silver_deposit_block"
-}

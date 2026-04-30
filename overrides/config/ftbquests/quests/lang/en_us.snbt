@@ -123,6 +123,17 @@
 	]
 	quest.2417977FCE5FBC2A.title: "Vat Chemistry"
 	quest.2798F6913720944D.quest_subtitle: "A Combustion Fuel"
+	quest.288CC1F24527EDCA.quest_desc: [
+		"To reach the nether without diamonds? Really? "
+		""
+		"You can make obsidian a few different ways currently, but lava casting a portal is equally as valid of an option!"
+		""
+		""
+		""
+		"&o&7Mother, oh mother, I finally realize; to love the whole world I must become a God. "
+		""
+		"&o&7I will weave them abodes to shield them from the rust of the rain, and flourish their fields to coddle their grains.&r"
+	]
 	quest.288CC1F24527EDCA.quest_subtitle: "Lava Casting"
 	quest.288CC1F24527EDCA.title: "Portal Assembly?"
 	quest.28CB7776596C9EB8.quest_subtitle: "Finally, real Andesite!"
@@ -153,7 +164,7 @@
 		""
 		"Speaking of, you can get a readout of the required stage with a &6Comparator&r."
 		""
-		"&o&7Mother oh mother, I understand now. To love the whole world, I must become a god.&r"
+		""
 	]
 	quest.29628DF6C3C4E804.quest_subtitle: "Big Mama Blaze"
 	quest.29628DF6C3C4E804.title: "Crogiolo Forge"

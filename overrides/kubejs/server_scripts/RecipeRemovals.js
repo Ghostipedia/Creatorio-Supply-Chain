@@ -329,6 +329,7 @@ yeet('repackaged:energy_gauge')
 ServerEvents.recipes(event => {
   event.remove({ id: 'malum:void_favor/raw_soulstone' })
   event.remove({ id: 'malum:spirit_infusion/paracausal_flame' })
+  event.remove({ id: 'tfmg:mixing/p_semiconductor' })
   event.remove({ id: 'malum:spirit_infusion/hallowed_gold_ingot' })
 
   event.remove({ id: 'createvintageneoforged:hammering/netherite_ingot' })
@@ -415,8 +416,16 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'powergrid:item_application/conductive_casing' })
   event.remove({ id: 'malum:soul_stained_steel_plating' })
   event.remove({ id: 'malum:spirit_infusion/soul_stained_steel_ingot' })
+  event.remove({ id: 'tfmg:vat_machine_recipe/sulfuric_acid' })
+  event.remove({ id: 'tfmg:vat_machine_recipe/etched_circuit_board' })
+  event.remove({ id: 'tfmg:vat_machine_recipe/plastic_from_propylene' })
+  event.remove({ id: 'tfmg:vat_machine_recipe/neon' })
+  event.remove({ id: 'tfmg:vat_machine_recipe/naphtha' })
+  event.remove({ id: 'tfmg:vat_machine_recipe/rubber' })
+  event.remove({ id: 'tfmg:vat_machine_recipe/plastic_from_ethylene' })
 
   //TFMG
+  event.remove({ id: 'tfmg:sequenced_assembly/transistor' })
   event.remove({ id: 'tfmg:casting/steel' })
   event.remove({ id: 'tfmg:compacting/cast_iron' })
   event.remove({ id: 'tfmg:smelting/fireproof_brick' })
@@ -431,6 +440,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'tfmg:sequenced_assembly/unfinished_circuit_board' })
   event.remove({ id: 'tfmg:crafting/materials/blast_furnace_output' })
   event.remove({ id: 'tfmg:crafting/materials/blast_furnace_hatch' })
+  
 })
 
 
@@ -438,4 +448,5 @@ ServerEvents.recipes(event => {
 
 ServerEvents.tags('block', event => {
   event.remove('aether:aether_portal_blocks', 'minecraft:glowstone')
+  event.add('simulated:non_movable', 'create_connected:item_silo')
 })

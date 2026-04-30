@@ -1,6 +1,12 @@
 ServerEvents.recipes(event => {
 
-
+    event.custom({
+        type: 'creatoriocore:reaction',
+        fluid_inputs: [{ id: 'rubberworks:resin', amount: 250 }, { id: 'minecraft:water', amount: 1000 }],
+        item_results: [{ id: 'minecraft:resin_clump' }],
+        duration: 200,
+        heat: 'blazing'
+    })
     event.shaped('tfmg:fireproof_bricks', [
         'ABA',
         'BCB',
@@ -139,7 +145,76 @@ ServerEvents.recipes(event => {
     event.recipes.create.crushing(Item.of('creatoriocore:crumbling_tin', 2), 'create:crushed_raw_tin')
     event.recipes.create.crushing(Item.of('create:crushed_raw_tin', 2), 'creatoriocore:raw_tin')
     event.recipes.create.mixing(Item.of('creatoriocore:invar_ingot', 3), [Item.of('creatoriocore:crumbling_iron', 2), 'creatoriocore:crumbling_nickel']).heated()
-    event.recipes.tfmg.vat_machine_recipe('minecraft:resin_clump', [Fluid.of('rubberworks:resin', 250), Fluid.of('minecraft:water', 1000)]).heated()
+    event.custom({
+        type: 'creatoriocore:reaction',
+        ingredients: [{ item: 'creatoriocore:destabilized_gravitite_dust' }, { item: 'creatoriocore:destabilized_gravitite_dust' }, { item: 'creatoriocore:destabilized_gravitite_dust' }, { item: 'aether:zanite_gemstone' }],
+        item_results: [{ id: 'creatoriocore:gravitite_crystal' }],
+        duration: 200,
+        heat: 'blazing'
+    })
+    event.shaped('creatoriocore:vat_blaze_burner', [
+        'AAA',
+        'ABA',
+        'AAA'
+    ], {
+        A: 'creatoriocore:reaction_vat_casing',
+        B: 'create:blaze_burner'
+    })
+    event.shaped('creatoriocore:gantry_foundation', [
+        'ABA',
+        'ABA',
+        'CCC'
+    ], {
+        A: 'creatoriocore:brass_casing_modular_board',
+        B: 'create:content_observer',
+        C: 'creatoriocore:gantry_hub'
+    })
+    event.shaped('creatoriocore:gantry_hub', [
+        'ABA',
+        'BCB',
+        'ADA'
+    ], {
+        A: 'create:fluid_tank',
+        B: 'create:precision_mechanism',
+        C: 'create:item_vault',
+        D: 'create:electron_tube'
+    })
+    event.shaped('creatoriocore:gantry_drive', [
+        ' A ',
+        'ABA',
+        ' A '
+    ], {
+        A: 'create:cogwheel',
+        B: 'creatoriocore:gantry_frame'
+    })
+    event.shaped('4x creatoriocore:gantry_frame', [
+        'AAA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'creatoriocore:andesite_alloy_braces',
+        B: 'creatoriocore:andesite_casing_internals',
+        C: 'tfmg:cast_iron_frame'
+    })
+    event.shaped('creatoriocore:reaction_vat_casing', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'creatoriocore:andesite_casing_modular_boards',
+        B: 'creatoriocore:andesite_alloy_braces',
+        C: 'dndecor:industrial_plating_block'
+    })
+    event.shaped('creatoriocore:vat_blaze_burner_frame', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'creatoriocore:brass_braces',
+        B: 'minecraft:blaze_rod',
+        C: 'dndecor:industrial_plating_block'
+    })
+
     event.recipes.createvintageneoforged.vibrating('creatoriocore:silicon_dust', 'minecraft:quartz')
     event.recipes.createvintageneoforged.coiling('creatoriocore:drawn_quartz_string', 'minecraft:quartz')
     event.recipes.createvintageneoforged.turning('creatoriocore:primitive_assembly_component', 'create:andesite_alloy').processingTime(40)
@@ -150,7 +225,14 @@ ServerEvents.recipes(event => {
     event.recipes.createvintageneoforged.turning('creatoriocore:invar_gear', 'creatoriocore:invar_plate')
     event.recipes.create.pressing('creatoriocore:invar_plate', 'creatoriocore:invar_ingot')
     event.recipes.create.pressing('creatoriocore:bronze_plate', 'creatoriocore:bronze_ingot')
-    event.recipes.tfmg.vat_machine_recipe('creatoriocore:insulated_cypherwire', ['4x creatoriocore:drawn_quartz_string', Fluid.of('rubberworks:resin', 1000)]).superheated().allowedVatTypes(['tfmg:cast_iron_vat'])
+    event.custom({
+        type: 'creatoriocore:reaction',
+        ingredients: [{ item: 'creatoriocore:drawn_quartz_string' }, { item: 'creatoriocore:drawn_quartz_string' }, { item: 'creatoriocore:drawn_quartz_string' }, { item: 'creatoriocore:drawn_quartz_string' }],
+        fluid_inputs: [{ id: 'rubberworks:resin', amount: 1000 }],
+        item_results: [{ id: 'creatoriocore:insulated_cypherwire' }],
+        duration: 200,
+        heat: 'searing'
+    })
     event.shaped('creatoriocore:copper_casing_internals', [
         'ABA',
         'BCB',

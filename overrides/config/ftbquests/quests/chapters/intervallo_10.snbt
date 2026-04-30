@@ -168,6 +168,7 @@
 				id: "minecraft:obsidian"
 			}
 			id: "288CC1F24527EDCA"
+			min_width: 300
 			shape: "none"
 			size: 2.0d
 			tasks: [{
