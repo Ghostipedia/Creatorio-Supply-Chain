@@ -325,8 +325,12 @@ yeet('dndesires:stirling_engine')
 yeet('repackaged:brass_battery_10x12')
 yeet('repackaged:battery_charger')
 yeet('repackaged:energy_gauge')
+yeet('tfmg:cast_iron_chemical_vat')
+yeet('tfmg:fireproof_chemical_vat')
+yeet('tfmg:steel_chemical_vat')
 
 ServerEvents.recipes(event => {
+  event.remove({ id: 'create:crafting/curiosities/brown_toolbox' })
   event.remove({ id: 'malum:void_favor/raw_soulstone' })
   event.remove({ id: 'malum:spirit_infusion/paracausal_flame' })
   event.remove({ id: 'tfmg:mixing/p_semiconductor' })
@@ -423,6 +427,15 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'tfmg:vat_machine_recipe/naphtha' })
   event.remove({ id: 'tfmg:vat_machine_recipe/rubber' })
   event.remove({ id: 'tfmg:vat_machine_recipe/plastic_from_ethylene' })
+  event.remove({ id: 'create:haunting/infested_stone' })
+  event.remove({ id: 'create:haunting/infested_stone_bricks' })
+  event.remove({ id: 'create:haunting/infested_mossy_stone_bricks' })
+  event.remove({ id: 'create:haunting/infested_cracked_stone_bricks' })
+  event.remove({ id: 'create:haunting/infested_chiseled_stone_bricks' })
+  event.remove({ id: 'create:haunting/infested_deepslate' })
+  event.remove({ id: 'create_enchantment_industry:compacting/infested_stone' })
+  event.remove({ id: 'tfmg:vat_machine_recipe/concrete' })
+
 
   //TFMG
   event.remove({ id: 'tfmg:sequenced_assembly/transistor' })
@@ -440,7 +453,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'tfmg:sequenced_assembly/unfinished_circuit_board' })
   event.remove({ id: 'tfmg:crafting/materials/blast_furnace_output' })
   event.remove({ id: 'tfmg:crafting/materials/blast_furnace_hatch' })
-  
+
 })
 
 

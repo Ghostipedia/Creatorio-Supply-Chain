@@ -7,6 +7,23 @@ ServerEvents.recipes(event => {
         duration: 200,
         heat: 'blazing'
     })
+    event.custom({
+        type: 'creatoriocore:reaction',
+        ingredients: [{ item: 'minecraft:sand' }, { item: 'minecraft:gravel' }, { item: 'tfmg:limesand' }],
+        fluid_inputs: [{ id: 'minecraft:water', amount: 250 }],
+        fluid_results: [{ id: 'tfmg:liquid_concrete', amount: 1000 }],
+        duration: 200
+    })
+    event.shaped('create:brown_toolbox', [
+        ' A ',
+        'BCB',
+        ' D '
+    ], {
+        A: 'create:cogwheel',
+        B: 'create:brass_sheet',
+        C: 'minecraft:trapped_chest',
+        D: 'minecraft:leather'
+    })
     event.shaped('tfmg:fireproof_bricks', [
         'ABA',
         'BCB',

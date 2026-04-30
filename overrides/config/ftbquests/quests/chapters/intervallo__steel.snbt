@@ -414,18 +414,6 @@
 		{
 			dependencies: ["57AEDC8C96065F80"]
 			hide_dependency_lines: true
-			id: "6A5B365EA0944C16"
-			size: 1.5d
-			tasks: [{
-				id: "0967BA0687604990"
-				item: { count: 1, id: "tfmg:steel_chemical_vat" }
-				type: "item"
-			}]
-			x: 4.5d
-			y: 5.5d
-		}
-		{
-			dependencies: ["6A5B365EA0944C16"]
 			id: "7F3BFF749EB42F08"
 			tasks: [{
 				id: "4D3B0101F556E7F1"
