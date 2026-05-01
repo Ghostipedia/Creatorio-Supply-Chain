@@ -67,6 +67,43 @@ ServerEvents.recipes(event => {
   event.smoking('minecraft:dead_fire_coral_fan', 'minecraft:fire_coral_fan')
   event.smoking('minecraft:dead_horn_coral', 'minecraft:horn_coral')
   event.smoking('minecraft:dead_horn_coral_fan', 'minecraft:horn_coral_fan')
+  //new age things
+  //the supercharged ingots for these things are post electricity seemed a bit far in for a... sidegrade? to blaze burners
+  //also thorium is unobtainable for pumps
+  //dont know if i should put the removals in this file or the removals one
+  event.remove({ id: 'create_new_age:shaped/heat_pump' })
+  event.remove({ id: 'create_new_age:shaped/heater' })
+  event.remove({ id: 'create_new_age:shaped/advanced_solar_heating_plate' })
+  event.shaped('4x create_new_age:heat_pump', [
+    ' A ',
+    'BCB',
+    ' A '
+  ], {
+    A: 'tfmg:cast_iron_sheet',
+    B: 'create_new_age:heat_pipe',
+    C: 'tfmg:lead_ingot'
+  })
+  event.shaped('create_new_age:heater', [
+    'AAA',
+    'BCB',
+    'DED'
+  ], {
+    A: 'create:copper_sheet',
+    B: 'createdeco:netherite_nugget',
+    C: 'create:blaze_burner',
+    D: 'create_new_age:heat_pipe',
+    E: 'tfmg:cast_iron_block'
+  })
+event.shaped('create_new_age:advanced_solar_heating_plate', [
+    'AAA',
+    'BCB',
+    'BDB'
+  ], {
+    A: 'minecraft:glass',
+    B: 'minecraft:copper_ingot',
+    C: 'create_new_age:basic_solar_heating_plate',
+    D: 'tfmg:cast_iron_block'
+  })
 })
 
   //compost tag for ink pearls
