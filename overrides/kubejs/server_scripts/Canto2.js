@@ -162,6 +162,27 @@ ServerEvents.recipes(event => {
     event.recipes.create.crushing(Item.of('creatoriocore:crumbling_tin', 2), 'create:crushed_raw_tin')
     event.recipes.create.crushing(Item.of('create:crushed_raw_tin', 2), 'creatoriocore:raw_tin')
     event.recipes.create.mixing(Item.of('creatoriocore:invar_ingot', 3), [Item.of('creatoriocore:crumbling_iron', 2), 'creatoriocore:crumbling_nickel']).heated()
+    event.recipes.create.crushing('creatoriocore:lapis_dust', 'minecraft:lapis_lazuli')
+    event.recipes.create.sequenced_assembly(
+        'simulated:gyroscopic_mechanism',
+        'create:iron_sheet',
+        [
+            event.recipes.create.deploying('simulated:incomplete_gyroscopic_mechanism', ['simulated:incomplete_gyroscopic_mechanism', 'create:cogwheel']),
+            event.recipes.create.deploying('simulated:incomplete_gyroscopic_mechanism', ['simulated:incomplete_gyroscopic_mechanism', 'create:shaft']),
+            event.recipes.create.deploying('simulated:incomplete_gyroscopic_mechanism', ['simulated:incomplete_gyroscopic_mechanism', 'create:brass_nugget'])
+        ]
+    ).transitionalItem('simulated:incomplete_gyroscopic_mechanism').loops(5)
+    event.recipes.create.sequenced_assembly(
+        'tfmg:steel_mechanism',
+        'tfmg:heavy_plate',
+        [
+            event.recipes.create.deploying('tfmg:unfinished_steel_mechanism', ['tfmg:unfinished_steel_mechanism', 'tfmg:steel_cogwheel']),
+            event.recipes.create.deploying('tfmg:unfinished_steel_mechanism', ['tfmg:unfinished_steel_mechanism', 'tfmg:nickel_sheet']),
+            event.recipes.create.deploying('tfmg:unfinished_steel_mechanism', ['tfmg:unfinished_steel_mechanism', 'tfmg:large_steel_cogwheel']),
+            event.recipes.create.deploying('tfmg:unfinished_steel_mechanism', ['tfmg:unfinished_steel_mechanism', 'tfmg:lead_sheet']),
+            event.recipes.create.deploying('tfmg:unfinished_steel_mechanism', ['tfmg:unfinished_steel_mechanism', 'tfmg:screw']),
+        ]
+    ).transitionalItem('tfmg:unfinished_steel_mechanism').loops(2)
     event.custom({
         type: 'creatoriocore:reaction',
         ingredients: [{ item: 'creatoriocore:destabilized_gravitite_dust' }, { item: 'creatoriocore:destabilized_gravitite_dust' }, { item: 'creatoriocore:destabilized_gravitite_dust' }, { item: 'aether:zanite_gemstone' }],

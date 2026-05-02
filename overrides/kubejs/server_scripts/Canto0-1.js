@@ -61,6 +61,15 @@ ServerEvents.recipes(event => {
         'minecraft:item.axe.strip'
     )
     event.recipes.farmersdelight.cutting(
+        'minecraft:short_grass',
+        'create:wrench',
+        [
+            ChanceResult.of('minecraft:green_dye', 0.20),
+            ChanceResult.of('minecraft:wheat_seeds', 0.05)
+        ],
+        'minecraft:item.axe.strip'
+    )
+    event.recipes.farmersdelight.cutting(
         'minecraft:wheat',
         'create:wrench',
         [

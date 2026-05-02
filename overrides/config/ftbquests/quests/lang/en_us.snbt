@@ -33,7 +33,7 @@
 		"If you accomplished that, feel free to check this quest off."
 	]
 	quest.0205D771F2295CC9.quest_subtitle: "Automation Challenge : Automate Redstone"
-	quest.026B7D0460BEC167.quest_subtitle: "Will have more uses in 0.4.1"
+	quest.026B7D0460BEC167.quest_subtitle: "Energize This!"
 	quest.02B742F686F88CCF.quest_desc: [
 		"Oh hey, dying your flour violent neon green makes it resemble enough of a slimeball you don't question it."
 		""
@@ -82,6 +82,14 @@
 	quest.140225D86D75BCBA.quest_subtitle: "The Slick Stuff"
 	quest.14AB5971D7E8C8D1.quest_subtitle: "Storing Fluids"
 	quest.1A068CFE0E65C291.quest_subtitle: "A Combustion Fuel"
+	quest.1AF2937A0F7E5851.quest_desc: [
+		"Toss it in the void and wait for it to rise back out."
+		""
+		"You can probably figure out how to break bedrock, right?"
+		""
+		"I'll give you a hint, Use a piston and the create wrench."
+	]
+	quest.1AF2937A0F7E5851.quest_subtitle: "How to make Shawdow Steel"
 	quest.1B48FC3752DE5D0C.quest_desc: [
 		"Right click a moon dew basin with a mirror and place the mirror with a large view of the sky."
 		""

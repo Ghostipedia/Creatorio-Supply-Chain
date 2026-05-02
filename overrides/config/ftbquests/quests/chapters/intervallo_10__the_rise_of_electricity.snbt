@@ -4,7 +4,7 @@
 	filename: "intervallo_10__the_rise_of_electricity"
 	group: "3B5D46B2B6E5A54B"
 	icon: {
-		id: "tfmg:light_bulb"
+		id: "malum:eldritch_spirit"
 	}
 	id: "4A2588BD18F8EBD1"
 	images: [
@@ -298,6 +298,89 @@
 			}]
 			x: 0.0d
 			y: 15.0d
+		}
+		{
+			dependencies: ["42F90F9CA0C424EC"]
+			id: "4A8279BA6C6A4EF4"
+			tasks: [{
+				id: "25B3666D7B5C941A"
+				item: { count: 1, id: "malum:refined_soulstone" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4A8279BA6C6A4EF4"]
+			id: "463E2C5AC6C06AF4"
+			tasks: [{
+				id: "4C63E2E42C406893"
+				item: { count: 1, id: "creatoriocore:cut_soulstone" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"6F9A62DF397EE320"
+				"1C28655D156C6581"
+				"0A35A41671DA7170"
+			]
+			id: "16BBB74554228E10"
+			tasks: [{
+				id: "5FA76C1BD3F84B0D"
+				item: { count: 1, id: "create:chromatic_compound" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["16BBB74554228E10"]
+			id: "1AF2937A0F7E5851"
+			tasks: [{
+				id: "64D44C7174E6C1F0"
+				item: { count: 1, id: "create:shadow_steel" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["1AF2937A0F7E5851"]
+			id: "56BAB11AC938BDA6"
+			tasks: [{
+				id: "128251703EC08F73"
+				item: { count: 1, id: "creatoriocore:living_mechanism" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["60B56E7AEAEF77AE"]
+			hide_dependency_lines: true
+			id: "0A35A41671DA7170"
+			tasks: [{
+				id: "223CD9B888F7BC4E"
+				item: { count: 1, id: "aeronautics:levitite_blend_bucket" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["60B56E7AEAEF77AE"]
+			hide_dependency_lines: true
+			id: "1C28655D156C6581"
+			tasks: [{
+				id: "026725199BAA4F63"
+				item: { count: 1, id: "creatoriocore:ink_pearls" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 6.0d
 		}
 	]
 }

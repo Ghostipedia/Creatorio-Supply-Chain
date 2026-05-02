@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:remove_features",
+  "biomes": "#aether:is_aether",
+  "features": [
+    "deep_aether:skyjade_ore",
+    "deep_aether:more_skyjade_ore",
+    "deep_aether:golden_heights_ambrosium_ore"
+  ],
+  "steps": "underground_ores"
+}

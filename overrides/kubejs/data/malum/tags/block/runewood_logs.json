@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "malum:runewood_log",
+    "malum:runewood",
+    "malum:exposed_runewood_log"
+  ]
+}

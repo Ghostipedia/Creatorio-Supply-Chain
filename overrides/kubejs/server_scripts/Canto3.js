@@ -540,7 +540,15 @@ ServerEvents.recipes(event => {
         'creatoriocore:smeaphormium_cluster',
         ['1x creatoriocore:gravitite_crystal', '2x aether:zanite_gemstone']
     ).superheated()
-
+    event.shaped('creatoriocore:soul_steel_basin', [
+        'A A',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'creatoriocore:soul_stained_steel_corner_welded_reinforcement',
+        B: 'malum:soul_stained_steel_plating',
+        C: 'creatoriocore:soul_stained_steel_casing_internals'
+    })
     event.custom({
         type: 'creatoriocore:crogiolo',
         ingredients: [

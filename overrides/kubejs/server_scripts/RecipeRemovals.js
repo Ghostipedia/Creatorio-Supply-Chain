@@ -18,11 +18,10 @@ let yeet_f = (itemName) => {
     event.add('c:hidden_from_recipe_viewers', itemName)
   })
 }
-yeet_f('creatoriocore:fuel_warm')
+
 
 yeet('malum:crude_scythe')
 yeet('malum:soul_stained_steel_scythe')
-yeet('creatoriocore:fuel_warm_bucket')
 yeet('creatoriocore:fuel_hot_bucket')
 yeet('creatoriocore:fuel_blazing_bucket')
 yeet('creatoriocore:fuel_searing_bucket')
@@ -41,6 +40,19 @@ yeet('sophisticatedbackpacks:stack_downgrade_tier_1')
 yeet('sophisticatedbackpacks:stack_downgrade_tier_2')
 yeet('sophisticatedbackpacks:stack_downgrade_tier_3')
 yeet('sophisticatedbackpacks:stack_upgrade_omega_tier')
+
+yeet('malum:void_depot')
+yeet('malum:void_conduit')
+yeet('malum:primordial_soup')
+yeet('malum:weeping_well_center')
+yeet('malum:weeping_well_column')
+yeet('malum:weeping_well_column_base')
+yeet('malum:weeping_well_column_cap')
+yeet('malum:weeping_well_corner')
+yeet('malum:weeping_well_flagstone')
+yeet('malum:weeping_well_side')
+yeet('malum:weeping_well_side_mirror')
+
 yeet('tfmg:coal_generator')
 yeet('tfmg:diesel_generator')
 yeet('tfmg:gas_generator')
@@ -328,8 +340,36 @@ yeet('repackaged:energy_gauge')
 yeet('tfmg:cast_iron_chemical_vat')
 yeet('tfmg:fireproof_chemical_vat')
 yeet('tfmg:steel_chemical_vat')
+yeet('tfmg:turbine_engine')
 
 ServerEvents.recipes(event => {
+  event.remove({ type: 'malum:void_favor' })
+
+
+
+  event.remove({ id: 'createfisheryindustry:peeling/crying_obsdian' })
+  event.remove({ id: 'createfisheryindustry:peeling/obsidian_peeling' })
+  event.remove({ id: 'createfisheryindustry:peeling/rose_quartz_peeling' })
+  event.remove({ id: 'simulated:sequenced_assembly/gyroscopic_mechanism' })
+  event.remove({ id: 'tfmg:sequenced_assembly/steel_mechanism' })
+  event.remove({ id: 'malum:soulstone_from_deepslate_blasting' })
+  event.remove({ id: 'malum:soulstone_from_blasting' })
+  event.remove({ id: 'malum:soulstone_from_raw_blasting' })
+  event.remove({ id: 'malum:soulstone_from_crushed_blasting' })
+
+  event.remove({ id: 'malum:soulstone_from_blasting' })
+  event.remove({ id: 'malum:soulstone_from_deepslate_blasting' })
+  event.remove({ id: 'malum:soulstone_from_crushed_blasting' })
+  event.remove({ id: 'malum:soulstone_from_raw_blasting' })
+
+  event.remove({ id: 'malum:create/washing/crushed_soulstone' })
+  event.remove({ id: 'malum:soulstone_from_deepslate_smelting' })
+  event.remove({ id: 'malum:soulstone_from_smelting' })
+  event.remove({ id: 'malum:soulstone_from_crushed_smelting' })
+  event.remove({ id: 'malum:soulstone_from_raw_smelting' })
+
+  event.remove({ id: 'dndesires:dragon_breathing/chorus_fruit_from_apple' })
+  event.remove({ id: 'create_dragons_plus:ending/chorus_fruit_from_apple' })
   event.remove({ id: 'create:crafting/curiosities/brown_toolbox' })
   event.remove({ id: 'malum:void_favor/raw_soulstone' })
   event.remove({ id: 'malum:spirit_infusion/paracausal_flame' })
