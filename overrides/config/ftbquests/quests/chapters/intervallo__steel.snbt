@@ -599,5 +599,56 @@
 			x: 9.5d
 			y: 2.0d
 		}
+		{
+			dependencies: ["537F0A416650C39D"]
+			icon: {
+				id: "createnuclear:reactor_controller"
+			}
+			id: "3A6E59AA90B99B12"
+			size: 1.5d
+			tasks: [
+				{
+					id: "0A7957D701F72AB7"
+					item: { count: 1, id: "createnuclear:reactor_controller" }
+					type: "item"
+				}
+				{
+					id: "4666C443144D9A99"
+					item: { count: 1, id: "createnuclear:reactor_output" }
+					type: "item"
+				}
+				{
+					id: "40AC08D8716784D2"
+					item: { count: 1, id: "createnuclear:reactor_input" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "09563E1F9BE55C21"
+					item: { count: 1, id: "createnuclear:reactor_core" }
+					type: "item"
+				}
+				{
+					count: 18L
+					id: "2594FB671AE1401D"
+					item: { count: 1, id: "createnuclear:reactor_frame" }
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "78B0A13ABA97322A"
+					item: { count: 1, id: "createnuclear:reactor_cooler" }
+					type: "item"
+				}
+				{
+					count: 130L
+					id: "51DA7526684CEE8F"
+					item: { count: 1, id: "createnuclear:reactor_casing" }
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: 10.0d
+		}
 	]
 }

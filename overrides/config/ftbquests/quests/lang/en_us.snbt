@@ -198,6 +198,15 @@
 	quest.35636EA132BBDEE8.quest_subtitle: "Painful"
 	quest.35923DE99E1EEADD.quest_desc: ["The Iron you pull from the ground is sufficient for standard applications, but lacks purity needed for steel. Your next objective is to refine iron into a capable material for Steel production. While you don't have total mastery over fluid chemistry or the vats to handle high tier molten metals... Your create machines seem to be eager to refine iron down into a pure granulated dust"]
 	quest.35923DE99E1EEADD.quest_subtitle: "An Agonizing Process"
+	quest.3A6E59AA90B99B12.quest_desc: [
+		"An Optimized Reactor can output a whopping 2.4M SU, Plenty of power for all the EU you'd ever want."
+		""
+		"At the cost of a lot of material investment, of course."
+		""
+		""
+		"Everything shown in this quest is what you need to &oAssemble a reactor&r it does not account for casings needed for the parts themselves, keep that in mind."
+	]
+	quest.3A6E59AA90B99B12.quest_subtitle: "Titanic Stress Production"
 	quest.3C438C3BCF92D6B1.quest_subtitle: "Power, Finally? "
 	quest.3CC265748B4DF058.quest_subtitle: "Steel at Last!"
 	quest.3D7151D129FF0276.quest_subtitle: "Metallic Glue"

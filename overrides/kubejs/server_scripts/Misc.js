@@ -108,7 +108,18 @@ ServerEvents.recipes(event => {
 //compost tag for ink pearls
 ServerEvents.tags('item', event => {
   event.add('ratatouille:compostable_items_4to1', 'creatoriocore:ink_pearl_seeds')
+  event.remove('c:ingots/steel', 'createnuclear:steel_ingot')
+  event.remove('c:nuggets/steel', 'createnuclear:steel_nugget')
+  event.remove('c:storage_blocks/steel', 'createnuclear:steel_block')
+  event.remove('c:ingots/lead', 'createnuclear:lead_ingot')
+  event.remove('c:nuggets/lead', 'createnuclear:lead_nugget')
+  event.remove('c:storage_blocks/lead', 'createnuclear:lead_block')
+  event.remove('c:storage_blocks/raw_lead', 'createnuclear:raw_lead_block')
+  event.remove('c:raw_materials/lead', 'createnuclear:raw_lead')
 })
+
+
+
 ServerEvents.tags('block', event => {
   event.add('creatoriocore:hose_gantry_targets', 'create_connected:fluid_vessel')
   event.add('creatoriocore:hose_gantry_targets', 'tfmg:cast_iron_fluid_tank')

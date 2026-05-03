@@ -344,7 +344,7 @@ ServerEvents.recipes(event => {
     event.recipes.create.crushing('2x creatoriocore:crumbling_lead', 'create:crushed_raw_lead')
     event.recipes.create.crushing('2x creatoriocore:crumbling_copper', 'create:crushed_raw_copper')
     event.recipes.create.crushing('creatoriocore:nether_slag', 'minecraft:nether_bricks')
-    event.recipes.create.crushing(['minecraft:gravel', CreateItem.of('3x create:copper_nugget', 0.15)], 'minecraft:granite')
+    event.recipes.create.crushing(['minecraft:gravel', CreateItem.of('createnuclear:uranium_powder', 0.55), CreateItem.of('3x create:copper_nugget', 0.15)], 'minecraft:granite')
 
 
 

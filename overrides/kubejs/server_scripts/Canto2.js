@@ -162,7 +162,24 @@ ServerEvents.recipes(event => {
     event.recipes.create.crushing(Item.of('creatoriocore:crumbling_tin', 2), 'create:crushed_raw_tin')
     event.recipes.create.crushing(Item.of('create:crushed_raw_tin', 2), 'creatoriocore:raw_tin')
     event.recipes.create.mixing(Item.of('creatoriocore:invar_ingot', 3), [Item.of('creatoriocore:crumbling_iron', 2), 'creatoriocore:crumbling_nickel']).heated()
+
+    event.recipes.create.mixing(Fluid.of('dndesires:vanilla_milkshake', 500), [Item.of('minecraft:sugar', 2), Item.of('minecraft:snowball', 4), 'minecraft:peony', Fluid.of('minecraft:milk', 250)])
+
+
     event.recipes.create.crushing('creatoriocore:lapis_dust', 'minecraft:lapis_lazuli')
+    event.shaped('tfmg:diesel_engine_cylinder', [
+        'A A',
+        'A A'
+    ], {
+        A: 'tfmg:heavy_plate'
+    })
+    event.shaped('tfmg:spark_plug', [
+        'A',
+        'B'
+    ], {
+        A: 'minecraft:flint',
+        B: 'tfmg:steel_ingot'
+    })
     event.recipes.create.sequenced_assembly(
         'simulated:gyroscopic_mechanism',
         'create:iron_sheet',
