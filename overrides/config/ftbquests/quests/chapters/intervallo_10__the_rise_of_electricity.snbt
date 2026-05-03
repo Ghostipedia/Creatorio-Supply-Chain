@@ -287,7 +287,10 @@
 			y: 11.5d
 		}
 		{
-			dependencies: ["1FEDE524EF62EE88"]
+			dependencies: [
+				"1FEDE524EF62EE88"
+				"56BAB11AC938BDA6"
+			]
 			id: "0CFB860707F3EE25"
 			shape: "none"
 			size: 2.0d
