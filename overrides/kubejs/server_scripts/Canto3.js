@@ -194,7 +194,7 @@ ServerEvents.recipes(event => {
         ]
     ).transitionalItem('tfmg:unfinished_circuit_board').loops(4)
     event.recipes.create.mixing('createnuclear:enriched_yellowcake', ['createnuclear:yellowcake', 'createnuclear:uranium_powder', Fluid.of('minecraft:lava', 1000)]).superheated()
-      event.recipes.create.crushing(CreateItem.of('minecraft:ancient_debris', 0.175), 'minecraft:red_nether_bricks')
+    event.recipes.create.crushing(CreateItem.of('minecraft:ancient_debris', 0.175), 'minecraft:red_nether_bricks')
     event.recipes.create.cutting(Item.of('creatoriocore:silicon_wafer', 4), 'creatoriocore:silicon_boule')
     event.recipes.create.cutting(Item.of('creatoriocore:silicon_strips', 4), 'creatoriocore:silicon_wafer')
     event.recipes.create.cutting(Item.of('creatoriocore:silicon_chips', 4), 'creatoriocore:silicon_strips')
@@ -347,14 +347,13 @@ ServerEvents.recipes(event => {
         'creatoriocore:aether_permit',
         'creatoriocore:nether_permit',
         [
-            event.recipes.create.deploying('creatoriocore:aether_permit', ['creatoriocore:aether_permit', 'creatoriocore:cypherwire_spool']),
-            event.recipes.create.cutting('creatoriocore:aether_permit', 'creatoriocore:aether_permit'),
-            event.recipes.create.deploying('creatoriocore:aether_permit', ['creatoriocore:aether_permit', 'tfmg:steel_block']),
-            event.recipes.create.filling('creatoriocore:aether_permit', ['creatoriocore:aether_permit', Fluid.of('tfmg:molten_plastic', 1000)]),
-            event.recipes.create.pressing('creatoriocore:aether_permit', 'creatoriocore:aether_permit'),
-            event.recipes.create.deploying('creatoriocore:aether_permit', ['creatoriocore:aether_permit', 'tfmg:circuit_board'])
+            event.recipes.create.deploying('creatoriocore:nether_permit', ['creatoriocore:nether_permit', 'creatoriocore:cypherwire_spool']),
+            event.recipes.create.cutting('creatoriocore:nether_permit', 'creatoriocore:nether_permit'),
+            event.recipes.create.deploying('creatoriocore:nether_permit', ['creatoriocore:nether_permit', 'tfmg:circuit_board']),
+            event.recipes.creatoriocore.welder_step({ ingredients: [{ item: 'creatoriocore:nether_permit' }, { item: 'tfmg:heavy_plate' }, { item: 'tfmg:heavy_plate' }, { item: 'tfmg:heavy_plate' }], results: [{ id: 'creatoriocore:nether_permit', count: 1 }], processingDuration: 200 }),
+            event.recipes.create.pressing('creatoriocore:nether_permit', 'creatoriocore:nether_permit')
         ]
-    ).transitionalItem('creatoriocore:aether_permit').loops(4)
+    ).transitionalItem('creatoriocore:nether_permit').loops(4)
 
     event.custom({
         type: 'create_dragons_plus:ending',

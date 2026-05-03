@@ -209,6 +209,22 @@
 	quest.3A6E59AA90B99B12.quest_subtitle: "Titanic Stress Production"
 	quest.3C438C3BCF92D6B1.quest_subtitle: "Power, Finally? "
 	quest.3CC265748B4DF058.quest_subtitle: "Steel at Last!"
+	quest.3D7151D129FF0276.quest_desc: [
+		"A breif summary of how to use the welder until the ponder is in place"
+		""
+		""
+		"For Single Recipes ; Use a welding Depot to place more than 1 item below the welder"
+		""
+		""
+		"For Sequenced Assembly : use multiple standard depots and a mechanical arm. "
+		""
+		"- First : Right click the welder with the mechanical arm like you would any other storage, it will be set to the mechanical arms output"
+		"- Second, bind all the relevant depots for that step, up to 3 for recipes, however you may bind more if desired."
+		"- Thirdly, Supply LV tiered Power to the top face of the block"
+		""
+		""
+		"Congrats you now got a functional welder!"
+	]
 	quest.3D7151D129FF0276.quest_subtitle: "Metallic Glue"
 	quest.42F433BBD4789381.quest_desc: [
 		"Add some water in a bucket with your flour to create dough."

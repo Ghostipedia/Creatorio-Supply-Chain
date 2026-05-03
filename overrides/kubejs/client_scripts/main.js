@@ -19,7 +19,7 @@ ItemEvents.modifyTooltips(event => {
     event.add('creatoriocore:honeyrose', Text.of('Not Yet Implemented').aqua())
     event.add('creatoriocore:midnight_moondrop', Text.of('Not Yet Implemented').aqua())
     event.add('creatoriocore:arcalite_pyre', Text.of('Not Yet Implemented').aqua())
-
+    event.add('creatoriocore:welder', Text.of('Ponder NYI : Check the Quest!').aqua())
 
     event.add('creatoriocore:ferrite_magnet', Text.of('Future Content').aqua())
     event.add('creatoriocore:neodymium_magnet', Text.of('Future Content').aqua())
