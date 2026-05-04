@@ -85,7 +85,15 @@ ServerEvents.recipes(event => {
         ],
         'minecraft:item.axe.strip'
     )
-
+    event.recipes.farmersdelight.cutting(
+        'minecraft:pale_oak_log',
+        '#minecraft:axes',
+        [
+            'minecraft:stripped_pale_oak_log',
+            'farmersdelight:tree_bark'
+        ],
+        'minecraft:item.axe.strip'
+    )
     event.shapeless('4x creatoriocore:weak_putty', [
         '2x minecraft:clay_ball',
         'minecraft:kelp',

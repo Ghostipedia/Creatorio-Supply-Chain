@@ -2,7 +2,6 @@
 let yeet = (itemName) => {
   ServerEvents.recipes(event => {
     event.remove({ output: itemName })
-    event.remove({ input: itemName })
   })
 
   ServerEvents.tags('item', event => {
@@ -366,9 +365,26 @@ yeet('createnuclear:raw_lead')
 yeet('createnuclear:enriching_campfire')
 yeet('createnuclear:enriched_soul_soil')
 
+yeet('malum:soul_stained_steel_knife')
+yeet('malum:soul_stained_steel_sword')
+yeet('malum:soul_stained_steel_pickaxe')
+yeet('malum:soul_stained_steel_axe')
+yeet('malum:soul_stained_steel_shovel')
+yeet('malum:soul_stained_steel_hoe')
+yeet('malum:tyrving')
+yeet('malum:mnemonic_hex_staff')
+yeet('malum:erosion_scepter')
+yeet('malum:weight_of_worlds')
+yeet('malum:edge_of_deliverance')
+yeet('malum:unwinding_chaos')
+yeet('malum:sundering_anchor')
+yeet('malum:spellweaving_pickaxe')
+yeet('malum:spellweaving_axe')
+yeet('malum:ring_of_esoteric_spoils')
+
 ServerEvents.recipes(event => {
   event.remove({ type: 'malum:void_favor' })
-  
+
   event.remove({ id: 'createnuclear:mechanical_crafting/reactor_core' })
   event.remove({ id: 'createnuclear:mechanical_crafting/reactor_frame' })
   event.remove({ id: 'createnuclear:mechanical_crafting/reactor_cooler' })
@@ -378,7 +394,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'create:crushing/granite' })
   event.remove({ id: 'create_new_age:sequenced_assembly/nuclear_fuel' })
   event.remove({ id: 'create_new_age:mixing/thorium' })
-  
+
   event.remove({ id: 'createnuclear:item_application/reactor_casing_from_steel_and_brass_casing_using_deployer' })
   event.remove({ id: 'createnuclear:item_application/reactor_casing_from_steel_and_brass_casing' })
   event.remove({ id: 'createnuclear:mixing/uranium_fluid' })
