@@ -19,7 +19,14 @@ ServerEvents.recipes(event => {
         'minecraft:item.axe.strip'
     )
 
-
+    event.shaped('create_enchantment_industry:experience_hatch', [
+        ' A ',
+        'ABA',
+        ' A '
+    ], {
+        A: 'create:experience_block',
+        B: 'dndesires:fluid_hatch'
+    })
     event.recipes.farmersdelight.cutting(
         'creatoriocore:primitive_andesite_alloy',
         '#minecraft:pickaxes',

@@ -527,7 +527,29 @@ ServerEvents.recipes(event => {
         ],
         'aether:gravitite_ore'
     )
-
+    event.shaped('tfmg:crankshaft', [
+        'ABA',
+        'BAB'
+    ], {
+        A: 'tfmg:rebar',
+        B: 'malum:soul_stained_steel_plating'
+    })
+    event.recipes.create.mechanical_crafting('tfmg:large_engine', [
+        '       ',
+        '   A   ',
+        '  ABA  ',
+        '  BCB  ',
+        '  DED  ',
+        '  DAD  ',
+        '  FFF  '
+    ], {
+        A: 'tfmg:steel_ingot',
+        B: 'creatoriocore:soul_stained_steel_square_beam',
+        C: 'tfmg:heavy_machinery_casing',
+        D: 'tfmg:steel_mechanism',
+        E: 'creatoriocore:soul_stained_steel_casing_internals',
+        F: 'tfmg:heavy_plate'
+    })
     event.custom({
         type: 'creatoriocore:reaction',
         ingredients: [{ item: 'creatoriocore:destabilized_gravitite_dust' }, { item: 'creatoriocore:destabilized_gravitite_dust' }, { item: 'creatoriocore:destabilized_gravitite_dust' }, { item: 'aether:zanite_gemstone' }],
@@ -535,7 +557,7 @@ ServerEvents.recipes(event => {
         duration: 200,
         heat: 'blazing'
     })
-    event.recipes.create.crushing([CreateItem.of('deep_aether:skyjade', 0.01), CreateItem.of('aether:zanite_gemstone', 0.01), CreateItem.of('aether:ambrosium_shard', 0.01)], 'aether:holystone')
+    event.recipes.create.crushing([CreateItem.of('deep_aether:skyjade', 0.1), CreateItem.of('aether:zanite_gemstone', 0.1), CreateItem.of('aether:ambrosium_shard', 0.1)], 'aether:holystone')
     event.recipes.create.mixing(Item.of('aether:holystone', 4), [Item.of('minecraft:diorite', 2), Item.of('aether:aerogel', 2), Fluid.of('minecraft:water', 1000)])
     event.recipes.create.mixing([Item.of('tfmg:bauxite_powder', 8), Fluid.of('tfmg:sulfuric_acid', 250)], [Item.of('minecraft:clay_ball', 16), Fluid.of('tfmg:sulfuric_acid', 250), Fluid.of('minecraft:water', 750)]).superheated()
     event.recipes.create.filling('aether:gravitite_ore', ['aether:holystone', Fluid.of('creatoriocore:homeward_essence', 1000)])

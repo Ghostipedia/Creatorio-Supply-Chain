@@ -35,17 +35,6 @@
 	quests: [
 		{
 			dependencies: ["57AEDC8C96065F80"]
-			id: "38CB5E073B985276"
-			tasks: [{
-				id: "494569F0684E5CCA"
-				item: { count: 1, id: "tfmg:industrial_mixer" }
-				type: "item"
-			}]
-			x: 2.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["57AEDC8C96065F80"]
 			icon: {
 				id: "createdeco:decal_fluid"
 			}
@@ -186,7 +175,7 @@
 			dependencies: [
 				"1D06C8E8E5161021"
 				"0D2324C953CC331D"
-				"38CB5E073B985276"
+				"6A8D142566C76543"
 			]
 			id: "51D6234D16C42CDC"
 			tasks: [{
@@ -312,17 +301,6 @@
 			}]
 			x: 6.0d
 			y: 0.5d
-		}
-		{
-			dependencies: ["38CB5E073B985276"]
-			id: "5CF52065D292AA83"
-			tasks: [{
-				id: "2AC85683559B22C2"
-				item: { count: 1, id: "tfmg:mixer_blade" }
-				type: "item"
-			}]
-			x: 3.0d
-			y: 5.5d
 		}
 		{
 			dependencies: ["239F68BEBF9AB53A"]
@@ -649,6 +627,60 @@
 			]
 			x: 10.5d
 			y: 10.0d
+		}
+		{
+			dependencies: ["57AEDC8C96065F80"]
+			icon: {
+				id: "creatoriocore:vat_blaze_burner"
+			}
+			id: "6A8D142566C76543"
+			tasks: [
+				{
+					id: "3496916B44B96154"
+					item: { count: 1, id: "creatoriocore:vat_blaze_burner" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "4FEFBE7EEA85082C"
+					item: { count: 1, id: "creatoriocore:vat_blaze_burner_frame" }
+					type: "item"
+				}
+				{
+					count: 17L
+					id: "113AF73248F680F8"
+					item: { count: 1, id: "creatoriocore:reaction_vat_casing" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2798F6913720944D"]
+			id: "4DBF4979D92A550F"
+			tasks: [{
+				id: "0587C2F520D6CEE3"
+				item: { count: 1, id: "tfmg:large_engine" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"2798F6913720944D"
+				"33B250BF865C6A06"
+				"1A068CFE0E65C291"
+			]
+			id: "43717912A554B039"
+			tasks: [{
+				id: "5E3A904BC8E83E6F"
+				item: { count: 1, id: "tfmg:regular_engine" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -0.5d
 		}
 	]
 }

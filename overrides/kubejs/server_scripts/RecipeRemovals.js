@@ -21,11 +21,6 @@ let yeet_f = (itemName) => {
 
 yeet('malum:crude_scythe')
 yeet('malum:soul_stained_steel_scythe')
-yeet('creatoriocore:fuel_hot_bucket')
-yeet('creatoriocore:fuel_blazing_bucket')
-yeet('creatoriocore:fuel_searing_bucket')
-yeet('creatoriocore:fuel_white_hot_bucket')
-yeet('creatoriocore:fuel_infernal_bucket')
 yeet('create_rns:resonance_buffer')
 yeet('create_rns:shattering_resonator')
 yeet('create_rns:stabilizing_resonator')
@@ -384,6 +379,11 @@ yeet('malum:ring_of_esoteric_spoils')
 
 ServerEvents.recipes(event => {
   event.remove({ type: 'malum:void_favor' })
+
+  event.remove({ id: 'tfmg:crafting/materials/crankshaft' })
+  event.remove({ id: 'tfmg:mechanical_crafting/large_engine' })
+  event.remove({ id: 'create_enchantment_industry:item_application/experience_hatch_using_deployer' })
+  event.remove({ id: 'create_enchantment_industry:item_application/experience_hatch' })
 
   event.remove({ id: 'createnuclear:mechanical_crafting/reactor_core' })
   event.remove({ id: 'createnuclear:mechanical_crafting/reactor_frame' })

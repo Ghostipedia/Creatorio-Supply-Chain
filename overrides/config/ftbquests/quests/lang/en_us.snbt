@@ -233,6 +233,16 @@
 		"It's sticky enough to be considered a slime ball, just not green enough."
 	]
 	quest.42F433BBD4789381.quest_subtitle: "Make it sticky"
+	quest.43717912A554B039.quest_desc: [
+		"So basically let me break it down for you."
+		""
+		""
+		"Goodluck I don't even know myself, they have a lot of customization for different fuels"
+		""
+		""
+		"Ps. if you spot any parts that still need aluminium just let me know. Ty."
+	]
+	quest.43717912A554B039.quest_subtitle: "Confusing"
 	quest.43775477581A2414.quest_desc: ["These sturdy plates will allow the creation of a new type of casing that can handle consistent physical strain"]
 	quest.43775477581A2414.quest_subtitle: "Boards for bulking"
 	quest.4389066D2B9F140E.quest_desc: [
@@ -355,6 +365,13 @@
 		"Chop up some wood on a cutting board for bark."
 	]
 	quest.67CE0B0A440DAC55.quest_subtitle: "Wood Chips"
+	quest.6A8D142566C76543.quest_desc: [
+		"You'll need a Vat Blaze Burner and the relevant casings to assemble a Reaction Vat."
+		""
+		""
+		"These vats are required to simmer and process up your first plastics."
+	]
+	quest.6A8D142566C76543.quest_subtitle: "If you haven't already"
 	quest.6B56B9AEF34154E5.quest_subtitle: "Lubricant Precursor"
 	quest.6B738D40D4612B92.quest_subtitle: "Legendary Component #2"
 	quest.7359BEFA3BFE2305.quest_desc: [
