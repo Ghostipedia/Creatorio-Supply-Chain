@@ -147,6 +147,7 @@ ServerEvents.recipes(event => {
     event.recipes.create.mixing(Fluid.of('creatoriocore:molten_lapis', 1000), 'minecraft:lapis_lazuli').superheated()
     event.smelting('tfmg:fireproof_brick', 'creatoriocore:fireclay_kaolin_blend')
     event.recipes.create.mixing(Item.of('creatoriocore:fireclay_kaolin_blend', 2), ['creatoriocore:kaolin_clay', 'tfmg:fireclay_ball'])
+    event.recipes.create.mixing(Item.of('tfmg:fireclay_ball', 16), ['4x minecraft:soul_sand', '4x create:scoria', '4x minecraft:clay_ball', Fluid.of('minecraft:lava', 500)])
     event.recipes.create.mixing('creatoriocore:kaolin_clay', ['creatoriocore:sintered_flint', 'minecraft:clay_ball', 'create:cinder_flour'])
     event.recipes.create.pressing(Item.of('minecraft:raw_copper', 4), 'creatoriocore:compacted_copper_ore_geode')
     event.recipes.create.pressing(Item.of('minecraft:raw_iron', 4), 'creatoriocore:compacted_iron_ore_geode')
