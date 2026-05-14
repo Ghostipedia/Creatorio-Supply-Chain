@@ -203,7 +203,7 @@ ServerEvents.recipes(event => {
     event.recipes.create.mixing('malum:soul_stained_steel_ingot', ['tfmg:copper_sulfate', 'minecraft:dragon_breath', 'tfmg:steel_ingot', Fluid.of('creatoriocore:molten_lapis', 1000)]).superheated()
     event.recipes.create.mixing('creatoriocore:high_quality_coke_iron_blend', ['creatoriocore:sifted_iron', 'tfmg:coal_coke_dust', 'create_aquatic_ambitions:calcium_rich_powder']).superheated()
     event.recipes.create.pressing(Item.of('rubberworks:rubber_sheet', 8), 'tfmg:rubber_sheet')
-    event.recipes.create.compacting(Item.of('tfmg:bauxite', 4), 'tfmg:bauxite_powder')
+    event.recipes.create.compacting(Item.of('tfmg:bauxite'), '4x tfmg:bauxite_powder',)
     event.shapeless('creatoriocore:steel_repackager', 'creatoriocore:steel_packager')
     event.shapeless('creatoriocore:steel_packager', 'creatoriocore:steel_repackager')
     event.shaped('2x creatoriocore:entangled_repackager', [
