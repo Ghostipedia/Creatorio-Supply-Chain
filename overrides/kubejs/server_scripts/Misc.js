@@ -103,6 +103,65 @@ ServerEvents.recipes(event => {
   event.smoking('minecraft:dead_fire_coral_fan', 'minecraft:fire_coral_fan')
   event.smoking('minecraft:dead_horn_coral', 'minecraft:horn_coral')
   event.smoking('minecraft:dead_horn_coral_fan', 'minecraft:horn_coral_fan')
+
+  //tfmg block recipes
+  event.recipes.create.compacting(Item.of('tfmg:cinder_block', 8), ['6x tfmg:cinderblock', '2x createvintageneoforged:iron_rod', Fluid.of('tfmg:liquid_concrete', 1000)])
+  event.shaped('8x tfmg:cinder_block', [
+    'AAA',
+    'BCB',
+    'AAA'
+  ], {
+    A: 'tfmg:cinderblock',
+    B: 'createvintageneoforged:iron_rod',
+    C: 'tfmg:liquid_concrete_bucket'
+  })
+  event.shaped('8x tfmg:cinderflour_block', [
+    'AAA',
+    'BCB',
+    'AAA'
+  ], {
+    A: 'tfmg:cinderflourblock',
+    B: 'createvintageneoforged:iron_rod',
+    C: 'minecraft:nether_wart_block'
+  })
+  event.shaped('4x tfmg:rebar_block', [
+    'A A',
+    '   ',
+    'A A'
+  ], {
+    A: 'createvintageneoforged:iron_rod'
+  })
+  event.shaped('3x tfmg:rebar_floor', [
+    'AAA'
+  ], {
+    A: 'createvintageneoforged:iron_rod'
+  })
+  event.shaped('6x tfmg:rebar_wall', [
+    'AAA',
+    'AAA'
+  ], {
+    A: 'createvintageneoforged:iron_rod'
+  })
+  event.shaped('tfmg:rebar_pile', [
+    'AAA',
+    'AAA',
+    'AAA'
+  ], {
+    A: 'createvintageneoforged:iron_rod'
+  })
+  event.shaped('3x tfmg:rebar_stairs', [
+    'A ',
+    'AA'
+  ], {
+    A: 'createvintageneoforged:iron_rod'
+  })
+  event.shaped('3x tfmg:rebar_pillar', [
+    'A',
+    'A',
+    'A'
+  ], {
+    A: 'createvintageneoforged:iron_rod'
+  })
 })
 
 //compost tag for ink pearls
