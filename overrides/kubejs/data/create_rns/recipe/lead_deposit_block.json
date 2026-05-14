@@ -16,6 +16,14 @@
       ]
     },
     {
+      "chance": 0.45,
+      "items": [
+        {
+          "item": "tfmg:galena"
+        }
+      ]
+    },
+    {
       "chance": 0.05,
       "items": [
         {
