@@ -552,6 +552,14 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'tfmg:sequenced_assembly/unfinished_circuit_board' })
   event.remove({ id: 'tfmg:crafting/materials/blast_furnace_output' })
   event.remove({ id: 'tfmg:crafting/materials/blast_furnace_hatch' })
+  event.remove({ id: 'tfmg:crafting/materials/cinder_block' })
+  event.remove({ id: 'tfmg:crafting/materials/cinderflour_block' })
+  event.remove({ id: 'tfmg:crafting/materials/rebar_block' })
+  event.remove({ id: 'tfmg:crafting/materials/rebar_floor' })
+  event.remove({ id: 'tfmg:crafting/materials/rebar_wall' })
+  event.remove({ id: 'tfmg:crafting/materials/rebar_pile' })
+  event.remove({ id: 'tfmg:crafting/materials/rebar_stairs' })
+  event.remove({ id: 'tfmg:crafting/materials/rebar_pillar' })
 
 })
 
